@@ -9,6 +9,7 @@
       </div>
       <div class="large-4 columns">
         <img src="img/twitter.png">
+
       </div>
     </div>
   </div> -->
