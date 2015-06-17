@@ -17,7 +17,7 @@
       <div class="grapefruit-content">
         <div class="medium-7 medium-offset-4 columns grapefruit-content">
           <h1>Advice you can count on</h1>
-          <h3>All Nomful coaches are registered dietitians, the highest level of nutrition education. You and your Nomful coach will set simple weekly goals together to achieve long-term results.</h3>
+          <h3>All Nomful coaches are registered diet You and your Nomful coach will set simple weekly goals together to achieve long-term results.</h3>
         </div>
       </div>
     </div>
