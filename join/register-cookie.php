@@ -1,5 +1,6 @@
 <?php
 require '../vendor/autoload.php';
+require_once('../config.php');
 
     // My modifications to mailer script from:
     // http://blog.teamtreehouse.com/create-ajax-contact-form
