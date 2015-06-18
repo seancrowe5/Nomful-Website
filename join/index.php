@@ -1,6 +1,6 @@
 <?php
    if (isset($_COOKIE['user'])) { 
-    header ( "Location: join/payment.php" ); 
+    header ( "Location: ../payment.php" ); 
    }
 ?>
 <!DOCTYPE html>
