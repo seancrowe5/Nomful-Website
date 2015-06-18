@@ -1,5 +1,6 @@
 <?php
-require 'vendor/autoload.php';
+require_once('../config.php');
+require '../vendor/autoload.php';
     use Parse\ParseClient;
     use Parse\ParseQuery;
     use Parse\ParseObject;
@@ -11,7 +12,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
    if (!isset($_COOKIE['user'])) { 
     header ( "Location: payment.php" ); 
    } 
-  require_once('./config.php');
+  
 
   $token  = $_POST['stripeToken'];
   $email = $_POST['stripeEmail'];
