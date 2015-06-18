@@ -1,6 +1,6 @@
 <?php
    if (isset($_COOKIE['user'])) { 
-    header ( "Location: ../../payment.php" ); 
+    header ( "Location: payment.php" ); 
    }
 ?>
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
   <meta property="og:title" content="" /> 
   <meta property="og:image" content="" /> 
   <meta property="og:description" content="" /> 
-  <meta property="og:url" content="https://nomful.com">
+  <meta property="og:url" content="https://nomful.com/development">
   <meta name="author" content="nomful" /> 
   <meta name="robots" content="index, follow, noydir" /> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
