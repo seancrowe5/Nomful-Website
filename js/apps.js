@@ -55,7 +55,7 @@ $(function() {
 		})
 		.success(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
-			window.location = "http://www.nomful.com/development/join/payment.php";
+			window.location = "https://www.nomful.com/development/join/payment.php";
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
