@@ -4,7 +4,7 @@
       <div class="intro-content">
         <div class="medium-5 columns">
           <h1>Nutrition simplified - THIS IS DEVELOPMENT SITE</h1>
-          <h3>Personalized support from a nutrition coach to optimize your health routine. Money</h3>
+          <h3>Personalized support from a nutrition coach to optimize your health routine.</h3>
           <!-- <a href="#join-now" class="join-now-button">Join now!</a> -->
         </div>
       </div>
