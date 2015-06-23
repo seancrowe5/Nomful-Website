@@ -11,7 +11,19 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
 
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-          
+      try {
+                $coupon = Stripe_Coupon::retrieve($coupon); //check coupon exists
+                if($coupon !== NULL) {
+                 $using_discount = true; //set to true our coupon exists or take the coupon id if you wanted to.
+                }
+                // if we got here, the coupon is valid
+
+             } catch (Exception $e) {
+                // an exception was caught, so the code is invalid
+                $message = $e->getMessage();
+                returnErrorWithMessage($message);
+             }
+      
 
       
         //Check to see if the group code is actually valid
@@ -29,11 +41,11 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         if (mail($recipient, $subject, $email_content)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Applying group code.";
+            echo "Thank You! Applying group code." . $coupon ;
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
-            echo "Oops! Something went wrong.";
+            echo "Oops! Something went wrong." . $message;
         }
 
     } 
