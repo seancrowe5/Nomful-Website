@@ -21,7 +21,7 @@ require_once('../config.php');
   <meta property="og:title" content="" /> 
   <meta property="og:image" content="" /> 
   <meta property="og:description" content="" /> 
-  <!-- <meta property="og:url" content="https://nomful.com/development"> -->
+  <meta property="og:url" content="https://nomful.com/development"> 
   <meta name="author" content="nomful" /> 
   <meta name="robots" content="index, follow, noydir" /> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
