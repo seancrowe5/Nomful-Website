@@ -21,8 +21,9 @@ img.reg-logo {
 
 .masthead-intro {
   background: url('https://nomful.com/development/img/Bigstock_81169544.jpg'); 
-  background-position: center; 
+  background-position: top; 
   background-size: cover;
+  overflow: visible;
 }
 
 .masthead-2 {
@@ -39,8 +40,8 @@ img.reg-logo {
 
 .masthead-content {
   position: relative;
-  top: 50%;
-  transform: translate(0px, -50%);
+  top: 45%;
+  transform: translate(0px, -45%);
   max-width: 635px; /* change this */
   margin: 0px auto;
   padding: 0px 30px;
@@ -63,7 +64,11 @@ img.reg-logo {
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead {
-    height: 810px;
+    height: 825px;
+  }
+  
+  .masthead-into{
+    height: 875px;
   }
 }
 

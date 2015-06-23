@@ -50,21 +50,17 @@
   <![endif]-->
 
 </head>
-<body>
-  
-  
-  <header> 
-    <div class="nav">
-      <img class="reg-logo" src="/../img/nomful.png"/>
-    </div>
-  </header><!-- /header -->
-  
+<body>  
   <section class="masthead masthead-intro">
+    <header> 
+      <div class="nav">
+        <img class="reg-logo" src="/../img/nomful.png"/>
+      </div>
+    </header><!-- /header -->
+    
     <div class="masthead-content">
-        <h1>Nutrition support built around you</h1>
-        <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>
-        <br>
-        <h3>Choose your device below.</h3>
+        <h1>Make healthy your routine</h1>
+        <p>Team up with a dedicated Nomful/nutrition coach to get the personalized support you need, right from your phone.</p>
     </div>
   </section>
   
@@ -89,7 +85,6 @@
   </section>
 
   
-
   
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
