@@ -59,6 +59,7 @@
     </div>
   </header><!-- /header -->
   
+  <section class="masthead masthead-intro">
   <div class="container">
     <div class="top-masthead">
         <h1>Nutrition support built around you</h1>
@@ -67,7 +68,31 @@
         <h3>Choose your device below.</h3>
     </div>
   </div>
+  </section>
   
+  <section class="masthead masthead-2">
+  <div class="container">
+    <div class="top-masthead">
+        <h1>Nutrition support built around you</h1>
+        <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>
+        <br>
+        <h3>Choose your device below.</h3>
+    </div>
+  </div>
+  </section>
+  
+  <section class="masthead masthead-3">
+  <div class="container">
+    <div class="top-masthead">
+        <h1>Nutrition support built around you</h1>
+        <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>
+        <br>
+        <h3>Choose your device below.</h3>
+    </div>
+  </div>
+  </section>
+  
+  <section>
   <div class="container mbudges">
     <div class="tables center">
       <img class="partnerlogo cell-middle" src="/../img/mac.png"/>
@@ -77,7 +102,7 @@
       <p>Nomful is proud to have partnered with the MAC to bring you with personalized nutrition support from the experts, right on your phone. To learn more, <a href="Nomful_Summary_FAQ-MAC_Member.pdf">click here.</a><br>If you have any additional questions or need help, email <a href="mailto:thomas@nomful.com">thomas@nomful.com</a> or call us anytime at (562) 666 - 3858.</p>
     </div>
   </div>
-  
+  </section>
           <div class="medium-8 medium-offset-2 columns">
           <h1>Every advantage, yours</h1>
           <h3>If you have a personal trainer, our platform integrates your Nomful coach with your trainer, giving you every advantage to reach your goals. You now have a powerful team inside and outside the gym.</h3>
@@ -99,15 +124,7 @@
     </div>
   </div>
   
-  <style>
-    html { 
-    background: url(http://nomful.com/development/img/Bigstock_81169544.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  </style>
+
   
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

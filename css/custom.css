@@ -2,15 +2,57 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 img.reg-logo {
   width: 190px;
-  padding: 18px 0 0 30px;
+  padding: 13px 0 0 30px;
 }
 
+.nav {
+  display: block;
+  padding: 0 0 8px 0;
+  background-color: rgba(255,255,255,.7);
+}
+
+.masthead {
+  height: 550px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(255, 255, 255,1);
+  background-size: cover;
+}
+
+.masthead-intro {
+  background: url('https://nomful.com/development/img/smoothie-drinking.jpg'); 
+  background-position: 50% 0px;
+  background-size: cover;
+}
 
 .top-masthead {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .masthead {
+    height: 800px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+
 
 
 
