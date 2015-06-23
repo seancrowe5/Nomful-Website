@@ -12,8 +12,8 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       try {
-        $coupon  = $_POST['group-code'];
-        $coupon = Stripe_Coupon::retrieve($coupon); //check coupon exists
+        $couponCode  = $_POST['group-code'];
+        $coupon = Stripe_Coupon::retrieve($couponCode); //check coupon exists
         if($coupon !== NULL) {
          $using_discount = true; //set to true our coupon exists or take the coupon id if you wanted to.
         }
