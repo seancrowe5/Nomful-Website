@@ -15,26 +15,36 @@ img.reg-logo {
   height: 550px;
   margin: 0 auto;
   text-align: center;
-  background-color: rgb(255, 255, 255,1);
+  background-color: rgb(255, 255, 255, 1);
   background-size: cover;
 }
 
 .masthead-intro {
   background: url('https://nomful.com/development/img/Bigstock_81169544.jpg'); 
-  background-position: 50% 0px;
+  background-position: center; 
   background-size: cover;
 }
 
 .masthead-2 {
   background: url('https://nomful.com/development/img/Bigstock_64958989.jpg'); 
-  background-position: 50% 0px;
+  background-position: center; 
   background-size: cover;
 }
 
 .masthead-3 {
-  background: url('https://nomful.com/development/img/Bigstock_81169544.jpg'); 
-  background-position: 50% 0px;
+  background: url('https://nomful.com/development/img/Bigstock_82639652.jpg'); 
+  background-position: center; 
   background-size: cover;
+}
+
+.masthead-content {
+  position: relative;
+  top: 50%;
+  transform: translate(0px, -50%);
+  max-width: 635px; /* change this */
+  margin: 0px auto;
+  padding: 0px 30px;
+  text-align: center;
 }
 
 .top-masthead {
@@ -53,7 +63,7 @@ img.reg-logo {
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead {
-    height: 800px;
+    height: 810px;
   }
 }
 

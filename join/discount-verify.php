@@ -37,7 +37,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         }
 
     } 
-    } else {
+    else {
         // Not a POST request, set a 403 (forbidden) response code.
         http_response_code(403);
         echo "There was a problem with your submission, please try again.";

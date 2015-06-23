@@ -60,25 +60,21 @@
   </header><!-- /header -->
   
   <section class="masthead masthead-intro">
-  <div class="container">
-    <div class="top-masthead">
+    <div class="masthead-content">
         <h1>Nutrition support built around you</h1>
         <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>
         <br>
         <h3>Choose your device below.</h3>
     </div>
-  </div>
   </section>
   
   <section class="masthead masthead-2">
-  <div class="container">
-    <div class="top-masthead">
+    <div class="masthead-content">
         <h1>Nutrition support built around you</h1>
         <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>
         <br>
         <h3>Choose your device below.</h3>
     </div>
-  </div>
   </section>
   
   <section class="masthead masthead-3">
@@ -91,38 +87,7 @@
     </div>
   </div>
   </section>
-  
-  <section>
-  <div class="container mbudges">
-    <div class="tables center">
-      <img class="partnerlogo cell-middle" src="/../img/mac.png"/>
-      <img class="partnerlogo cell-middle" src="/../img/nomful.png"/>
-    </div>
-    <div class="top-masthead mbudge">
-      <p>Nomful is proud to have partnered with the MAC to bring you with personalized nutrition support from the experts, right on your phone. To learn more, <a href="Nomful_Summary_FAQ-MAC_Member.pdf">click here.</a><br>If you have any additional questions or need help, email <a href="mailto:thomas@nomful.com">thomas@nomful.com</a> or call us anytime at (562) 666 - 3858.</p>
-    </div>
-  </div>
-  </section>
-          <div class="medium-8 medium-offset-2 columns">
-          <h1>Every advantage, yours</h1>
-          <h3>If you have a personal trainer, our platform integrates your Nomful coach with your trainer, giving you every advantage to reach your goals. You now have a powerful team inside and outside the gym.</h3>
-          <div id="form-messages"></div>
-          <form class="email-form" id="ajax-contact" method="post" action="mailer.php">
-            <input type="email" id="join-email" name="join-email" placeholder="your email" />
-            <input type="text"  id="sp-website" name="sp-website" value=""  />
-            <input type="phone" id="sp-phone" name="sp-phone" value="" />
-            <input type="submit" value="Join now" />
-          </form>
-        </div>
-  
-    
-  <div class="form-container">
-    <div class="row">
-      <div class="offset-by-three six columns center">
-        <a class="button" href="http://nomful.com/join">MAC Member Sign-up</a>
-      </div>
-    </div>
-  </div>
+
   
 
   
