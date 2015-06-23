@@ -9,6 +9,15 @@
 //dev
 ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJyJVIeM0RbTMkGmHlped7dMhoksgrxm', 'fk2DwxckV3Pe4fKGRs6LH1YaZkslDTu86TS6Ouv5');
 
+//test
+$stripe = array(
+  "secret_key"      => "sk_test_uMTJhaR5rAwMtnsLLKH9wTBx",
+  "publishable_key" => "pk_test_JQ0bC9TcrUXB06bKoMjYjw3l"
+);
+
+
+\Stripe\Stripe::setApiKey($stripe['secret_key']);
+
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       try {
