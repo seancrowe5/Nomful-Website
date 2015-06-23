@@ -8,7 +8,8 @@ img.reg-logo {
 .nav {
   display: block;
   padding: 0 0 8px 0;
-  background-color: rgba(255,255,255,.7);
+  /* background-color: rgba(255,255,255,.7); */
+  float: left;
 }
 
 .masthead {
@@ -23,11 +24,10 @@ img.reg-logo {
   background: url('https://nomful.com/development/img/Bigstock_81169544.jpg'); 
   background-position: top; 
   background-size: cover;
-  overflow: visible;
 }
 
 .masthead-2 {
-  background: url('https://nomful.com/development/img/Bigstock_64958989.jpg'); 
+  background: url('https://nomful.com/development/img/Bigstock_56847974.jpg'); 
   background-position: center; 
   background-size: cover;
 }
@@ -64,7 +64,7 @@ img.reg-logo {
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead {
-    height: 825px;
+    height: 830px;
   }
   
   .masthead-into{

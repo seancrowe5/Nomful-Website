@@ -66,22 +66,16 @@
   
   <section class="masthead masthead-2">
     <div class="masthead-content">
-        <h1>Nutrition support built around you</h1>
-        <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>
-        <br>
-        <h3>Choose your device below.</h3>
+      <h1>Not a Class</h1>
+      <p>You get to know your coach, set goals together, and work through obstacles to get to where you want/need to be. Your Nomful coach is always there for you to keep you on track.</p>
     </div>
   </section>
   
   <section class="masthead masthead-3">
-  <div class="container">
-    <div class="top-masthead">
+    <div class="masthead-content">
         <h1>Nutrition support built around you</h1>
         <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>
-        <br>
-        <h3>Choose your device below.</h3>
     </div>
-  </div>
   </section>
 
   
