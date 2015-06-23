@@ -1,5 +1,5 @@
 <?php
-require_once('/join/vendor/autoload.php');
+require_once('join/vendor/autoload.php');
     use Parse\ParseClient;
     use Parse\ParseQuery;
     use Parse\ParseObject;
