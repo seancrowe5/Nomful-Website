@@ -22,7 +22,8 @@ $stripe = array(
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       try {
         $couponCode  = 'tester';
-        $coupon = Stripe_Coupon::retrieve($couponCode); //check coupon exists
+        
+        $coupon = Stripe_Coupon::retrieve( 'tester' ); //check coupon exists
         if($coupon !== NULL) {
          $using_discount = true; //set to true our coupon exists or take the coupon id if you wanted to.
         }
