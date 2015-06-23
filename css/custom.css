@@ -25,6 +25,18 @@ img.reg-logo {
   background-size: cover;
 }
 
+.masthead-2 {
+  background: url('https://nomful.com/development/img/Bigstock_81169544.jpg'); 
+  background-position: 50% 0px;
+  background-size: cover;
+}
+
+.masthead-3 {
+  background: url('https://nomful.com/development/img/Bigstock_81169544.jpg'); 
+  background-position: 50% 0px;
+  background-size: cover;
+}
+
 .top-masthead {
   max-width: 600px;
   margin: 0 auto;
