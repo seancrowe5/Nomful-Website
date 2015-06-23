@@ -61,7 +61,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
           'user',				// Name of the cookie, required
           $c,					// The value of the cookie
           time()+60*60*24,		// Expiration time, set for a week in the future
-          '/development',					// Folder path the cookie will be available for
+          '/',					// Folder path the cookie will be available for
           'nomful.com'		    // Domain to which the cookie will be bound
         );
 
