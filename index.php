@@ -1,26 +1,3 @@
-<?php 
-    //this is the co-braded page for Nomful + MAC
-
-  $partner_info = array(
-    'plan_base' => 'macmember', //THIS HAS TO MATCH THE ID IN STRIPE
-    'club' => 'MAC Wellness', // this is the NAME of the affiliate partner
-    'basic_price' => '99', // this is the PRICE of the BASIC plan for this group code
-    'premium_price' => '249', // this is the PRICE of the PREMIUM plan for this group code
-    'gymID' => 'V0qgIi6L53' //gym id dbXma3eUtI V0qgIi6L53
-  );
-
-  $c = json_encode($partner_info);
-  setcookie(
-    'partner_info',				// Name of the cookie, required
-    $c,					        // The value of the cookie
-    time()+60*60*24,			// Expiration time, set for a week in the future
-    '/',						// Folder path the cookie will be available for
-    'nomful.com'		        // Domain to which the cookie will be bound
-  );
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,6 +51,22 @@
 
 </head>
 <body>
+  
+  
+  <header> 
+    <div class="nav">
+      <img class="reg-logo" src="/../img/nomful.png"/>
+    </div>
+  </header><!-- /header -->
+  
+  <div class="container">
+    <div class="top-masthead">
+        <h1>Nutrition support built around you</h1>
+        <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>
+        <br>
+        <h3>Choose your device below.</h3>
+    </div>
+  </div>
   
   <div class="container mbudges">
     <div class="tables center">
