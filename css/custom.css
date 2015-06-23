@@ -54,6 +54,10 @@ img.reg-logo {
   text-align: center;
 }
 
+footer {
+  background: url('https://nomful.com/development/img/background-footer.png'); 
+  background-repeat: repeat;  
+}
 
 /* Larger than mobile */
 @media (min-width: 400px) {}

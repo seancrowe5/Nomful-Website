@@ -78,6 +78,14 @@
     </div>
   </section>
 
+  <footer>
+    <ul>
+      <li>this is the first one</li>
+      <li>this would be the second</li>
+      <li>and the third lastly</li>
+    </ul>
+  
+  </footer>
   
   
   <!-- End Document
