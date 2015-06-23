@@ -23,7 +23,7 @@ $(function() {
       
         // We make sure that the group code is actually filled in
         if ($('input#group-code').val().length <= 1) {
-            alert("Oh no! Please enter a group code");
+            alert("Oh no! Please enter a group code nowwwww");
             return false;
         } 
       
