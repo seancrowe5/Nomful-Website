@@ -58,7 +58,7 @@ require_once('../config.php');
   <script src="/../js/foundation.min.js"></script>
   <script src="/../js/classie.js"></script>
   <script src="/../js/jquery-2.1.0.min.js"></script>
-  <script src="/../js/forms/discount-verify.js"></script>
+  <script src="https://nomful.com/development/js/forms/discount-verify.js"></script>
   <script src="/../js/forms/plan-select.js"></script>
   <script src="/../js/mailcheck.min.js"></script>
   <script src="/../js/jquery.label_better.js"></script>
