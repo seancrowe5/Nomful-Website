@@ -1,6 +1,6 @@
 <?php
-  require_once('/../config.php');
-  require '/../vendor/autoload.php';
+  require_once('../config.php');
+  require '../vendor/autoload.php';
     use Parse\ParseClient;
     use Parse\ParseQuery;
     use Parse\ParseObject;
@@ -9,13 +9,20 @@
 //dev
 ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJyJVIeM0RbTMkGmHlped7dMhoksgrxm', 'fk2DwxckV3Pe4fKGRs6LH1YaZkslDTu86TS6Ouv5');
 
+//test
+$stripe = array(
+  "secret_key"      => "sk_test_uMTJhaR5rAwMtnsLLKH9wTBx",
+  "publishable_key" => "pk_test_JQ0bC9TcrUXB06bKoMjYjw3l"
+);
+
+
+\Stripe\Stripe::setApiKey($stripe['secret_key']);
 
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       try {
-        $couponCode  = 'tester';
-        
-        $coupon = Stripe_Coupon::retrieve( 'tester' ); //check coupon exists
+        $couponCode  = $_POST['group-code'];
+        $coupon = Stripe_Coupon::retrieve($couponCode); //check coupon exists
         if($coupon !== NULL) {
          $using_discount = true; //set to true our coupon exists or take the coupon id if you wanted to.
         }
