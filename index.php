@@ -101,7 +101,7 @@
   
   <style>
     html { 
-    background: url(http://nomful.com/img/strawberry.jpg) no-repeat center center fixed; 
+    background: url(http://nomful.com/img/Bigstock_81169544.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
