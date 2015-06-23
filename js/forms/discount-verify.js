@@ -71,7 +71,7 @@ $(function() {
             duration: 2e3,
             spinner: spinner
         });
-			location.reload();
+			
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
