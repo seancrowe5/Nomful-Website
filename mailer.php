@@ -49,15 +49,7 @@ require 'vendor/autoload.php';
             
             $template_name = 'Waiting List - Welcome to Community';
             
-            $template_content = array(
-                                    array(
-                                        'name' => 'main',
-                                        'content' => 'Hi *|FIRSTNAME|* *|LASTNAME|*, thanks for signing up.'),
-                                    array(
-                                        'name' => 'footer',
-                                        'content' => 'Copyright 2013.')
-
-                                    );
+            $template_content = null;
 
             
             $response = $mandrill->messages->sendTemplate($template_name, $template_content, $message);
