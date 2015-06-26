@@ -1,5 +1,5 @@
 <?php 
-require_once('./config.php');
+require_once('../config.php');
 
    if (!isset($_COOKIE['user'])) { 
     header ( "Location: index.php" ); 
@@ -21,7 +21,7 @@ require_once('./config.php');
   <meta property="og:title" content="" /> 
   <meta property="og:image" content="" /> 
   <meta property="og:description" content="" /> 
-  <meta property="og:url" content="https://nomful.com">
+  <meta property="og:url" content="https://nomful.com/development/join"> 
   <meta name="author" content="nomful" /> 
   <meta name="robots" content="index, follow, noydir" /> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +58,7 @@ require_once('./config.php');
   <script src="/../js/foundation.min.js"></script>
   <script src="/../js/classie.js"></script>
   <script src="/../js/jquery-2.1.0.min.js"></script>
-  <script src="/../js/forms/discount-verify.js"></script>
+  <script src="https://nomful.com/development/js/forms/discount-verify.js"></script>
   <script src="/../js/forms/plan-select.js"></script>
   <script src="/../js/mailcheck.min.js"></script>
   <script src="/../js/jquery.label_better.js"></script>
@@ -127,7 +127,7 @@ require_once('./config.php');
   
   
   
- <!-- <div class="form-container center" id="group-code-question">
+  <div class="form-container center" id="group-code-question">
     <h4>If you have a group code, enter it below!</h4>
     <div id="discount-messages"></div>
     <form id="ajax-discount" method="post" action="discount-verify.php" novalidate>
@@ -138,7 +138,7 @@ require_once('./config.php');
         <input class="button-primary" type="submit" id="btns" value="Continue">
       </div>
     </form>
-  </div>  -->
+  </div>  
   
 <div class="top-masthead" id="group-code-success">
 <h4><?php echo $intro_message; ?></h4>

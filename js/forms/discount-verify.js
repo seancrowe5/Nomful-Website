@@ -23,7 +23,7 @@ $(function() {
       
         // We make sure that the group code is actually filled in
         if ($('input#group-code').val().length <= 1) {
-            alert("Oh no! Please enter a group code");
+            alert("Oh no! Please enter a group code nowwwww");
             return false;
         } 
       
@@ -40,11 +40,11 @@ $(function() {
 		})
 		.done(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
-          //$(formMessages).removeClass('error');
-			//$(formMessages).addClass('success');
+          $(formMessages).removeClass('error');
+			$(formMessages).addClass('success');
           
           // Set the message text.
-			//$(formMessages).text(response);
+			$(formMessages).text(response);
           
            var opts = {
 		lines: 13, // The number of lines to draw
@@ -71,7 +71,7 @@ $(function() {
             duration: 2e3,
             spinner: spinner
         });
-			location.reload();
+			
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
