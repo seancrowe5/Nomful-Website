@@ -41,7 +41,7 @@ require 'vendor/autoload.php';
         'from_name' => 'Sean',
         'to' => array(
             array(
-                'email' => $recipient,
+                'email' => $email,
                 'name' => 'Recipient Name',
                 'type' => 'to'
             )
@@ -70,7 +70,7 @@ require 'vendor/autoload.php';
         ),
         'merge_vars' => array(
             array(
-                'rcpt' => $recipient,
+                'rcpt' => $email,
                 'vars' => array(
                     array(
                         'name' => 'merge2',
@@ -86,7 +86,7 @@ require 'vendor/autoload.php';
         'metadata' => array('website' => 'www.nomful.com'),
         'recipient_metadata' => array(
             array(
-                'rcpt' => $recipient,
+                'rcpt' => $email,
                 'values' => array('user_id' => 123456)
             )
         ),
