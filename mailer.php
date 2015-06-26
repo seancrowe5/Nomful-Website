@@ -17,19 +17,7 @@ require 'vendor/autoload.php';
             exit;
         }
 
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "sean@nomful.com";
-
-        // Set the email subject.
-        $subject = "New contact from $email";
-
-        // Build the email content.
-        $email_content .= "Email: $email\n\n";
-
-        // Build the email headers.
-        $email_headers = "From: <$email>";
-        
+        //Send email with madrill
         try {
             $mandrill = new Mandrill('PV3bzl_61BybiLXgAeEQQg'); //QcW7X7TjFMCbR6eC9lqZWQ live ....  //PV3bzl_61BybiLXgAeEQQg test
             
@@ -46,14 +34,9 @@ require 'vendor/autoload.php';
                 ),
                 'headers' => array('Reply-To' => 'support@nomful.com')
             );
-            
             $template_name = 'Waiting List - Welcome to Community';
-            
             $template_content = null;
-
-            
             $response = $mandrill->messages->sendTemplate($template_name, $template_content, $message);
-
             print_r($response);
             
 } catch(Mandrill_Error $e) {
