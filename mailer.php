@@ -47,7 +47,7 @@ require 'vendor/autoload.php';
                 'headers' => array('Reply-To' => 'support@nomful.com')
             );
             
-            $template_name = 'YOUR-TEMPLATE-NAME';
+            $template_name = 'Waiting List - Welcome to Community';
             
             $template_content = array(
                                     array(
