@@ -47,7 +47,21 @@ require 'vendor/autoload.php';
                 'headers' => array('Reply-To' => 'support@nomful.com')
             );
             
-            $result = $mandrill->messages->send($message, $async, $ip_pool, $send_at);
+            $template_name = 'YOUR-TEMPLATE-NAME';
+            
+            $template_content = array(
+                                    array(
+                                        'name' => 'main',
+                                        'content' => 'Hi *|FIRSTNAME|* *|LASTNAME|*, thanks for signing up.'),
+                                    array(
+                                        'name' => 'footer',
+                                        'content' => 'Copyright 2013.')
+
+                                    );
+
+            
+            $response = $mandrill->messages->sendTemplate($template_name, $template_content, $message);
+
             print_r($result);
             
 } catch(Mandrill_Error $e) {
