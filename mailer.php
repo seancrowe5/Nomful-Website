@@ -83,13 +83,7 @@ require 'vendor/autoload.php';
         'subaccount' => 'customer-123',
         'google_analytics_domains' => array('example.com'),
         'google_analytics_campaign' => 'sean@nomful.com',
-        'metadata' => array('website' => 'www.nomful.com'),
-        'recipient_metadata' => array(
-            array(
-                'rcpt' => $email,
-                'values' => array('user_id' => 123456)
-            )
-        )
+        'metadata' => array('website' => 'www.nomful.com')
     );
   
     $result = $mandrill->messages->send($message, $async, $ip_pool, $send_at);
