@@ -89,23 +89,9 @@ require 'vendor/autoload.php';
                 'rcpt' => $email,
                 'values' => array('user_id' => 123456)
             )
-        ),
-        'attachments' => array(
-            array(
-                'type' => 'text/plain',
-                'name' => 'myfile.txt',
-                'content' => 'ZXhhbXBsZSBmaWxl'
-            )
-        ),
-        'images' => array(
-            array(
-                'type' => 'image/png',
-                'name' => 'IMAGECID',
-                'content' => 'ZXhhbXBsZSBmaWxl'
-            )
         )
     );
-    $async = true;
+  
     $result = $mandrill->messages->send($message, $async, $ip_pool, $send_at);
     print_r($result);
 } catch(Mandrill_Error $e) {
