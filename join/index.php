@@ -17,7 +17,7 @@
   <meta property="og:title" content="" /> 
   <meta property="og:image" content="" /> 
   <meta property="og:description" content="" /> 
-  <meta property="og:url" content="https://nomful.com/development/join">
+  <meta property="og:url" content="https://nomful.com">
   <meta name="author" content="nomful" /> 
   <meta name="robots" content="index, follow, noydir" /> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -55,7 +55,7 @@
   <script src="/../js/classie.js"></script>
   <script src="/../js/jquery-2.1.0.min.js"></script>
   <script src="/../js/app.js"></script>
-  <!--<script src="/../js/apps.js"></script>-->
+  <script src="/../js/apps.js"></script>
   <script src="/../js/mailcheck.min.js"></script>
   <script src="/../js/jquery.label_better.js"></script>
 

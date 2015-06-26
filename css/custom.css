@@ -2,88 +2,15 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 img.reg-logo {
   width: 190px;
-  padding: 13px 0 0 30px;
+  padding: 18px 0 0 30px;
 }
 
-.nav {
-  display: block;
-  padding: 0 0 8px 0;
-  /* background-color: rgba(255,255,255,.7); */
-  float: left;
-}
-
-.masthead {
-  height: 550px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgb(255, 255, 255, 1);
-  background-size: cover;
-}
-
-.masthead-intro {
-  background: url('https://nomful.com/development/img/Bigstock_81169544.jpg'); 
-  background-position: top; 
-  background-size: cover;
-}
-
-.masthead-2 {
-  background: url('https://nomful.com/development/img/Bigstock_56847974.jpg'); 
-  background-position: center; 
-  background-size: cover;
-}
-
-.masthead-3 {
-  background: url('https://nomful.com/development/img/Bigstock_82639652.jpg'); 
-  background-position: center; 
-  background-size: cover;
-}
-
-.masthead-content {
-  position: relative;
-  top: 45%;
-  transform: translate(0px, -45%);
-  max-width: 635px; /* change this */
-  margin: 0px auto;
-  padding: 0px 30px;
-  text-align: center;
-}
 
 .top-masthead {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
-
-footer {
-  background: url('https://nomful.com/development/img/background-footer.png'); 
-  background-repeat: repeat;  
-}
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-  .masthead {
-    height: 830px;
-  }
-  
-  .masthead-into{
-    height: 875px;
-  }
-}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
-
-
-
 
 
 
