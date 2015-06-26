@@ -31,7 +31,7 @@ require 'vendor/autoload.php';
         $email_headers = "From: <$email>";
         
         try {
-            $mandrill = new Mandrill('PV3bzl_61BybiLXgAeEQQg');
+            $mandrill = new Mandrill('QcW7X7TjFMCbR6eC9lqZWQ'); //QcW7X7TjFMCbR6eC9lqZWQ 
             
             $message = array(
                 'html' => '<p>Example HTML content</p>',
