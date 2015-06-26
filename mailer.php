@@ -80,8 +80,7 @@ require 'vendor/autoload.php';
             )
         ),
         'tags' => array('password-resets'),
-        'subaccount' => 'customer-123',
-        'google_analytics_domains' => array('example.com'),
+        'google_analytics_domains' => array('nomful.com'),
         'google_analytics_campaign' => 'sean@nomful.com',
         'metadata' => array('website' => 'www.nomful.com')
     );
