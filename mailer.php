@@ -62,7 +62,7 @@ require 'vendor/autoload.php';
             
             $response = $mandrill->messages->sendTemplate($template_name, $template_content, $message);
 
-            print_r($result);
+            print_r($response);
             
 } catch(Mandrill_Error $e) {
     // Mandrill errors are thrown as exceptions
