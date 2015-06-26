@@ -29,26 +29,27 @@ require 'vendor/autoload.php';
 
         // Build the email headers.
         $email_headers = "From: <$email>";
-
-    
+        
         try {
-    $mandrill = new Mandrill('QcW7X7TjFMCbR6eC9lqZWQ');
-    $message = array(
-        'html' => '<p>Example HTML content</p>',
-        'text' => 'Example text content',
-        'subject' => 'example subject',
-        'from_email' => 'sean@nomful.com',
-        'from_name' => 'Sean',
-        'to' => array(
-            array(
-                'email' => $email
-            )
-        ),
-        'headers' => array('Reply-To' => 'support@nomful.com')
-    );
-  
-    $result = $mandrill->messages->send($message, $async, $ip_pool, $send_at);
-    print_r($result);
+            $mandrill = new Mandrill('PV3bzl_61BybiLXgAeEQQg ');
+            
+            $message = array(
+                'html' => '<p>Example HTML content</p>',
+                'text' => 'Example text content',
+                'subject' => 'example subject',
+                'from_email' => 'sean@nomful.com',
+                'from_name' => 'Sean',
+                'to' => array(
+                    array(
+                        'email' => $email
+                    )
+                ),
+                'headers' => array('Reply-To' => 'support@nomful.com')
+            );
+            
+            $result = $mandrill->messages->send($message, $async, $ip_pool, $send_at);
+            print_r($result);
+            
 } catch(Mandrill_Error $e) {
     // Mandrill errors are thrown as exceptions
     echo 'A mandrill error occurred: ' . get_class($e) . ' - ' . $e->getMessage();
