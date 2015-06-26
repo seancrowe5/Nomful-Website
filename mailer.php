@@ -19,7 +19,7 @@ require 'vendor/autoload.php';
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "thomas@nomful.com";
+        $recipient = "sean@nomful.com";
 
         // Set the email subject.
         $subject = "New contact from $email";
@@ -46,7 +46,7 @@ require 'vendor/autoload.php';
                 'type' => 'to'
             )
         ),
-        'headers' => array('Reply-To' => 'sean@nomful.com'),
+        'headers' => array('Reply-To' => 'thomas@nomful.com'),
         'important' => false,
         'track_opens' => null,
         'track_clicks' => null,
