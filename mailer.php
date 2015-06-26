@@ -31,12 +31,12 @@ require 'vendor/autoload.php';
         $email_headers = "From: <$email>";
         
         try {
-            $mandrill = new Mandrill('QcW7X7TjFMCbR6eC9lqZWQ'); //QcW7X7TjFMCbR6eC9lqZWQ 
+            $mandrill = new Mandrill('PV3bzl_61BybiLXgAeEQQg'); //QcW7X7TjFMCbR6eC9lqZWQ live ....  //PV3bzl_61BybiLXgAeEQQg test
             
             $message = array(
                 'html' => '<p>Example HTML content</p>',
                 'text' => 'Example text content',
-                'subject' => 'example subject',
+                'subject' => 'Welcome to the Community',
                 'from_email' => 'sean@nomful.com',
                 'from_name' => 'Sean',
                 'to' => array(
