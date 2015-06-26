@@ -41,48 +41,10 @@ require 'vendor/autoload.php';
         'from_name' => 'Sean',
         'to' => array(
             array(
-                'email' => $email,
-                'name' => 'Recipient Name',
-                'type' => 'to'
+                'email' => $email
             )
         ),
-        'headers' => array('Reply-To' => 'thomas@nomful.com'),
-        'important' => false,
-        'track_opens' => null,
-        'track_clicks' => null,
-        'auto_text' => null,
-        'auto_html' => null,
-        'inline_css' => null,
-        'url_strip_qs' => null,
-        'preserve_recipients' => null,
-        'view_content_link' => null,
-        'bcc_address' => null,
-        'tracking_domain' => null,
-        'signing_domain' => null,
-        'return_path_domain' => null,
-        'merge' => true,
-        'merge_language' => 'mailchimp',
-        'global_merge_vars' => array(
-            array(
-                'name' => 'merge1',
-                'content' => 'merge1 content'
-            )
-        ),
-        'merge_vars' => array(
-            array(
-                'rcpt' => $email,
-                'vars' => array(
-                    array(
-                        'name' => 'merge2',
-                        'content' => 'merge2 content'
-                    )
-                )
-            )
-        ),
-        'tags' => array('password-resets'),
-        'google_analytics_domains' => array('nomful.com'),
-        'google_analytics_campaign' => 'sean@nomful.com',
-        'metadata' => array('website' => 'www.nomful.com')
+        'headers' => array('Reply-To' => 'support@nomful.com')
     );
   
     $result = $mandrill->messages->send($message, $async, $ip_pool, $send_at);
