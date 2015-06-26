@@ -105,8 +105,7 @@ require 'vendor/autoload.php';
             )
         )
     );
-  
-
+    $async = true;
     $result = $mandrill->messages->send($message, $async, $ip_pool, $send_at);
     print_r($result);
 } catch(Mandrill_Error $e) {
