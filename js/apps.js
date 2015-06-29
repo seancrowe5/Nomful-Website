@@ -30,7 +30,7 @@ $(function() {
         } 
       
         if ($('input#cell-phone').val().length != 10 ) {
-            alert("Oh no! Please enter a 10 digit phone number. Just numbers.");
+            alert("Oh no! Please enter a 10 digit phone number bitch. Just numbers.");
             return false;
         }
       
