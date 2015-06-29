@@ -30,7 +30,7 @@ $(function() {
         } 
       
         if ($('input#cell-phone').val().length != 10 ) {
-            alert("Oh no! Please enter a 10 digit phone number bitch . Just numbers.");
+            alert("Oh no! Please enter a 10 digit phone number. Just numbers.");
             return false;
         }
       
@@ -55,7 +55,7 @@ $(function() {
 		})
 		.success(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
-			window.location = "";
+			window.location = "http://dev.nomful.com/join/payment.php";
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
