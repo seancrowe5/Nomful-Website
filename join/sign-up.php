@@ -1,7 +1,7 @@
 <?php
-   if (isset($_COOKIE['user'])) { 
-    header ( "Location: payment.php" ); 
-   } 
+//   if (isset($_COOKIE['user'])) { 
+//    header ( "Location: payment.php" ); 
+//   } 
 ?>
 <!DOCTYPE html>
 <html lang="en">
