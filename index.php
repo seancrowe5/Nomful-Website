@@ -73,7 +73,7 @@
   </section>
   
   <section class="masthead masthead-3">
-    <div class="masthead-content">
+    <div class="masthead-content underlay-light">
         <h1>Nutrition support built around you</h1>
         <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>
     </div>
