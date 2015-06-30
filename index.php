@@ -1,61 +1,94 @@
-<?php include 'header.php';?>
-  <div class="masthead-intro">
-    <div class="row masthead-content">
-      <div class="intro-content">
-        <div class="medium-5 columns">
-          <h1>DEVELOPMENTt</h1>
-          <h3>Personalized support from a nutrition coach to optimize your health routine.</h3>
-          <!-- <a href="#join-now" class="join-now-button">Join now!</a> -->
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8" /> 
+  <title>nomful | be nomful about food</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content="nomful | be nomful about food" />
+  <meta property="og:type" content="website" /> 
+  <meta property="og:title" content="" /> 
+  <meta property="og:image" content="" /> 
+  <meta property="og:description" content="" /> 
+  <!-- <meta property="og:url" content="https://nomful.com"> -->
+  <meta name="author" content="nomful" /> 
+  <meta name="robots" content="index, follow, noydir" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="google-site-verification" content="s-PDv36DeQ8GbPWkvISgveTSpQBsb7BQSMJTfiK_7Ps" />
+  <link rel="icon" 
+    type="image/png" 
+    href="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <script src="//use.typekit.net/zcg5xnb.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/../css/normalize.css">
+  <link rel="stylesheet" href="/../css/skeleton.css">
+  <link rel="stylesheet" href="/../css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/../images/favicon.png">
+
+  <!-- SCRIPTS
+  ================================================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>  
+  <section class="masthead masthead-intro">
+    <header> 
+      <div class="nav">
+        <img class="reg-logo" src="/../img/nomful.png"/>
       </div>
+    </header><!-- /header -->
+    
+    <div class="masthead-content">
+        <h1>Make healthy your routine</h1>
+        <p>Team up with a dedicated Nomful/nutrition coach to get the personalized support you need, right from your phone.</p>
     </div>
-  </div>
-
-
-  <div class="masthead-grapefruit">
-    <div class="row masthead-content">
-      <div class="grapefruit-content">
-        <div class="medium-7 medium-offset-4 columns grapefruit-content">
-          <h1>Advice you can count on</h1>
-          <h3>All Nomful coaches are registered diet You and your Nomful coach will set simple weekly goals together to achieve long-term results.</h3>
-        </div>
-      </div>
+  </section>
+  
+  <section class="masthead masthead-2">
+    <div class="masthead-content">
+      <h1>Not a Class</h1>
+      <p>You get to know your coach, set goals together, and work through obstacles to get to where you want/need to be. Your Nomful coach is always there for you to keep you on track.</p>
     </div>
-  </div>
-
-  <div class="masthead-asparagus">
-   <div class="row masthead-content">
-      <div class="asparagus-content">
-        <div class="medium-8 medium-offset-2 columns asparagus-content">
-          <h1>Personalized Support</h1>
-          <h3>Everyone reacts differently to different foods. Nomful coaches help you achieve your goals by crafting a personalized nutrition plan that fits into your lifestyle.</h3>
-        </div>
-      </div>
+  </section>
+  
+  <section class="masthead masthead-3">
+    <div class="masthead-content">
+        <h1>Nutrition support built around you</h1>
+        <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>
     </div>
-  </div>
+  </section>
 
-  <div class="masthead-strawberry">
-    <div class="row masthead-content">
-      <a name="join-now"></a>
-      <div class="strawberry-content">
-        <div class="medium-8 medium-offset-2 columns">
-          <h1>Every advantage, yours</h1>
-          <h3>If you have a personal trainer, our platform integrates your Nomful coach with your trainer, giving you every advantage to reach your goals. You now have a powerful team inside and outside the gym.</h3>
-          <div id="form-messages"></div>
-          <form class="email-form" id="ajax-contact" method="post" action="mailer.php">
-            <input type="email" id="join-email" name="join-email" placeholder="your email" />
-            <input type="text"  id="sp-website" name="sp-website" value=""  />
-            <input type="phone" id="sp-phone" name="sp-phone" value="" />
-            <input type="submit" value="Join now" />
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-    
-    
-    
-    
-
-<?php include 'footer.php';?>
+  <footer>
+    <ul>
+      <li>this is the first one</li>
+      <li>this would be the second</li>
+      <li>and the third lastly</li>
+    </ul>
+  
+  </footer>
+  
+  
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
