@@ -66,7 +66,7 @@
   </section>
   
   <section class="masthead masthead-2">
-    <div class="masthead-content underlay-light">
+    <div class="masthead-content light">
       <h1>Not a Class</h1>
       <p>You get to know your coach, set goals together, and work through obstacles to get to where you want/need to be. Your Nomful coach is always there for you to keep you on track.</p>
     </div>
