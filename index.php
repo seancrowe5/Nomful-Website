@@ -61,11 +61,12 @@
     <div class="masthead-content">
         <h1>Make healthy your routine</h1>
         <p>Team up with a dedicated Nomful/nutrition coach to get the personalized support you need, right from your phone.</p>
+        <a class="gbutton" href="/join/">Join</a>
     </div>
   </section>
   
   <section class="masthead masthead-2">
-    <div class="masthead-content">
+    <div class="masthead-content underlay-light">
       <h1>Not a Class</h1>
       <p>You get to know your coach, set goals together, and work through obstacles to get to where you want/need to be. Your Nomful coach is always there for you to keep you on track.</p>
     </div>
