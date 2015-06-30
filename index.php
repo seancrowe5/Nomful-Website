@@ -56,8 +56,8 @@
       <img class="reg-logo" src="/../img/nomful.png"/>
     </div>
   </header><!-- /header -->
-  <section class="masthead masthead-intro tables">
-    <div class="masthead-content cell-middle">
+  <section class="masthead masthead-intro">
+    <div class="masthead-content">
         <h1>Make healthy your routine</h1>
         <p>Team up with a dedicated Nomful/nutrition coach to get the personalized support you need, right from your phone.</p>
         <a class="gbutton" href="/join/">Join</a>

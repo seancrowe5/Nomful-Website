@@ -33,13 +33,15 @@ img.reg-logo {
 }
 
 .masthead-3 {
-  background: url('http://dev.nomful.com/img/Bigstock_82639652.jpg'); 
+  background: url('http://dev.nomful.com/img/breakfast-eats.jpg'); 
   background-position: center; 
   background-size: cover;
 }
 
 .masthead-content {
   position: relative;
+  top: 50%;
+  transform: translate(0px, -50%);
   max-width: 635px; /* change this */
   margin: 0px auto;
   padding: 0px 30px;
