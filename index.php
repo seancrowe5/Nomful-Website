@@ -51,18 +51,18 @@
 
 </head>
 <body>  
-  <section class="masthead masthead-intro">
-    <header> 
-      <div class="nav">
-        <img class="reg-logo" src="/../img/nomful.png"/>
-      </div>
-    </header><!-- /header -->
-    
-    <div class="masthead-content">
+  <header> 
+    <div class="nav">
+      <img class="reg-logo" src="/../img/nomful.png"/>
+    </div>
+  </header><!-- /header -->
+  <section class="masthead masthead-intro tables">
+    <div class="masthead-content cell-middle">
         <h1>Make healthy your routine</h1>
         <p>Team up with a dedicated Nomful/nutrition coach to get the personalized support you need, right from your phone.</p>
         <a class="gbutton" href="/join/">Join</a>
     </div>
+
   </section>
   
   <section class="masthead masthead-2">
@@ -79,12 +79,36 @@
     </div>
   </section>
 
-  <footer>
-    <ul>
-      <li>this is the first one</li>
-      <li>this would be the second</li>
-      <li>and the third lastly</li>
-    </ul>
+  <footer class="container">
+    <div class="row">
+      <div class="one-third column">
+        <h4>Learn more</h4>
+        <div class="row">
+          <div class="one-half column">
+            <p>asdfasdf</p>
+            <p>asdf</p>
+          </div>
+          <div class="one-half column">
+            <p>asdfasdf</p>
+            <p>asdf</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="two-thirds column">
+        <h4>Learn more</h4>
+        <div class="row">
+          <div class="one-half column">
+            <p>asdfasdf</p>
+            <p>asdf</p>
+          </div>
+          <div class="one-half column">
+            <p>asdfasdf</p>
+            <p>asdf</p>
+          </div>
+      
+      </div>
+    </div>
   
   </footer>
   
