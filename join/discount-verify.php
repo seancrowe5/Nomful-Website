@@ -67,6 +67,22 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
 //          'nomful.com'		// Domain to which the cookie will be bound
 //        );
 
+      $using_discount = false;
+      
+          try {
+                $coupon = Stripe_Coupon::retrieve('tester'); //check coupon exists
+                if($coupon !== NULL) {
+                 $using_discount = true; //set to true our coupon exists or take the coupon id if you wanted to.
+                }
+                // if we got here, the coupon is valid
+
+             } catch (Exception $e) {
+                // an exception was caught, so the code is invalid
+                $message = $e->getMessage();
+                returnErrorWithMessage($message);
+             }
+
+      
       
         //Check to see if the group code is actually valid
         // Set the recipient email address.
@@ -74,7 +90,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         $recipient = "thomas@nomful.com";
 
         // Set the email subject.
-        $subject = "group code - coupon thingy";
+        $subject = $using_discount. "group code - coupon thingy";
 
         // Build the email content.
         $email_content = "I guess it works";
@@ -83,7 +99,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         if (mail($recipient, $subject, $email_content)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Applying group code.";
+            echo $using_discount . '----' . $coupon . '----' . $message;
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
