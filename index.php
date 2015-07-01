@@ -66,7 +66,7 @@
   </section>
   
   <section class="masthead masthead-2">
-    <div class="masthead-content light">
+    <div class="masthead-content underlay-light">
       <h1>Not a Class</h1>
       <p>You get to know your coach, set goals together, and work through obstacles to get to where you want/need to be. Your Nomful coach is always there for you to keep you on track.</p>
     </div>
@@ -79,37 +79,50 @@
     </div>
   </section>
 
-  <footer class="container">
+  <footer>
+    <div class="container">
     <div class="row">
-      <div class="one-third column">
-        <h4>Learn more</h4>
+      <div class="one-third column center mbudges">
+        <h5>Learn more</h5>
         <div class="row">
           <div class="one-half column">
-            <p>asdfasdf</p>
-            <p>asdf</p>
+            <ul>
+              <li><a href="/index.php">Home</a></li>
+              <li><a href="/press.php">Press</a></li>              
+            </ul>
           </div>
           <div class="one-half column">
-            <p>asdfasdf</p>
-            <p>asdf</p>
+            <ul>
+              <li><a href="/join/">Join</a></li>
+              <li><a href="/contact.php">Contact Us</a></li>              
+            </ul>          
           </div>
         </div>
       </div>
       
-      <div class="two-thirds column">
-        <h4>Learn more</h4>
-        <div class="row">
-          <div class="one-half column">
-            <p>asdfasdf</p>
-            <p>asdf</p>
-          </div>
-          <div class="one-half column">
-            <p>asdfasdf</p>
-            <p>asdf</p>
-          </div>
+      <div class="one-third column center mbudges">
+        <h5>Follow us</h5>
+        <ul>
+          <li><a href="/index.php">Home</a></li>
+          <li><a href="/press.php">Press</a></li>              
+        </ul>
+      </div>
       
+      <div class="one-third column center mbudges">
+        <h5>Connect with us</h5>
+          <form class="email-form" id="ajax-contact" method="post" action="mailer.php">
+            <input type="email" id="join-email" name="join-email" placeholder="your email" />
+            <input type="text"  id="sp-website" name="sp-website" value=""  />
+            <input type="phone" id="sp-phone" name="sp-phone" value="" />
+            <input type="submit" value="Sign up" />
+          </form>
       </div>
     </div>
+    </div>
   
+    <div class="footer-copy">
+      &#169; 2015 Nomful, Inc., Chicago, IL
+    </div>
   </footer>
   
   

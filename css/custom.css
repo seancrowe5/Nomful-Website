@@ -30,8 +30,6 @@ img.reg-logo {
   background: url('http://dev.nomful.com/img/benchwarmers.jpg'); 
   background-position: center; 
   background-size: cover;
-  height: 500px !important;
-  background-attachment: fixed;
 }
 
 .masthead-3 {
@@ -60,7 +58,14 @@ img.reg-logo {
 
 footer {
   background: url('https://nomful.com/development/img/background-footer.png'); 
+  background-size: cover;
   background-repeat: repeat;  
+}
+
+.footer-copy {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.3rem;
 }
 
 /* Larger than mobile */
@@ -122,13 +127,10 @@ footer {
   text-align: center;
 }
 
-.light {
-  background-color: rgba(255,255,255,.8);
-  padding: 155px 500px;
-}
 .underlay-light {
   background-color: rgba(255,255,255,.8);
   padding: 50px;
+  border-radius: 8px;
 }
 
 .underlay-dark {
