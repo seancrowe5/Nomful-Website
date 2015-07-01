@@ -69,10 +69,12 @@ require_once('./config.php');
               //code was wrong...has to reference the \Stripe library then then \Coupon classs
               //same syntax we used in the charge file to create a charge on a customer --> $customer = \Stripe\Customer::create
                 $coupon = \Stripe\Coupon::retrieve('tester'); //check coupon exists
+              
                 if($coupon !== NULL) {
                  $using_discount = true; //set to true our coupon exists or take the coupon id if you wanted to.
                 }
                 // if we got here, the coupon is valid
+              //$coupon variable contains the COUPON OBJECT NOW...
 
              } catch (Exception $e) {
                 // an exception was caught, so the code is invalid
