@@ -1,9 +1,9 @@
 <?php
 require_once('vendor/autoload.php');
-require 'config.php';
     use Parse\ParseClient;
     use Parse\ParseQuery;
     use Parse\ParseObject;
+require_once('./config.php');
 
 //live
 //ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4aveQRkxabmIY2wzisgnGQ1UH4SVG0', 'j3W9jcVXVgWQDfamFbm7UodDiYOSPjinnEAR7EdS');
@@ -72,7 +72,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
       $using_discount = false;
       
           try {
-                $coupon = \Stripe\Stripe\Stripe_Coupon::retrieve('tester'); //check coupon exists
+                $coupon = Stripe_Coupon::retrieve('tester'); //check coupon exists
                 if($coupon !== NULL) {
                  $using_discount = true; //set to true our coupon exists or take the coupon id if you wanted to.
                 }
