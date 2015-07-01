@@ -69,6 +69,11 @@ footer {
   font-size: 1.3rem;
 }
 
+.social-img {
+  width: 75%;
+}
+
+
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
@@ -126,6 +131,10 @@ footer {
 
 .center {
   text-align: center;
+}
+
+.inline {
+  display: inline-block;
 }
 
 .underlay-light {

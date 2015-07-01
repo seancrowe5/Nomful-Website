@@ -83,7 +83,7 @@
     <div class="container">
     <div class="row">
       <div class="one-third column center mbudges">
-        <h5>Learn more</h5>
+        <h6>Learn more</h6>
         <div class="row">
           <div class="one-half column">
             <ul>
@@ -101,15 +101,16 @@
       </div>
       
       <div class="one-third column center mbudges">
-        <h5>Follow us</h5>
+        <h6>Follow us</h6>
         <ul>
-          <li><a href="/index.php">Home</a></li>
-          <li><a href="/press.php">Press</a></li>              
+          <li class="inline"><a href="/press.php"><img class="social-img" src="img/twitter.png"/></a></li>
+          <li class="inline"><a href="/press.php"><img class="social-img" src="img/instagram.png"/></a></li>  
+          <li class="inline"><a href="/press.php"><img class="social-img" src="img/facebook.png"/></a></li>  
         </ul>
       </div>
       
       <div class="one-third column center mbudges">
-        <h5>Connect with us</h5>
+        <h6>Connect with us</h6>
           <form class="email-form" id="ajax-contact" method="post" action="mailer.php">
             <input type="email" id="join-email" name="join-email" placeholder="your email" />
             <input type="text"  id="sp-website" name="sp-website" value=""  />
@@ -121,7 +122,7 @@
     </div>
   
     <div class="footer-copy">
-      &#169; 2015 Nomful, Inc., Chicago, IL
+      &#169; 2015 Nomful, Inc., Chicago, IL - <a href="/terms.php">Terms &amp; Privacy</a>
     </div>
   </footer>
   
