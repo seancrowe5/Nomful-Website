@@ -63,7 +63,7 @@ require_once('./config.php');
       $using_discount = false;
       
           try {
-                $coupon = Stripe_Coupon::retrieve('tester'); //check coupon exists
+                $coupon = \Stripe\Stripe_Coupon::retrieve('tester'); //check coupon exists
                 if($coupon !== NULL) {
                  $using_discount = true; //set to true our coupon exists or take the coupon id if you wanted to.
                 }
