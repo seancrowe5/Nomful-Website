@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-require_once('config.php');
+require 'config.php';
     use Parse\ParseClient;
     use Parse\ParseQuery;
     use Parse\ParseObject;
@@ -72,7 +72,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
       $using_discount = false;
       
           try {
-                $coupon = Stripe_Coupon::retrieve('tester'); //check coupon exists
+                $coupon = \Stripe\Stripe_Coupon::retrieve('tester'); //check coupon exists
                 if($coupon !== NULL) {
                  $using_discount = true; //set to true our coupon exists or take the coupon id if you wanted to.
                 }
