@@ -4,7 +4,7 @@
     use Parse\ParseClient;
     use Parse\ParseQuery;
     use Parse\ParseObject;
-    use Stripe\Stripe_Coupon
+    use Stripe\Stripe_Coupon;
 //live
 //ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4aveQRkxabmIY2wzisgnGQ1UH4SVG0', 'j3W9jcVXVgWQDfamFbm7UodDiYOSPjinnEAR7EdS');
 //dev
