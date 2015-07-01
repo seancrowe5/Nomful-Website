@@ -100,7 +100,7 @@
         </div>
       </div>
       
-      <div class="one-third column center mbudge">
+      <div class="one-third column center mbudges">
         <h6>Follow us</h6>
         <ul>
           <li class="inline"><a href="/press.php"><img class="social-img" src="img/twitter.png"/></a></li>
@@ -109,7 +109,7 @@
         </ul>
       </div>
       
-      <div class="one-third column center mbudge">
+      <div class="one-third column center mbudges">
         <h6>Connect with us</h6>
           <form class="email-form" id="ajax-contact" method="post" action="mailer.php">
             <input type="email" id="join-email" name="join-email" placeholder="your email" />

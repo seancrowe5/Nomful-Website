@@ -95,8 +95,7 @@ footer {
   padding: 50px;
 }
 
-.mbudge { margin-top: 20px; margin-bottom: 20px; }
-.mbudges { margin-top: 40px; margin-bottom: 20px; }
+.mbudge, .mbudges { margin-top: 20px; margin-bottom: 10px; }
 
 
 
@@ -116,7 +115,7 @@ footer {
     height: 875px;
   }
   
-  .mbudge { margin-top: 40px;}
+  .mbudges { margin-top: 40px; margin-bottom: 20px; }
 
 }
 
