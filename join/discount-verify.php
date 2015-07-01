@@ -1,9 +1,11 @@
 <?php
 
-
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      
+        require_once('vendor/autoload.php');
+        require_once('./config.php');
+
+       
 //        // Get the group code
 //        $group_code  = $_POST["group-code"];
 //        $group_code = strtolower($group_code);
