@@ -127,7 +127,7 @@ require_once('./config.php');
   
   
   
- <!-- <div class="form-container center" id="group-code-question">
+ <div class="form-container center" id="group-code-question">
     <h4>If you have a group code, enter it below!</h4>
     <div id="discount-messages"></div>
     <form id="ajax-discount" method="post" action="discount-verify.php" novalidate>
@@ -138,7 +138,7 @@ require_once('./config.php');
         <input class="button-primary" type="submit" id="btns" value="Continue">
       </div>
     </form>
-  </div>  -->
+  </div>
   
 <div class="top-masthead" id="group-code-success">
 <h4><?php echo $intro_message; ?></h4>
