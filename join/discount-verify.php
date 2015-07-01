@@ -1,5 +1,7 @@
 <?php
+//this loads the Stripe and parse classes and sets the api key for stripe
 require_once('./config.php');
+
     // Only process POST reqeusts.
     //if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
