@@ -1,6 +1,6 @@
 <?php
-   require 'vendor/autoload.php';
-    require_once('./config.php');
+require 'vendor/autoload.php';
+require_once('config.php');
     use Parse\ParseClient;
     use Parse\ParseQuery;
     use Parse\ParseObject;
