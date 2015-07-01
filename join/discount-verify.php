@@ -1,7 +1,7 @@
 <?php
 
     // Only process POST reqeusts.
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
        
 //        // Get the group code
@@ -99,11 +99,11 @@
             echo "Oops! Something went wrong.";
         }
 
-    } 
-     else {
+    //} 
+    // else {
         // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
-    }
+       // http_response_code(403);
+        //echo "There was a problem with your submission, please try again.";
+   // }
 
 ?>
