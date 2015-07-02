@@ -6,7 +6,7 @@
     'club' => 'MAC Wellness', // this is the NAME of the affiliate partner
     'basic_price' => '99', // this is the PRICE of the BASIC plan for this group code
     'premium_price' => '249', // this is the PRICE of the PREMIUM plan for this group code
-    'gymID' => 'V0qgIi6L53' //gym id dbXma3eUtI V0qgIi6L53
+    'gymID' => 'dbXma3eUtI' //gym id dbXma3eUtI V0qgIi6L53
   );
 
   $c = json_encode($partner_info);
