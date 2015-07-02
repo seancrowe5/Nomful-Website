@@ -56,9 +56,8 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
                                                                     ]);
             }
         catch (ParseException $ex) {
-           http_response_code(500);
-          echo "user: " . $user->getObjectId();
-          exit;
+           
+            
         }
         
         
