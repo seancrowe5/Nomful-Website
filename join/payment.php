@@ -79,22 +79,21 @@ require_once('./config.php');
   </header><!-- /header -->
   
   <?php
-
-    //get user cookie and save to $obj
+  //get user cookie and save to $obj
   $return=$_COOKIE['user'];
   $obj = json_decode($return);
 
-    //get first name and email from cookie
+  //get first name and email from cookie
   $first_name = $obj->{'first_name'}; // 12345
   $email = $obj->{'email'};
 
-    //***hard code pricing
+  //***hard code pricing
   $basicPrice = 109;
   $premiumPrice = 279;
   ?>
   
   
-    <?php // This code checks to see if the discount code cookie has been set
+<?php // This code checks to see if the discount code cookie has been set
   if(isset($_COOKIE['partner_info'])) { 
     $return = $_COOKIE['partner_info'];
     $objs = json_decode($return);
@@ -129,17 +128,18 @@ require_once('./config.php');
   
   
  <div class="form-container center" id="coupon-code-form">
-    <h4>If you have a coupon code, enter it below!</h4>
+    <div id="discount-messages"></div>
     <form id="ajax-discount" method="post" action="discount-verify.php" novalidate>
+      <h4>If you have a coupon code, enter it below!</h4>
       <div class="row">
-          <input class="label_better" data-new-placeholder="coupon code" type="text" placeholder="coupon code" name="coupon-code" id="coupon-code">
+        <input class="label_better" data-new-placeholder="coupon code" type="text" placeholder="coupon code" name="coupon-code" id="coupon-code">
         <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
         <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
         <input class="button-primary" type="submit" id="btns" value="Continue">
       </div>
     </form>
   </div>
-  <div id="discount-messages"></div>
+  
   
 <div class="top-masthead" id="group-code-success">
 <h4><?php echo $intro_message; ?></h4>

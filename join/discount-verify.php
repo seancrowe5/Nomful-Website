@@ -40,11 +40,10 @@ require_once('./config.php');
           //if we got here, the coupon is valid
           //$coupon variable contains the COUPON OBJECT NOW...
         }
-      
+
       } catch (Exception $e) {
-            // an exception was caught, so the coupon code is invalid
-            $message = $e->getMessage();
-        
+        // an exception was caught, so the coupon code is invalid
+        $message = $e->getMessage();
       }
 
       // if you need to quickly test via sending emails

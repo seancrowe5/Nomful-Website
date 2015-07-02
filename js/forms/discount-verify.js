@@ -41,7 +41,7 @@ $(function() {
           // Make sure that the formMessages div has the 'success' class.
           $(formMessages).removeClass('error');
           $(formMessages).addClass('success');
-          $('coupon-code-form').fadeOut(300);
+          $('#ajax-discount').fadeOut(300);
 
           // Set the message text.
           $(formMessages).text(response);
