@@ -27,8 +27,6 @@ $(function() {
             return false;
         } 
       
-       
-      
 		// Serialize the form data.
 		var formData = $(form).serialize();
 
@@ -38,13 +36,14 @@ $(function() {
 			url: $(form).attr('action'),
 			data: formData
 		})
+
 		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-          $(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
-          
+          // Make sure that the formMessages div has the 'success' class.
+          $(formMessages).removeClass('error').fadeOut(500);
+          $(formMessages).addClass('success');
+
           // Set the message text.
-			$(formMessages).text(response);
+          $(formMessages).text(response);
           
 //           var opts = {
 //		lines: 13, // The number of lines to draw

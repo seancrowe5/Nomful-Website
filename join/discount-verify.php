@@ -37,7 +37,7 @@ require_once('./config.php');
         if($coupon !== NULL) {
           $coupon_valid = true; //set to true our coupon exists or take the coupon id if you wanted to.
           $message = 'Congratulations! We applied your coupon code :)';
-          // if we got here, the coupon is valid
+          //if we got here, the coupon is valid
           //$coupon variable contains the COUPON OBJECT NOW...
         }
       
