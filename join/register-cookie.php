@@ -48,7 +48,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         }
         
         //mixpanel user creation
-        $mixpanelUser = ParseCloud::run("createMixpanelUser", ["id" => "userid",     
+        $mixpanelUser = Parse\ParseCloud::run("createMixpanelUser", ["id" => "userid",     
                                                                "firstName" => "Web Testing",
                                                                "lastName" => "web",
                                                                "email" => "sean@hutster.com",
