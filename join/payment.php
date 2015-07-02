@@ -151,7 +151,7 @@ require_once('./config.php');
       #coupon-code-form {
         display: none;
       }
-      .og-price-small {
+      .og-price-small, #coupon-info {
         display: inline-block;
       }
     </style>
@@ -179,7 +179,7 @@ require_once('./config.php');
   
   <div class="form-container center">
     <div id="coupon-applied">
-      <p>Coupon code "<?php echo $coupon_id;?> has been applied. <a href="/coupon-remove.php">Remove coupon</a></p>
+      <p>Coupon code "<?php echo $coupon_id;?> has been applied. <a href="coupon-remove.php">Remove coupon</a></p>
     
     </div>
     <div class="row">

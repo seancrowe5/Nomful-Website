@@ -267,7 +267,9 @@ form.email-form {
 }
 
 
-
+.og-price-small, #coupon-info {
+        display: inline-block;
+      }
 
 form#premiumForm, form#basicForm {
   display: none;
