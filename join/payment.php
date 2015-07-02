@@ -133,8 +133,8 @@ require_once('./config.php');
     $goods = json_decode($returns);
     $percent_off = $goods->{'percent_off'};
     $percent_off = floatval($percent_off);
-    $basicPrice = (100 - $percent_off) / 100 * $basicPrice;
-    $premiumPrice = (100 - $percent_off)/100 * $premiumPrice; 
+    $basicPrice = number_format(((100 - $percent_off) / 100 * $basicPrice), 2, '.', '');
+    $premiumPrice = number_format(((100 - $percent_off)/100 * $premiumPrice), 2, '.', ''); 
     $basicOGPrice = 109;
     $premiumOGPrice = 279; ?>
     <style>
