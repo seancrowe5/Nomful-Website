@@ -129,7 +129,9 @@ require_once('./config.php');
   <?php // This code checks to see if the coupon code cookie has been set, and if yes, get rid of the coupon field
   if(isset($_COOKIE['coupon_info'])) { 
     $returns = $_COOKIE['coupon_info'];
+    echo $returns;
     $goods = json_decode($returns);
+    echo $goods;
     $percent_off = $goods->{'percent_off'}; 
     $basicPrice = (100 - $percent_off)/100*basicPrice;
     $premiumPrice = (100 - $percent_off)/100*premiumPrice; 
