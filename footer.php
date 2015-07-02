@@ -1,27 +1,52 @@
-<footer>
-  <!-- <div class="row">
-    <div class="small-2 small-offset-5 columns">
-      <div class="large-4 columns">
-        <img src="img/twitter.png">
+  <footer>
+    <div class="container">
+    <div class="row">
+      <div class="one-third column center mbudges">
+        <h6>Learn more</h6>
+        <div class="row">
+          <div class="one-half column">
+            <ul>
+              <li><a href="/index.php">Home</a></li>
+              <li><a href="/press.php">Press</a></li>              
+            </ul>
+          </div>
+          <div class="one-half column">
+            <ul>
+              <li><a href="/join/">Join</a></li>
+              <li><a href="/contact.php">Contact Us</a></li>              
+            </ul>          
+          </div>
+        </div>
       </div>
-      <div class="large-4 columns">
-        <img src="img/twitter.png">
+      
+      <div class="one-third column center mbudges">
+        <h6>Follow us</h6>
+        <ul>
+          <li class="inline"><a href="/press.php"><img class="social-img" src="img/twitter.png"/></a></li>
+          <li class="inline"><a href="/press.php"><img class="social-img" src="img/instagram.png"/></a></li>  
+          <li class="inline"><a href="/press.php"><img class="social-img" src="img/facebook.png"/></a></li>  
+        </ul>
       </div>
-      <div class="large-4 columns">
-        <img src="img/twitter.png">
-
+      
+      <div class="one-third column center mbudges">
+        <h6>Connect with us</h6>
+          <form class="email-form" id="ajax-contact" method="post" action="mailer.php">
+            <input type="email" id="join-email" name="join-email" placeholder="your email" />
+            <input type="text"  id="sp-website" name="sp-website" value=""  />
+            <input type="phone" id="sp-phone" name="sp-phone" value="" />
+            <input type="submit" value="Sign up" />
+          </form>
       </div>
     </div>
-  </div> -->
+    </div>
   
-  <div class="copyright"><center>
-    <a href="privacy.php" target="_blank">Privacy Policy</a>
-    <a href="terms.php" target="_blank">Terms of Service</a></center>
-    <p>&copy; 2015 Nomful, Inc.</p>
-  </div>
+    <div class="footer-copy">
+      &#169; 2015 Nomful, Inc., Chicago, IL - <a href="/terms.php">Terms &amp; Privacy</a>
+    </div>
+  </footer>
   
-  <div class="bar"></div>
-</footer>
-
+  
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
