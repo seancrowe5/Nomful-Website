@@ -131,7 +131,7 @@ require_once('./config.php');
     $returns = $_COOKIE['coupon_info'];
     echo $returns;
     $goods = json_decode($returns);
-    $percent_off = $goods->{'percent_off'}; 
+    $percent_off = intval($goods->{'percent_off'}); 
     $basicPrice = (100 - $percent_off)/100*basicPrice;
     $premiumPrice = (100 - $percent_off)/100*premiumPrice; 
     $basicOGPrice = 109;
