@@ -50,7 +50,7 @@ require_once('./config.php');
              } catch (Exception $e) {
                 // an exception was caught, so the code is invalid
                 $message = $e->getMessage();
-                returnErrorWithMessage($message);
+                
              }
 
       
