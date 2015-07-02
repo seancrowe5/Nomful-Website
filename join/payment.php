@@ -132,9 +132,17 @@ require_once('./config.php');
     echo $returns;
     $goods = json_decode($returns);
     $percent_off = $goods->{'percent_off'};
+    $amount_off = $goods->{'amount_off'};
+    $coupon_id = $goods->{'id'};
     $percent_off = floatval($percent_off);
     $basicPrice = number_format(((100 - $percent_off) / 100 * $basicPrice), 2, '.', '');
     $premiumPrice = number_format(((100 - $percent_off)/100 * $premiumPrice), 2, '.', ''); 
+    
+    if ( $amount_off != 'null' ) {
+      $basicPrice = number_format($basicPrice - $amount_off);
+      $premiumPrice = number_format($premiumPrice - $amount_off);  
+    }
+    
     $basicOGPrice = 109;
     $premiumOGPrice = 279; ?>
     <style>
@@ -142,7 +150,7 @@ require_once('./config.php');
         display: none;
       }
       .og-price-small {
-        display: block;
+        display: inline-block;
       }
     </style>
   <?php }  ?>
