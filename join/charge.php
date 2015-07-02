@@ -141,11 +141,13 @@ else {
 setcookie ("user", "", time()-60*60*25, '/', 'nomful.com'	);
 setcookie ("plan_info", "", time()-60*60*25, '/', 'nomful.com'	);
 setcookie ("partner_info", "", time()-60*60*25, '/', 'nomful.com' );
+setcookie ("coupon_info", "", time()-60*60*25, '/', 'nomful.com' );
 
   
 unset($_COOKIE['user']);
 unset($_COOKIE['plan']);
 unset($_COOKIE['partner_info']);
+unset($_COOKIE['coupon_info']);
 
 ?>
 
