@@ -4,16 +4,10 @@ require_once('./config.php');
 
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        
-       
-        // Get the group code
-        $coupon_code  = $_POST["coupon-code"];
-        $coupon_code = strtolower($coupon_code);
-    
-//        //get email from existing cookie
-//        $return = $_COOKIE['user'];
-//        $objs = json_decode($return);
-//        $userPhone = $objs->{'cell_phone'}; // 12345
+          
+      // Get the coupon code
+      $coupon_code  = $_POST["coupon-code"];
+      $coupon_code = strtolower($coupon_code);
             
 //          // take the information from the gymObject and set in cookie
 //          $code_info = array(
@@ -33,55 +27,47 @@ require_once('./config.php');
 //          'nomful.com'		// Domain to which the cookie will be bound
 //        );
 
-      $using_discount = false;
+      $coupon_valid = false;
       
-          try {
-              
-              //code was wrong...has to reference the \Stripe library then then \Coupon classs
-              //same syntax we used in the charge file to create a charge on a customer --> $customer = \Stripe\Customer::create
-                $coupon = \Stripe\Coupon::retrieve($coupon_code); //check coupon exists
-              
-                if($coupon !== NULL) {
-                 $using_discount = true; //set to true our coupon exists or take the coupon id if you wanted to.
-                }
-                // if we got here, the coupon is valid
-              //$coupon variable contains the COUPON OBJECT NOW...
+      try {
+        //has to reference the \Stripe library then then \Coupon classs
+        //same syntax we used in the charge file to create a charge on a customer --> $customer = \Stripe\Customer::create
+        $coupon = \Stripe\Coupon::retrieve($coupon_code); //check coupon exists
 
-             } catch (Exception $e) {
-                // an exception was caught, so the code is invalid
-                $message = $e->getMessage();
-                
-             }
-
-      
-      
-        //Check to see if the group code is actually valid
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "thomas@nomful.com";
-
-        // Set the email subject.
-        $subject = $using_discount. "group code - coupon thingy";
-
-        // Build the email content.
-        $email_content = "I guess it works";
-
-        // Send the email.
-        if (mail($recipient, $subject, $email_content)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            echo $using_discount . '----' . $coupon . '----' . $message;
-        } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong.";
+        if($coupon !== NULL) {
+          $coupon_valid = true; //set to true our coupon exists or take the coupon id if you wanted to.
+          $message = 'Congratulations! We applied your coupon code :)';
+          // if we got here, the coupon is valid
+          //$coupon variable contains the COUPON OBJECT NOW...
         }
+      
+      } catch (Exception $e) {
+            // an exception was caught, so the coupon code is invalid
+            $message = $e->getMessage();
+        
+      }
 
-    } 
-     else {
+      // if you need to quickly test via sending emails
+      /*$recipient = "thomas@nomful.com";
+      $subject = "coupon thingy";
+      $email_content = "I guess it works";
+      mail($recipient, $subject, $email_content);*/
+
+      // Send the email.
+      if ($coupon_valid) {
+        // Set a 200 (okay) response code.
+        http_response_code(200);
+        echo $message;
+      } else {
+        // Set a 500 (internal server error) response code.
+        http_response_code(500);
+        echo $message;
+      }
+
+    } else {
         // Not a POST request, set a 403 (forbidden) response code.
         http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
+        echo "Ya you shouldn't be here.";
     }
 
 ?>
