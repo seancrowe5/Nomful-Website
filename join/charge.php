@@ -39,16 +39,26 @@ $type = $_COOKIE['plan_info']; // will return either "basic-plan" or "premium-pl
 $plan = $type . '-' . $plan_base;
 
 
-
 try {
-    $customer = \Stripe\Customer::create(array(
-      "source" => $token, // obtained from Stripe.js
-      "plan" => $plan,
-      "email" => $email,
-      "coupon" => $coupon_id
-    ));
-    $success = 1;
-  
+    
+    if (isset($_COOKIE['coupon_info'])){
+        //if coupon is used then charge with coupon
+        $customer = \Stripe\Customer::create(array(
+          "source" => $token, // obtained from Stripe.js
+          "plan" => $plan,
+          "email" => $email,
+          "coupon" => $coupon_id
+        ));
+        $success = 1;
+    }else{
+        //no coupon used
+        $customer = \Stripe\Customer::create(array(
+          "source" => $token, // obtained from Stripe.js
+          "plan" => $plan,
+          "email" => $email
+        ));
+        $success = 1;
+    } 
 } catch(Stripe_CardError $e) {
   $error1 = $e->getMessage();
 } catch (Stripe_InvalidRequestError $e) {
