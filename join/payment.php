@@ -113,7 +113,11 @@ require_once('./config.php');
         $("#group-code-success").hide().fadeIn(1200); // and we fade in the success message
       });
     </script>*/
-  } else { 
+  ?>
+  <style>
+    .og-price-small { display: inline-block; }
+  </style>
+  <?php } else { 
     $intro_message = 'Congrats ' . $first_name . ', you are almost done! Choose a plan that fits your needs below.'; // if they are not from a club
   }  
   ?>
