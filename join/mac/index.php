@@ -89,7 +89,7 @@
   <div class="form-container">
     <div class="row">
       <div class="offset-by-three six columns center">
-        <a class="button" href="http://nomful.com/join">MAC Member Sign-up</a>
+        <a class="button" href="../">MAC Member Sign-up</a>
       </div>
     </div>
   </div>
