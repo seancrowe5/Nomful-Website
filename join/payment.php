@@ -131,12 +131,14 @@ require_once('./config.php');
     $returns = $_COOKIE['coupon_info'];
     echo $returns;
     $goods = json_decode($returns);
-    echo $goods;
+    echo 'asdfasdf asdf asdfasdf ' . $goods;
     $percent_off = $goods->{'percent_off'}; 
     $basicPrice = (100 - $percent_off)/100*basicPrice;
     $premiumPrice = (100 - $percent_off)/100*premiumPrice; 
     $basicOGPrice = 109;
-    $premiumOGPrice = 279; ?>
+    $premiumOGPrice = 279; 
+  
+    echo '1111111111111 this is p off' . $percent_off; ?>
     <style>
       #coupon-code-form {
         display: none;
