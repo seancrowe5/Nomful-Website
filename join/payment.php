@@ -133,14 +133,10 @@ require_once('./config.php');
     $goods = json_decode($returns);
     $percent_off = $goods->{'percent_off'};
     $percent_off = floatval($percent_off);
-    $basicPrice = (100 - $percent_off)/100*basicPrice;
-    $premiumPrice = (100 - $percent_off)/100*premiumPrice; 
+    $basicPrice = (100 - $percent_off) / 100 * $basicPrice;
+    $premiumPrice = (100 - $percent_off)/100 * $premiumPrice; 
     $basicOGPrice = 109;
-    $premiumOGPrice = 279; 
-  
-    echo '1111111111111 this is p off' . $percent_off; 
-    $calc = 100 - $percent_off;
-    echo ' ' . $calc;?>
+    $premiumOGPrice = 279; ?>
     <style>
       #coupon-code-form {
         display: none;
