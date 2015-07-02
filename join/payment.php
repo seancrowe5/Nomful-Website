@@ -128,9 +128,8 @@ require_once('./config.php');
   
   
   
- <div class="form-container center" id="group-code-question">
-    <h4>If you have a group code, enter it below!</h4>
-    <div id="discount-messages"></div>
+ <div class="form-container center" id="coupon-code-form">
+    <h4>If you have a coupon code, enter it below!</h4>
     <form id="ajax-discount" method="post" action="discount-verify.php" novalidate>
       <div class="row">
           <input class="label_better" data-new-placeholder="coupon code" type="text" placeholder="coupon code" name="coupon-code" id="coupon-code">
@@ -140,6 +139,7 @@ require_once('./config.php');
       </div>
     </form>
   </div>
+  <div id="discount-messages"></div>
   
 <div class="top-masthead" id="group-code-success">
 <h4><?php echo $intro_message; ?></h4>
