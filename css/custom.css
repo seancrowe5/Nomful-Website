@@ -242,7 +242,7 @@ form.email-form {
 }
 
 
-.success {
+.success, #coupon-applied {
   padding: 1em;
   margin-bottom: 0.75rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);

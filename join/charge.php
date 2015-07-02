@@ -31,6 +31,10 @@ $return = $_COOKIE['partner_info'];
         $objs = json_decode($return);
         $plan_base = $objs->{'plan_base'};
 
+$returns = $_COOKIE['coupon_info'];
+        $goods = json_decode($returns);
+        $coupon_id = $objs->{'id'};
+
 $type = $_COOKIE['plan_info']; // will return either "basic-plan" or "premium-plan"
 $plan = $type . '-' . $plan_base;
 
@@ -40,7 +44,8 @@ try {
     $customer = \Stripe\Customer::create(array(
       "source" => $token, // obtained from Stripe.js
       "plan" => $plan,
-      "email" => $email
+      "email" => $email,
+      "coupon" => $coupon_id
     ));
     $success = 1;
   
