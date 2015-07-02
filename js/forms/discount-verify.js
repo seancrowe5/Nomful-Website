@@ -41,7 +41,7 @@ $(function() {
           // Make sure that the formMessages div has the 'success' class.
           $(formMessages).removeClass('error');
           $(formMessages).addClass('success');
-          $('#ajax-discount').fadeOut(300);
+          //$('#ajax-discount').fadeOut(300);
 
           // Set the message text.
           $(formMessages).text(response);
@@ -83,7 +83,7 @@ $(function() {
 				$(formMessages).text(data.responseText);
                 return false;
 			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
+				$(formMessages).text('Oops! An error occured.');
                 return false;
 			}
 		});

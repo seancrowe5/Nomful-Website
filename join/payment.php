@@ -126,11 +126,27 @@ require_once('./config.php');
   <?php }  ?>
   
   
+  <?php // This code checks to see if the coupon code cookie has been set, and if yes, get rid of the coupon field
+  if(isset($_COOKIE['coupon_info'])) { 
+    $returns = $_COOKIE['coupon_info'];
+    $goods = json_decode($returns);
+    $percent_off = $goods->{'percent_off'}; 
+    $basicPrice = (100 - $percent_off)/100*basicPrice;
+    $premiumPrice = (100 - $percent_off)/100*premiumPrice; 
+    $basicOGPrice = 109;
+    $premiumOGPrice = 279; ?>
+    <style>
+      #coupon-code-form {
+        display: none;
+      }
+    </style>
+  <?php }  ?>
+  
   
  <div class="form-container center" id="coupon-code-form">
-    <div id="discount-messages"></div>
     <form id="ajax-discount" method="post" action="discount-verify.php" novalidate>
       <h4>If you have a coupon code, enter it below!</h4>
+      <div id="discount-messages"></div>
       <div class="row">
         <input class="label_better" data-new-placeholder="coupon code" type="text" placeholder="coupon code" name="coupon-code" id="coupon-code">
         <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
