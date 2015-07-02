@@ -47,7 +47,12 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         }
         
         //mixpanel user creation
-        
+        $mixpanelUser = ParseCloud::run("createMixpanelUser", ["id" => "userid",     
+                                                               "firstName" => "Web Testing",
+                                                               "lastName" => "web",
+                                                               "email" => "sean@hutster.com",
+                                                               "phone" => "8472261310" 
+                                                              ]);
         
         // Check that data was sent to the mailer.
         if ( !filter_var($email, FILTER_VALIDATE_EMAIL)) {
