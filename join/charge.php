@@ -33,7 +33,7 @@ $return = $_COOKIE['partner_info'];
 
 $returns = $_COOKIE['coupon_info'];
         $goods = json_decode($returns);
-        $coupon_id = $objs->{'id'};
+        $coupon_id = $goods->{'id'};
 
 $type = $_COOKIE['plan_info']; // will return either "basic-plan" or "premium-plan"
 $plan = $type . '-' . $plan_base;

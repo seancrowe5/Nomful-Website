@@ -39,12 +39,12 @@ $(function() {
 
 		.done(function(response) {
           // Make sure that the formMessages div has the 'success' class.
-          $(formMessages).removeClass('error');
-          $(formMessages).addClass('success');
+          //$(formMessages).removeClass('error');
+          //$(formMessages).addClass('success');
           //$('#ajax-discount').fadeOut(300);
 
           // Set the message text.
-          $(formMessages).text(response);
+          //$(formMessages).text(response);
           
            var opts = {
 		lines: 13, // The number of lines to draw
