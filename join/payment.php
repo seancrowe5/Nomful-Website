@@ -105,13 +105,14 @@ require_once('./config.php');
     $basicOGPrice = 109;
     $premiumOGPrice = 279; 
   
-    $intro_message = 'Congrats ' . $first_name . '! As a member of ' . $club . ' we have already applied your special pricing!'; // if they do have a partner!! ?>  
-    <!-- <script>
+    $intro_message = 'Congrats ' . $first_name . '! As a member of ' . $club . ' we have already applied your special pricing!'; // if they do have a partner!! 
+
+    /*<script>
       $(document).ready(function(){
         $("#group-code-question").hide(); // if yes we don't ask the user anymore and hide the form 
         $("#group-code-success").hide().fadeIn(1200); // and we fade in the success message
-      });</script> -->
-  <?php 
+      });
+    </script>*/
   } else { 
     $intro_message = 'Congrats ' . $first_name . ', you are almost done! Choose a plan that fits your needs below.'; // if they are not from a club
   }  
@@ -143,7 +144,7 @@ require_once('./config.php');
       #coupon-code-form {
         display: none;
       }
-      .og-price-small, #coupon-info {
+      .og-price-small, #coupon-applied {
         display: inline-block;
       }
     </style>
