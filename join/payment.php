@@ -111,19 +111,11 @@ require_once('./config.php');
         $("#group-code-question").hide(); // if yes we don't ask the user anymore and hide the form 
         $("#group-code-success").hide().fadeIn(1200); // and we fade in the success message
       });</script> -->
-  <?php } else { 
-    $intro_message = 'Congrats ' . $first_name . ', you are almost done! Choose a plan that fits your needs below.'; // if they are not from a club ?> 
-    <style>
-      .og-price-small {
-        display: none;
-      }
-    </style>
-    <!-- <script>
-      $(document).ready(function(){
-        $(".og-price-small").hide();
-      });
-    </script> -->
-  <?php }  ?>
+  <?php 
+  } else { 
+    $intro_message = 'Congrats ' . $first_name . ', you are almost done! Choose a plan that fits your needs below.'; // if they are not from a club
+  }  
+  ?>
   
   
   <?php // This code checks to see if the coupon code cookie has been set, and if yes, get rid of the coupon field
@@ -144,7 +136,7 @@ require_once('./config.php');
       $basicPrice = number_format($basicPrice - $amount_off);
       $premiumPrice = number_format($premiumPrice - $amount_off);  
     }
-    
+
     $basicOGPrice = 109;
     $premiumOGPrice = 279; ?>
     <style>

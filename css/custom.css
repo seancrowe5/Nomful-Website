@@ -268,8 +268,8 @@ form.email-form {
 
 
 .og-price-small, #coupon-info {
-        display: inline-block;
-      }
+  display: none;
+}
 
 form#premiumForm, form#basicForm {
   display: none;
