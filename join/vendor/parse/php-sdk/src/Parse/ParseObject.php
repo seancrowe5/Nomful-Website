@@ -180,6 +180,18 @@ class ParseObject implements Encodable
     }
 
     /**
+     * Magic handler to catch isset calls to object properties.
+     *
+     * @param string $key Key to check on the object.
+     *
+     * @return boolean
+     */
+    public function __isset($key)
+    {
+        return $this->has($key);
+    }
+
+    /**
      * Get current value for an object property.
      *
      * @param string $key Key to retrieve from the estimatedData array.
@@ -755,6 +767,7 @@ class ParseObject implements Encodable
     public static function destroyAll(array $objects, $useMasterKey = false)
     {
         $errors = [];
+        $objects = array_values($objects); // To support non-ordered arrays
         $count = count($objects);
         if ($count) {
             $batchSize = 40;
@@ -765,7 +778,7 @@ class ParseObject implements Encodable
                 $currentcount++;
                 $currentBatch[] = $objects[$processed++];
                 if ($currentcount == $batchSize || $processed == $count) {
-                    $results = static::destroyBatch($currentBatch);
+                    $results = static::destroyBatch($currentBatch, $useMasterKey);
                     $errors = array_merge($errors, $results);
                     $currentBatch = [];
                     $currentcount = 0;
