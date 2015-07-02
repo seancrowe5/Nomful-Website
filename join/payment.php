@@ -172,12 +172,16 @@ require_once('./config.php');
   </div>
   
   
-<div class="top-masthead" id="group-code-success">
-<h4><?php echo $intro_message; ?></h4>
+<div class="top-masthead">
+  <h4><?php echo $intro_message; ?></h4>
 </div>
   
   
   <div class="form-container center">
+    <div id="coupon-applied">
+      <p>Coupon code "<?php echo $coupon_id;?> has been applied. <a href="/coupon-remove.php">Remove coupon</a></p>
+    
+    </div>
     <div class="row">
       <div class="six columns">
         <h3><span class="group-price"><?php echo '$' . $basicPrice; ?></span> <span class="og-price-small"><?php echo '$' . $basicOGPrice; ?></span> <span class="per_month"> per month</span></h3>
