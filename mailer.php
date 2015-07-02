@@ -19,7 +19,7 @@ require 'vendor/autoload.php';
 
         //Send email with madrill
         try {
-            $mandrill = new Mandrill('PV3bzl_61BybiLXgAeEQQg'); //QcW7X7TjFMCbR6eC9lqZWQ live ....  //PV3bzl_61BybiLXgAeEQQg test
+            $mandrill = new Mandrill('QcW7X7TjFMCbR6eC9lqZWQ'); //QcW7X7TjFMCbR6eC9lqZWQ live ....  //PV3bzl_61BybiLXgAeEQQg test
             
             $message = array(
                 'html' => '<p>Example HTML content</p>',
