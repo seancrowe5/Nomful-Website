@@ -135,10 +135,11 @@ require_once('./config.php');
     $amount_off = $goods->{'amount_off'};
     $coupon_id = $goods->{'id'};
     $percent_off = floatval($percent_off);
+    $amount_off = floatval($amount_off);
     $basicPrice = number_format(((100 - $percent_off) / 100 * $basicPrice), 2, '.', '');
     $premiumPrice = number_format(((100 - $percent_off)/100 * $premiumPrice), 2, '.', ''); 
-    
-    if ( $amount_off != 'null' ) {
+    echo $amount_off;
+    if ( $amount_off > 0 ) {
       $basicPrice = number_format($basicPrice - $amount_off);
       $premiumPrice = number_format($premiumPrice - $amount_off);  
     }
