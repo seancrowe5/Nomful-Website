@@ -139,7 +139,7 @@ require_once('./config.php');
     $premiumOGPrice = 279; 
   
     echo '1111111111111 this is p off' . $percent_off; 
-    echo '<br> ' $percent_off - 1;?>
+    echo '<br> ' . $percent_off - 1;?>
     <style>
       #coupon-code-form {
         display: none;
