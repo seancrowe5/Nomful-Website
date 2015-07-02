@@ -133,7 +133,7 @@ require_once('./config.php');
     <div id="discount-messages"></div>
     <form id="ajax-discount" method="post" action="discount-verify.php" novalidate>
       <div class="row">
-          <input class="label_better" data-new-placeholder="group code" type="text" placeholder="group code" name="group-code" id="group-code">
+          <input class="label_better" data-new-placeholder="coupon code" type="text" placeholder="coupon code" name="coupon-code" id="coupon-code">
         <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
         <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
         <input class="button-primary" type="submit" id="btns" value="Continue">

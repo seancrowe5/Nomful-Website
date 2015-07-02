@@ -22,7 +22,7 @@ $(function() {
         } 
       
         // We make sure that the group code is actually filled in
-        if ($('input#group-code').val().length <= 1) {
+        if ($('input#coupon-code').val().length <= 1) {
             alert("Oh no! Please enter a group code");
             return false;
         } 
