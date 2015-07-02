@@ -20,9 +20,10 @@ require_once('./config.php');
           //$message = 'Congratulations! We applied your coupon code :)';
           //if we got here, the coupon is valid
           //$coupon variable contains the COUPON OBJECT NOW...
+          $coupon_json = $coupon->__toJSON();
           setcookie(
             'coupon_info',				// Name of the cookie, required
-            $coupon,					// The value of the cookie
+            $coupon_json,				// The value of the cookie
             time()+60*60*24,			// Expiration time, set for a day in the future
             '/',						// Folder path the cookie will be available for
             'nomful.com'		        // Domain to which the cookie will be bound
