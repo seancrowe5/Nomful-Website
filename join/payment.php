@@ -129,16 +129,17 @@ require_once('./config.php');
   <?php // This code checks to see if the coupon code cookie has been set, and if yes, get rid of the coupon field
   if(isset($_COOKIE['coupon_info'])) { 
     $returns = $_COOKIE['coupon_info'];
-    echo $returns;
     $goods = json_decode($returns);
-    $percent_off = $goods->{'percent_off'};
-    $amount_off = $goods->{'amount_off'};
-    $coupon_id = $goods->{'id'};
-    $percent_off = floatval($percent_off/100);
-    $amount_off = floatval($amount_off/100);
-    $basicPrice = number_format(((1 - $percent_off)* $basicPrice), 2, '.', '');
+    $percent_off = $goods->{'percent_off'};   // get the percent off
+    $amount_off = $goods->{'amount_off'};     // get the amount off
+    $coupon_id = $goods->{'id'};              // get the coupon id
+    
+    $percent_off = floatval($percent_off/100);    // remember to convert to a float otherwise this thing will shit
+    $amount_off = floatval($amount_off/100);      // and divide by a hundred unless you want to be wrong
+    $basicPrice = number_format(((1 - $percent_off)* $basicPrice), 2, '.', '');         // calculate the new values after percent off 
     $premiumPrice = number_format(((1 - $percent_off) * $premiumPrice), 2, '.', ''); 
     
+    // unless the new values are an amount off
     if ( $amount_off > 0 ) {
       $basicPrice = number_format($basicPrice - $amount_off);
       $premiumPrice = number_format($premiumPrice - $amount_off);  
