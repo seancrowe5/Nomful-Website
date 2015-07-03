@@ -69,18 +69,15 @@
       <div class="row">
         <div class="one-third column mobile-bottom">
           <img src="img/1.png"/>
-          <h3>get a phone call</h3>
-          <p>be lika lika boss and then all the way lets gooooo hurayyy yas yasy lorem ipsum dum</p>
+          <h3>Match with Nomful Coach</h3>
         </div>
         <div class="one-third column mobile-bottom">
           <img src="img/1.png"/>
-          <h3>get a phone call</h3>
-          <p>be lika lika boss and then all the way lets gooooo hurayyy yas yasy lorem ipsum dum</p>
+          <h3>Snap photos of meals</h3>
         </div>
         <div class="one-third column">
           <img src="img/1.png"/>
-          <h3>get a phone call</h3>
-          <p>be lika lika boss and then all the way lets gooooo hurayyy yas yasy lorem ipsum dum</p>
+          <h3>Get personalized coaching</h3>
         </div>
       </div>
     </div>
@@ -88,8 +85,8 @@
   
   <section class="masthead masthead-3">
     <div class="masthead-content underlay-light">
-      <h1>Not a Class</h1>
-      <p>You get to know your coach, set goals together, and work through obstacles to get to where you want/need to be. Your Nomful coach is always there for you to keep you on track.</p>
+      <h1>Real Personalized Coaching</h1>
+      <p>Diets don’t work...you know that...we know that. You need real life coaching from a real life nutrition expert. Someone that will be there for you at the grocery store, while you eat, and while you cook.</p>
     </div>
   </section>
   

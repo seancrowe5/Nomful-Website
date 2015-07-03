@@ -22,7 +22,7 @@ img.reg-logo {
 }
 
 .masthead-intro {
-  background: url('/img/Bigstock_81169544.jpg'); 
+  background: url('/img/smoothie.jpg'); 
   background-position: top; 
   background-size: cover;
 }
@@ -31,7 +31,7 @@ img.reg-logo {
   background-color: lightblue;
   background-position: center; 
   background-size: cover;
-  padding: 60px 0px;
+  padding: 45px 0px;
 }
 
 .masthead-3 {
@@ -121,7 +121,7 @@ footer {
 
 .pbudge { padding-top: 100px; } 
 
-.mobile-bottom { padding-bottom: 60px; }
+.mobile-bottom { padding-bottom: 45px; }
 
 
 /* Larger than mobile */
@@ -137,7 +137,7 @@ footer {
   }
   
   .masthead-2 {
-    padding: 100px 0px;
+    padding: 60px 0px;
   }
   
   .masthead {
