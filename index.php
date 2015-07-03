@@ -68,16 +68,16 @@
     <div class="container center">
       <div class="row">
         <div class="one-third column mobile-bottom">
-          <img src="img/1.png"/>
-          <h3>Match with Nomful Coach</h3>
+          <img src="img/1435979560_Woman-9.png"/>
+          <h4>Team up with your Nomful Coach</h4>
         </div>
         <div class="one-third column mobile-bottom">
-          <img src="img/1.png"/>
-          <h3>Snap photos of meals</h3>
+          <img src="img/1435979620_Tablet-Chart.png"/>
+          <h4>Together, set goals and track progress</h4>
         </div>
         <div class="one-third column">
-          <img src="img/1.png"/>
-          <h3>Get personalized coaching</h3>
+          <img src="img/1435979663_Smartphone-Message.png"/>
+          <h4>Personalized coaching, at your fingertips</h4>
         </div>
       </div>
     </div>
