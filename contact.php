@@ -60,12 +60,12 @@
   </header><!-- /header -->
   <section class="top-masthead contact">
     <div class="container center middle">
-      <h1>Contact us</h1>
+      <h1>Contact</h1>
       <p>We would love to hear from you, so get in touch with us!</p>
     </div>
   </section>
   
-  <section class="form-container">
+  <section class="form-container center mbudges">
     <p>Have a question? Want to learn more about us? We'd love to hear from you! Fill out the form below and we will get back to you as soon as possible :)</p>
     <div id="contact-messages" class="mbudge"></div>
     <form id="ajax-contact" method="post" action="contact-form.php" novalidate>
@@ -85,7 +85,7 @@
     <div class="row">
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-      <input class="button-primary u-pull-right mbudge" type="submit" value="Continue">
+      <input class="button-primary u-pull-right mbudge" type="submit" value="contact us">
     </div>
     </form>
   </section>
