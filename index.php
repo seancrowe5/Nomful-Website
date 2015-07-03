@@ -57,9 +57,9 @@
     </div>
   </header><!-- /header -->
   <section class="masthead masthead-intro">
-    <div class="masthead-intro-content">
+    <div class="masthead-intro-content underlay-dark">
       <h1>Eat better. Live better.</h1>
-      <p>It’s not a diet. It’s called eating healthy. Team up with a coach that knows nutrition inside and out.</p>
+      <p>No more dieting. Let’s get you eating healthy again. Team up with a coach that knows nutrition inside and out.</p>
       <a class="gbutton" href="/join/">Join</a>
     </div>
   </section>
@@ -93,7 +93,7 @@
   <section class="masthead masthead-4">
     <div class="masthead-content underlay-light">
         <h1>Nutrition support built around you</h1>
-        <p>Fads aren't personalized. They don't talk back either. You need real life coaching from a real life nutrition expert. Someone that will be there for you at the grocery store, while you eat, and while you cook.</p>
+        <p>Diets don't work. You know that. We know that. You need real coaching from a real nutrition expert. Someone that will be there for you at the grocery store, while you eat, and while you cook.</p>
     </div>
   </section>
 
