@@ -59,7 +59,7 @@
   <section class="masthead masthead-intro">
     <div class="masthead-intro-content">
       <h1>Eat better. Live better.</h1>
-      <p>It’s not a diet. It’s called eating healthy. Team up with a coach that knows nutrition inside and out. Let's change your life.</p>
+      <p>It’s not a diet. It’s called eating healthy. Team up with a coach that knows nutrition inside and out.</p>
       <a class="gbutton" href="/join/">Join</a>
     </div>
   </section>
