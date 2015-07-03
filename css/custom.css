@@ -22,8 +22,8 @@ img.reg-logo {
 }
 
 .masthead-intro {
-  background: url('/img/green-shoe.jpg'); 
-  background-position: top; 
+  background: url('/img/green-shoes.jpg'); 
+  background-position: bottom; 
   background-size: cover;
 }
 
@@ -56,6 +56,19 @@ img.reg-logo {
   margin: 0px auto;
   padding: 0px 30px;
   text-align: center;
+}
+
+.masthead-intro-content {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translate(0,-40%);
+  -ms-transform: translate(0,-40%);
+  transform: translate(0,-40%);
+  max-width: 635px; /* change this */
+  padding: 0px 30px;
+  text-align: left;
+  margin-left: 7%;
+  
 }
 
 .top-masthead {

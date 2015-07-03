@@ -57,10 +57,10 @@
     </div>
   </header><!-- /header -->
   <section class="masthead masthead-intro">
-    <div class="masthead-content">
-        <h1>Make healthy your routine</h1>
-        <p>Team up with a dedicated Nomful/nutrition coach to get the personalized support you need, right from your phone.</p>
-        <a class="gbutton" href="/join/">Join</a>
+    <div class="masthead-intro-content">
+      <h1>Eat better. Live better.</h1>
+      <p>It’s not a diet. It’s called eating healthy. Team up with a coach that knows nutrition inside and out. Let's change your life.</p>
+      <a class="gbutton" href="/join/">Join</a>
     </div>
   </section>
   
