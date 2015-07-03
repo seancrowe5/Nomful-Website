@@ -169,7 +169,7 @@ require_once('./config.php');
   </div>
   
   
-<div class="top-masthead">
+<div class="top-masthead-join mbudges">
   <h4><?php echo $intro_message; ?></h4>
 </div>
   

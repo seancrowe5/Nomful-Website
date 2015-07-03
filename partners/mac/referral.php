@@ -67,7 +67,7 @@
   </header><!-- /header -->
   
   <div class="container">
-    <div class="top-masthead">
+    <div class="top-masthead-join pbudge">
       <h1>Submit a referral</h1>
       <p>Track who you refer to Nomful and get extra cash for those who sign up! Fill out the information below.</p>
     </div>
