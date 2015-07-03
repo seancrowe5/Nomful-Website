@@ -80,7 +80,7 @@
       <img class="partnerlogo cell-middle" src="/../img/mac.png"/>
       <img class="partnerlogo cell-middle" src="/../img/nomful.png"/>
     </div>
-    <div class="top-masthead mbudge">
+    <div class="top-masthead-join mbudges">
       <p>Nomful is proud to have partnered with the MAC to bring you with personalized nutrition support from the experts, right on your phone. To learn more, <a href="Nomful_Summary_FAQ-MAC_Member.pdf">click here.</a><br>If you have any additional questions or need help, email <a href="mailto:thomas@nomful.com">thomas@nomful.com</a> or call us anytime at (562) 666 - 3858.</p>
     </div>
   </div>

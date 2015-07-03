@@ -67,7 +67,7 @@
   </header><!-- /header -->
   
   <div class="container">
-    <div class="top-masthead">
+    <div class="top-masthead-join pbudge">
       <h1>Trainer Registration</h1>
       <p>If you'd like to connect with you clients and their nutrition coach, sign up below! Once you do, you'll be able to log into the app.</p>
     </div>

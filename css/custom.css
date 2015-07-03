@@ -85,6 +85,12 @@ img.reg-logo {
   height: 400px; 
 }
 
+.top-masthead-join {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .contact {
   background: url('/img/strawberries.jpg'); 
   background-position: left; 
@@ -206,8 +212,12 @@ footer {
 }
 
 .gbutton:hover {
-  background-color: rgba(255,255,255,.4);
-  border: rgba(255,255,255,.7) solid 2px;
+  background-color: rgba(142, 197, 67, 0.6);
+  border: rgba(142, 197, 67, 1) solid 2px;
+}
+
+a.gbutton:hover {
+  color: #f1f1f1;
 }
 
 

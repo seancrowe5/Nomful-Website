@@ -231,7 +231,7 @@ unset($_COOKIE['coupon_info']);
   </header><!-- /header -->
   
   <div class="container">
-    <div class="top-masthead">
+    <div class="top-masthead-join pbudge">
       <h2>Congratulations <?php echo $first_name; ?>!</h2>
       <p>You have successfully signed up. Please continue by downloading the app and press LOGIN to login with the credentials you just used.</p>
       <br>

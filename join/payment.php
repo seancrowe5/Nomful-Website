@@ -154,10 +154,13 @@ require_once('./config.php');
     </style>
   <?php }  ?>
   
+  <div class="top-masthead-join pbudge">
+    <h4><?php echo $intro_message; ?></h4>
+  </div>
   
  <div class="form-container center" id="coupon-code-form">
     <form id="ajax-discount" method="post" action="discount-verify.php" novalidate>
-      <h4>If you have a coupon code, enter it below!</h4>
+      <h5>If you have a coupon code, enter it below!</h5>
       <div id="discount-messages"></div>
       <div class="row">
         <input class="label_better" data-new-placeholder="coupon code" type="text" placeholder="coupon code" name="coupon-code" id="coupon-code">
@@ -166,13 +169,7 @@ require_once('./config.php');
         <input class="button-primary" type="submit" id="btns" value="Continue">
       </div>
     </form>
-  </div>
-  
-  
-<div class="top-masthead">
-  <h4><?php echo $intro_message; ?></h4>
-</div>
-  
+  </div>  
   
   <div class="form-container center">
     <div id="coupon-applied">
