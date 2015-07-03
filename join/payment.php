@@ -160,7 +160,7 @@ require_once('./config.php');
   
  <div class="form-container center" id="coupon-code-form">
     <form id="ajax-discount" method="post" action="discount-verify.php" novalidate>
-      <h4>If you have a coupon code, enter it below!</h4>
+      <h5>If you have a coupon code, enter it below!</h5>
       <div id="discount-messages"></div>
       <div class="row">
         <input class="label_better" data-new-placeholder="coupon code" type="text" placeholder="coupon code" name="coupon-code" id="coupon-code">
