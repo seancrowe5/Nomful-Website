@@ -47,23 +47,6 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
           exit;
         }
         
-        //mixpanel user creation
-        try {$mixpanelUser = ParseCloud::run('createMixpanelUser', ['id' => $user->getObjectId(),     
-                                                                    'firstName' => $_POST['first-name'],
-                                                                    'lastName' => $_POST['last-name'],
-                                                                    'email' => $_POST['email'],
-                                                                    'phone' => $_POST['cell-phone'] 
-                                                                    ]);
-            }
-        catch (ParseException $ex) {
-           
-            
-        }
-        
-        
-        
-        
-        
         // Check that data was sent to the mailer.
         if ( !filter_var($email, FILTER_VALIDATE_EMAIL)) {
           // Set a 400 (bad request) response code and exit.
