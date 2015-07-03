@@ -1,4 +1,5 @@
 <?php
+require 'vendor/autoload.php';
     // My modifications to mailer script from:
     // http://blog.teamtreehouse.com/create-ajax-contact-form
     // Added input sanitizing to prevent injection
@@ -16,29 +17,45 @@
             exit;
         }
 
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "thomas@nomful.com";
-
-        // Set the email subject.
-        $subject = "New contact from $email";
-
-        // Build the email content.
-        $email_content .= "Email: $email\n\n";
-
-        // Build the email headers.
-        $email_headers = "From: <$email>";
-
-        // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            echo "Thank You!";
-        } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong.";
-        }
+        //Send email with madrill
+        try {
+            $mandrill = new Mandrill('QcW7X7TjFMCbR6eC9lqZWQ'); //QcW7X7TjFMCbR6eC9lqZWQ live ....  //PV3bzl_61BybiLXgAeEQQg test
+            
+            $message = array(
+                'html' => '<p>Example HTML content</p>',
+                'text' => 'Example text content',
+                'subject' => 'Welcome to the Community',
+                'from_email' => 'sean@nomful.com',
+                'from_name' => 'Sean',
+                'to' => array(
+                    array(
+                        'email' => $email
+                    )
+                ),
+                'headers' => array('Reply-To' => 'support@nomful.com')
+            );
+            $template_name = 'Waiting List - Welcome to Community';
+            $template_content = null;
+            $response = $mandrill->messages->sendTemplate($template_name, $template_content, $message);
+            print_r($response);
+            
+} catch(Mandrill_Error $e) {
+    // Mandrill errors are thrown as exceptions
+    echo 'A mandrill error occurred: ' . get_class($e) . ' - ' . $e->getMessage();
+    // A mandrill error occurred: Mandrill_Unknown_Subaccount - No subaccount exists with the id 'customer-123'
+    throw $e;
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
     } else {
         // Not a POST request, set a 403 (forbidden) response code.

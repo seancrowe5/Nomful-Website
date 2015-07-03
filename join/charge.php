@@ -31,19 +31,34 @@ $return = $_COOKIE['partner_info'];
         $objs = json_decode($return);
         $plan_base = $objs->{'plan_base'};
 
+$returns = $_COOKIE['coupon_info'];
+        $goods = json_decode($returns);
+        $coupon_id = $goods->{'id'};
+
 $type = $_COOKIE['plan_info']; // will return either "basic-plan" or "premium-plan"
 $plan = $type . '-' . $plan_base;
 
 
-
 try {
-    $customer = \Stripe\Customer::create(array(
-      "source" => $token, // obtained from Stripe.js
-      "plan" => $plan,
-      "email" => $email
-    ));
-    $success = 1;
-  
+    
+    if (isset($_COOKIE['coupon_info'])){
+        //if coupon is used then charge with coupon
+        $customer = \Stripe\Customer::create(array(
+          "source" => $token, // obtained from Stripe.js
+          "plan" => $plan,
+          "email" => $email,
+          "coupon" => $coupon_id
+        ));
+        $success = 1;
+    }else{
+        //no coupon used
+        $customer = \Stripe\Customer::create(array(
+          "source" => $token, // obtained from Stripe.js
+          "plan" => $plan,
+          "email" => $email
+        ));
+        $success = 1;
+    } 
 } catch(Stripe_CardError $e) {
   $error1 = $e->getMessage();
 } catch (Stripe_InvalidRequestError $e) {
@@ -136,11 +151,13 @@ else {
 setcookie ("user", "", time()-60*60*25, '/', 'nomful.com'	);
 setcookie ("plan_info", "", time()-60*60*25, '/', 'nomful.com'	);
 setcookie ("partner_info", "", time()-60*60*25, '/', 'nomful.com' );
+setcookie ("coupon_info", "", time()-60*60*25, '/', 'nomful.com' );
 
   
 unset($_COOKIE['user']);
 unset($_COOKIE['plan']);
 unset($_COOKIE['partner_info']);
+unset($_COOKIE['coupon_info']);
 
 ?>
 
@@ -214,7 +231,7 @@ unset($_COOKIE['partner_info']);
   </header><!-- /header -->
   
   <div class="container">
-    <div class="top-masthead">
+    <div class="top-masthead-join pbudge">
       <h2>Congratulations <?php echo $first_name; ?>!</h2>
       <p>You have successfully signed up. Please continue by downloading the app and press LOGIN to login with the credentials you just used.</p>
       <br>

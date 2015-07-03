@@ -84,8 +84,11 @@ final class ParseClient
         if (! ParseObject::hasRegisteredSubclass('_Role')) {
             ParseRole::registerSubclass();
         }
-
-        ParseInstallation::registerSubclass();
+        
+        if (! ParseObject::hasRegisteredSubclass('_Installation')) {
+            ParseInstallation::registerSubclass();
+        }
+        
         ParseSession::registerSubclass();
         self::$applicationId = $app_id;
         self::$restKey = $rest_key;
@@ -112,7 +115,7 @@ final class ParseClient
      */
     public static function _encode($value, $allowParseObjects)
     {
-        if ($value instanceof \DateTime) {
+        if ($value instanceof \DateTime || $value instanceof \DateTimeImmutable) {
             return [
                 '__type' => 'Date', 'iso' => self::getProperDateFormat($value),
             ];
@@ -402,12 +405,14 @@ final class ParseClient
      * Format from Parse doc: an ISO 8601 date without a time zone, i.e. 2014-10-16T12:00:00 .
      *
      * @param \DateTime $value DateTime value to format.
+     * @param boolean $local Whether to return the local push time
      *
      * @return string
      */
-    public static function getLocalPushDateFormat($value)
+    public static function getPushDateFormat($value, $local = false)
     {
         $dateFormatString = 'Y-m-d\TH:i:s';
+        if (!$local) $dateFormatString .= '\Z';
         $date = date_format($value, $dateFormatString);
 
         return $date;

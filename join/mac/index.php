@@ -6,7 +6,7 @@
     'club' => 'MAC Wellness', // this is the NAME of the affiliate partner
     'basic_price' => '99', // this is the PRICE of the BASIC plan for this group code
     'premium_price' => '249', // this is the PRICE of the PREMIUM plan for this group code
-    'gymID' => 'V0qgIi6L53' //gym id dbXma3eUtI V0qgIi6L53
+    'gymID' => 'dbXma3eUtI' //gym id dbXma3eUtI V0qgIi6L53
   );
 
   $c = json_encode($partner_info);
@@ -80,7 +80,7 @@
       <img class="partnerlogo cell-middle" src="/../img/mac.png"/>
       <img class="partnerlogo cell-middle" src="/../img/nomful.png"/>
     </div>
-    <div class="top-masthead mbudge">
+    <div class="top-masthead-join mbudges">
       <p>Nomful is proud to have partnered with the MAC to bring you with personalized nutrition support from the experts, right on your phone. To learn more, <a href="Nomful_Summary_FAQ-MAC_Member.pdf">click here.</a><br>If you have any additional questions or need help, email <a href="mailto:thomas@nomful.com">thomas@nomful.com</a> or call us anytime at (562) 666 - 3858.</p>
     </div>
   </div>
@@ -89,7 +89,7 @@
   <div class="form-container">
     <div class="row">
       <div class="offset-by-three six columns center">
-        <a class="button" href="http://nomful.com/join">MAC Member Sign-up</a>
+        <a class="button" href="../">MAC Member Sign-up</a>
       </div>
     </div>
   </div>

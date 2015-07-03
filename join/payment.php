@@ -1,4 +1,5 @@
 <?php 
+require_once('vendor/autoload.php');
 require_once('./config.php');
 
    if (!isset($_COOKIE['user'])) { 
@@ -78,22 +79,21 @@ require_once('./config.php');
   </header><!-- /header -->
   
   <?php
-
-    //get user cookie and save to $obj
+  //get user cookie and save to $obj
   $return=$_COOKIE['user'];
   $obj = json_decode($return);
 
-    //get first name and email from cookie
+  //get first name and email from cookie
   $first_name = $obj->{'first_name'}; // 12345
   $email = $obj->{'email'};
 
-    //***hard code pricing
+  //***hard code pricing
   $basicPrice = 109;
   $premiumPrice = 279;
   ?>
   
   
-    <?php // This code checks to see if the discount code cookie has been set
+<?php // This code checks to see if the discount code cookie has been set
   if(isset($_COOKIE['partner_info'])) { 
     $return = $_COOKIE['partner_info'];
     $objs = json_decode($return);
@@ -105,47 +105,77 @@ require_once('./config.php');
     $basicOGPrice = 109;
     $premiumOGPrice = 279; 
   
-    $intro_message = 'Congrats ' . $first_name . '! As a member of ' . $club . ' we have already applied your special pricing!'; // if they do have a partner!! ?>  
-    <!-- <script>
+    $intro_message = 'Congrats ' . $first_name . '! As a member of ' . $club . ' we have already applied your special pricing!'; // if they do have a partner!! 
+
+    /*<script>
       $(document).ready(function(){
         $("#group-code-question").hide(); // if yes we don't ask the user anymore and hide the form 
         $("#group-code-success").hide().fadeIn(1200); // and we fade in the success message
-      });</script> -->
+      });
+    </script>*/
+  ?>
+  <style>
+    .og-price-small { display: inline-block; }
+  </style>
   <?php } else { 
-    $intro_message = 'Congrats ' . $first_name . ', you are almost done! Choose a plan that fits your needs below.'; // if they are not from a club ?> 
+    $intro_message = 'Congrats ' . $first_name . ', you are almost done! Choose a plan that fits your needs below.'; // if they are not from a club
+  }  
+  ?>
+  
+  
+  <?php // This code checks to see if the coupon code cookie has been set, and if yes, get rid of the coupon field
+  if(isset($_COOKIE['coupon_info'])) { 
+    $returns = $_COOKIE['coupon_info'];
+    $goods = json_decode($returns);
+    $percent_off = $goods->{'percent_off'};   // get the percent off
+    $amount_off = $goods->{'amount_off'};     // get the amount off
+    $coupon_id = $goods->{'id'};              // get the coupon id
+    
+    $percent_off = floatval($percent_off/100);    // remember to convert to a float otherwise this thing will shit
+    $amount_off = floatval($amount_off/100);      // and divide by a hundred unless you want to be wrong
+    $basicPrice = number_format(((1 - $percent_off)* $basicPrice), 2, '.', '');         // calculate the new values after percent off 
+    $premiumPrice = number_format(((1 - $percent_off) * $premiumPrice), 2, '.', ''); 
+    
+    // unless the new values are an amount off
+    if ( $amount_off > 0 ) {
+      $basicPrice = number_format($basicPrice - $amount_off);
+      $premiumPrice = number_format($premiumPrice - $amount_off);  
+    }
+
+    $basicOGPrice = 109;
+    $premiumOGPrice = 279; ?>
     <style>
-      .og-price-small {
+      #coupon-code-form {
         display: none;
       }
+      .og-price-small, #coupon-applied {
+        display: inline-block;
+      }
     </style>
-    <!-- <script>
-      $(document).ready(function(){
-        $(".og-price-small").hide();
-      });
-    </script> -->
   <?php }  ?>
   
+  <div class="top-masthead-join pbudge">
+    <h4><?php echo $intro_message; ?></h4>
+  </div>
   
-  
- <!-- <div class="form-container center" id="group-code-question">
-    <h4>If you have a group code, enter it below!</h4>
-    <div id="discount-messages"></div>
+ <div class="form-container center" id="coupon-code-form">
     <form id="ajax-discount" method="post" action="discount-verify.php" novalidate>
+      <h5>If you have a coupon code, enter it below!</h5>
+      <div id="discount-messages"></div>
       <div class="row">
-          <input class="label_better" data-new-placeholder="group code" type="text" placeholder="group code" name="group-code" id="group-code">
+        <input class="label_better" data-new-placeholder="coupon code" type="text" placeholder="coupon code" name="coupon-code" id="coupon-code">
         <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
         <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
         <input class="button-primary" type="submit" id="btns" value="Continue">
       </div>
     </form>
-  </div>  -->
-  
-<div class="top-masthead" id="group-code-success">
-<h4><?php echo $intro_message; ?></h4>
-</div>
-  
+  </div>  
   
   <div class="form-container center">
+    <div id="coupon-applied">
+      <p>Coupon code "<?php echo $coupon_id;?> has been applied. <a href="coupon-remove.php">Remove coupon</a></p>
+    
+    </div>
     <div class="row">
       <div class="six columns">
         <h3><span class="group-price"><?php echo '$' . $basicPrice; ?></span> <span class="og-price-small"><?php echo '$' . $basicOGPrice; ?></span> <span class="per_month"> per month</span></h3>

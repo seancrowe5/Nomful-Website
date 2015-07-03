@@ -22,12 +22,10 @@ $(function() {
         } 
       
         // We make sure that the group code is actually filled in
-        if ($('input#group-code').val().length <= 1) {
+        if ($('input#coupon-code').val().length <= 1) {
             alert("Oh no! Please enter a group code");
             return false;
         } 
-      
-       
       
 		// Serialize the form data.
 		var formData = $(form).serialize();
@@ -38,13 +36,15 @@ $(function() {
 			url: $(form).attr('action'),
 			data: formData
 		})
+
 		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
+          // Make sure that the formMessages div has the 'success' class.
           //$(formMessages).removeClass('error');
-			//$(formMessages).addClass('success');
-          
+          //$(formMessages).addClass('success');
+          //$('#ajax-discount').fadeOut(300);
+
           // Set the message text.
-			//$(formMessages).text(response);
+          //$(formMessages).text(response);
           
            var opts = {
 		lines: 13, // The number of lines to draw
@@ -83,7 +83,7 @@ $(function() {
 				$(formMessages).text(data.responseText);
                 return false;
 			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
+				$(formMessages).text('Oops! An error occured.');
                 return false;
 			}
 		});

@@ -1,60 +1,5 @@
 [
     {
-        "name": "parse/php-sdk",
-        "version": "1.1.2",
-        "version_normalized": "1.1.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ParsePlatform/parse-php-sdk.git",
-            "reference": "22efa1c8d35db107288c72495d81f62a191b077e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/ParsePlatform/parse-php-sdk/zipball/22efa1c8d35db107288c72495d81f62a191b077e",
-            "reference": "22efa1c8d35db107288c72495d81f62a191b077e",
-            "shasum": ""
-        },
-        "require": {
-            "ext-curl": "*",
-            "ext-json": "*",
-            "php": ">=5.4.0"
-        },
-        "require-dev": {
-            "phpdocumentor/phpdocumentor": "~2.5",
-            "phpunit/phpunit": "~4.0",
-            "squizlabs/php_codesniffer": "~1.5"
-        },
-        "time": "2015-04-15 01:41:04",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.1-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Parse\\": "src/Parse/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "Parse Platform License"
-        ],
-        "authors": [
-            {
-                "name": "Parse",
-                "homepage": "https://github.com/parseplatform/parse-php-sdk/contributors"
-            }
-        ],
-        "description": "Parse PHP SDK",
-        "homepage": "https://github.com/parseplatform/parse-php-sdk",
-        "keywords": [
-            "parse",
-            "sdk"
-        ]
-    },
-    {
         "name": "stripe/stripe-php",
         "version": "v2.2.0",
         "version_normalized": "2.2.0.0",
@@ -112,60 +57,58 @@
         ]
     },
     {
-        "name": "phpmailer/phpmailer",
-        "version": "v5.2.10",
-        "version_normalized": "5.2.10.0",
+        "name": "parse/php-sdk",
+        "version": "1.1.4",
+        "version_normalized": "1.1.4.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/PHPMailer/PHPMailer.git",
-            "reference": "07005ecbb80d11ec8c0f067bb37e8909cc7fcbb7"
+            "url": "https://github.com/ParsePlatform/parse-php-sdk.git",
+            "reference": "3b1b267606ffe81d0c5edbbc25dba2d31279331e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/07005ecbb80d11ec8c0f067bb37e8909cc7fcbb7",
-            "reference": "07005ecbb80d11ec8c0f067bb37e8909cc7fcbb7",
+            "url": "https://api.github.com/repos/ParsePlatform/parse-php-sdk/zipball/3b1b267606ffe81d0c5edbbc25dba2d31279331e",
+            "reference": "3b1b267606ffe81d0c5edbbc25dba2d31279331e",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.0.0"
+            "ext-curl": "*",
+            "ext-json": "*",
+            "php": ">=5.4.0"
         },
         "require-dev": {
-            "phpdocumentor/phpdocumentor": "*",
-            "phpunit/phpunit": "4.3.*"
+            "phpdocumentor/phpdocumentor": "~2.5",
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~1.5"
         },
-        "time": "2015-05-04 12:37:21",
+        "time": "2015-06-16 22:46:01",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1-dev"
+            }
+        },
         "installation-source": "dist",
         "autoload": {
-            "classmap": [
-                "class.phpmailer.php",
-                "class.smtp.php",
-                "class.pop3.php",
-                "extras/EasyPeasyICS.php",
-                "extras/ntlm_sasl_client.php"
-            ]
+            "psr-4": {
+                "Parse\\": "src/Parse/"
+            }
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "LGPL-2.1"
+            "Parse Platform License"
         ],
         "authors": [
             {
-                "name": "Jim Jagielski",
-                "email": "jimjag@gmail.com"
-            },
-            {
-                "name": "Marcus Bointon",
-                "email": "phpmailer@synchromedia.co.uk"
-            },
-            {
-                "name": "Andy Prevost",
-                "email": "codeworxtech@users.sourceforge.net"
-            },
-            {
-                "name": "Brent R. Matzelle"
+                "name": "Parse",
+                "homepage": "https://github.com/parseplatform/parse-php-sdk/contributors"
             }
         ],
-        "description": "PHPMailer is a full-featured email creation and transfer class for PHP"
+        "description": "Parse PHP SDK",
+        "homepage": "https://github.com/parseplatform/parse-php-sdk",
+        "keywords": [
+            "parse",
+            "sdk"
+        ]
     }
 ]
