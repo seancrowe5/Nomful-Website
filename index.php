@@ -92,15 +92,7 @@
         </div>
       </div>
     </div>
-  </section>
-  
-  <section class="masthead masthead-3">
-    <div class="masthead-content underlay-light">
-      <h1>Real Personalized Coaching</h1>
-      <p>Diets don't work. You know that. We know that. You need real life coaching from a real life nutrition expert. Someone that will be there for you at the grocery store, while you eat, and while you cook.</p>
-    </div>
-  </section>
-  
+  </section>  
   <section class="masthead masthead-4">
     <div class="masthead-content underlay-light">
         <h1>Nutrition support built around you</h1>
