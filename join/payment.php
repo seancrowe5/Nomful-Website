@@ -155,7 +155,7 @@ require_once('./config.php');
   <?php }  ?>
   
   
- <div class="form-container center" id="coupon-code-form">
+ <div class="form-container center pbudge" id="coupon-code-form">
     <form id="ajax-discount" method="post" action="discount-verify.php" novalidate>
       <h4>If you have a coupon code, enter it below!</h4>
       <div id="discount-messages"></div>
@@ -169,7 +169,7 @@ require_once('./config.php');
   </div>
   
   
-<div class="top-masthead-join mbudges">
+<div class="top-masthead-join">
   <h4><?php echo $intro_message; ?></h4>
 </div>
   
