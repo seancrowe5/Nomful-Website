@@ -54,7 +54,7 @@ $(function() {
 			// Clear the form.
 			$('#email').val('');
             $('#name').val('');
-            $('message').val('');
+            $('#message').val('');
           
 		})
 		.fail(function(data) {

@@ -61,12 +61,13 @@
   <section class="top-masthead contact">
     <div class="container center middle">
       <h1>Contact us</h1>
-      <p>Have a question? Want to learn more about us? We'd love to hear from you!</p>
+      <p>We would love to hear from you, so get in touch with us!</p>
     </div>
   </section>
   
   <section class="form-container">
-    <div id="contact-messages"></div>
+    <p>Have a question? Want to learn more about us? We'd love to hear from you! Fill out the form below and we will get back to you as soon as possible :)</p>
+    <div id="contact-messages" class="mbudge"></div>
     <form id="ajax-contact" method="post" action="contact-form.php" novalidate>
     <div class="row">
       <div class="six columns">
