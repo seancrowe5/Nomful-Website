@@ -30,7 +30,8 @@
       
       <div class="one-third column center mbudges">
         <h6>Connect with us</h6>
-          <form class="email-form" id="ajax-contact" method="post" action="mailer.php">
+          <div id="newsletter-messages"></div>
+          <form class="email-form" id="ajax-newsletter" method="post" action="mailer.php">
             <input type="email" id="join-email" name="join-email" placeholder="your email" />
             <input type="text"  id="sp-website" name="sp-website" value=""  />
             <input type="phone" id="sp-phone" name="sp-phone" value="" />

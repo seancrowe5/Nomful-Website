@@ -1,10 +1,10 @@
 $(function() {
 
 	// Get the form.
-	var form = $('#ajax-newsletter');
+	var form = $('#ajax-contact');
 
 	// Get the messages div.
-	var formMessages = $('#newsletter-messages');
+	var formMessages = $('#contact-messages');
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {
@@ -15,9 +15,24 @@ $(function() {
             return false;
         } 
       
-        if ($('input#sp-phone').val().length != 0) {
+        else if ($('input#sp-phone').val().length != 0) {
             return false;
         } 
+      
+        else if ($('input#name').val().length <= 1) {
+            alert("Oh no! Is that your real name?");
+            return false;
+        } 
+      
+        else if ($('input#email').val().length <= 1) {
+            alert("Oh no! Is that your real email?");
+            return false;
+        } 
+      
+        else if ($('textarea#message').val().length <= 1) {
+            alert("Oh no! That's not a real message!");
+            return false;
+        }
       
 		// Serialize the form data.
 		var formData = $(form).serialize();
@@ -37,7 +52,7 @@ $(function() {
 			$(formMessages).text(response);
 
 			// Clear the form.
-			$('#join-email').val('');
+			$('#email').val('');
           
 		})
 		.fail(function(data) {

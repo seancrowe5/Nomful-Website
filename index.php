@@ -62,17 +62,38 @@
         <p>Team up with a dedicated Nomful/nutrition coach to get the personalized support you need, right from your phone.</p>
         <a class="gbutton" href="/join/">Join</a>
     </div>
-
   </section>
   
-  <section class="masthead masthead-2">
+  <section class="masthead-2">
+    <div class="container center">
+      <div class="row">
+        <div class="one-third column mobile-bottom">
+          <img src="img/1.png"/>
+          <h3>get a phone call</h3>
+          <p>be lika lika boss and then all the way lets gooooo hurayyy yas yasy lorem ipsum dum</p>
+        </div>
+        <div class="one-third column mobile-bottom">
+          <img src="img/1.png"/>
+          <h3>get a phone call</h3>
+          <p>be lika lika boss and then all the way lets gooooo hurayyy yas yasy lorem ipsum dum</p>
+        </div>
+        <div class="one-third column">
+          <img src="img/1.png"/>
+          <h3>get a phone call</h3>
+          <p>be lika lika boss and then all the way lets gooooo hurayyy yas yasy lorem ipsum dum</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="masthead masthead-3">
     <div class="masthead-content underlay-light">
       <h1>Not a Class</h1>
       <p>You get to know your coach, set goals together, and work through obstacles to get to where you want/need to be. Your Nomful coach is always there for you to keep you on track.</p>
     </div>
   </section>
   
-  <section class="masthead masthead-3">
+  <section class="masthead masthead-4">
     <div class="masthead-content underlay-light">
         <h1>Nutrition support built around you</h1>
         <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>

@@ -4,7 +4,7 @@ $(function() {
 	var form = $('#ajax-newsletter');
 
 	// Get the messages div.
-	var formMessages = $('#newsletter-messages');
+	var formMessages = $('#form-messages');
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {
