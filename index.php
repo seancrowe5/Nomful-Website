@@ -71,6 +71,7 @@
     <div class="masthead-intro-content underlay-dark">
       <h1>Eat better. Live better.</h1>
       <p>No more dieting. Let’s get you eating healthy again. Team up with a coach that knows nutrition inside and out.</p>
+        
       <a class="gbutton" href="/join/">Join</a>
     </div>
   </section>
