@@ -37,7 +37,7 @@ require 'vendor/autoload.php';
             $template_name = 'Waiting List - Welcome to Community';
             $template_content = null;
             $response = $mandrill->messages->sendTemplate($template_name, $template_content, $message);
-            print_r($response);
+            print_r("Thanks for signing up, we'll be in touch soon!");
             
 } catch(Mandrill_Error $e) {
     // Mandrill errors are thrown as exceptions
