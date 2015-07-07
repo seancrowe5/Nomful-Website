@@ -51,7 +51,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         //get the gym object for REVUUP: Wacv1Ck6Tf
         $query = new ParseQuery("Gym");
         try {
-          $gymObject = $query->get("Wacv1Ck6Tf");
+          $gymObject = $query->get("MAxrYIdkKY");
           // The object was retrieved successfully.
         } catch (ParseException $ex) {
           // The object was not retrieved successfully.
