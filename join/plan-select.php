@@ -1,5 +1,8 @@
 <?php
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      
+      //set the plan_info cookie from the information posted
+      
     $plan  = $_POST["plan"];
           setcookie(
             'plan_info',		// Name of the cookie, required
@@ -8,5 +11,8 @@
             '/',				// Folder path the cookie will be available for
             'nomful.com'		// Domain to which the cookie will be bound
           );
+            
   }
+
+
 ?>

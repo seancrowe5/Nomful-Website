@@ -38,7 +38,8 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         try {
           $user->signUp();
           // Hooray! USER SIGNED UP...NOW DO STUFF HERE 
-          
+            
+            
         } catch (ParseException $ex) {
           //OH NO! ERROR OCCURED. THOMAS 
           // Show the error message somewhere and let the user try again.
@@ -58,6 +59,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         $contents = array('first_name' => $first_name, 'email' => $email, 'cell_phone' => $cell_phone);
         
         $c=json_encode($contents);
+        
         $cookieset = setcookie(
           'user',				// Name of the cookie, required
           $c,					// The value of the cookie
