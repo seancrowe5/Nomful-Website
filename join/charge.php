@@ -106,10 +106,6 @@ else {
     $partnerCookie = json_decode($returns);
     $gymID = $partnerCookie->{'gymID'};
   
-   
-    $planCookie = $_COOKIE['plan_info'];
-    $planCookieJSON = json_decode($planCookie);
-    $planID = $planCookieJSON->{'plan'};
 
     //we have the user phone...check
     //we have the gym ID...check
@@ -124,12 +120,12 @@ else {
             $gymMember = new ParseObject("GymMembers");
             $gymMember->set("GymObjects", $gymObject);
             $gymMember->set("userPhone", $userPhone);
-            $gymMember->set("planID", $planID);
+            $gymMember->set("planID", $type);
         }else{
             //there is no gymid from cookie
             $gymMember = new ParseObject("GymMembers");
             $gymMember->set("userPhone", $userPhone);
-            $gymMember->set("planID", $planID);
+            $gymMember->set("planID", $type);
         }
         
     } catch (ParseException $ex) {
