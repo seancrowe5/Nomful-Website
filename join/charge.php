@@ -125,7 +125,7 @@ else {
             //there is no gymid from cookie
             $gymMember = new ParseObject("GymMembers");
             $gymMember->set("userPhone", $userPhone);
-            $gymMember->set("planID", $plan);
+            $gymMember->set("planID", $type);
         }
         
     } catch (ParseException $ex) {
