@@ -120,12 +120,12 @@ else {
             $gymMember = new ParseObject("GymMembers");
             $gymMember->set("GymObjects", $gymObject);
             $gymMember->set("userPhone", $userPhone);
-            $gymMember->set("planID", $type);
+            $gymMember->set("planID", $plan);
         }else{
             //there is no gymid from cookie
             $gymMember = new ParseObject("GymMembers");
             $gymMember->set("userPhone", $userPhone);
-            $gymMember->set("planID", $type);
+            $gymMember->set("planID", $plan);
         }
         
     } catch (ParseException $ex) {
