@@ -93,7 +93,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         $recipient = "thomas@nomful.com";
 
         // Set the email subject.
-        $subject = "New revuup signed up - $first_name";
+        $subject = "New trial berry signed up - $first_name";
 
         // Build the email content.
         $email_content .= "First Name: $first_name\n\n";

@@ -68,7 +68,7 @@
   
   <div class="container">
     <div class="top-masthead">
-      <h1>REV Cycle Studio Sign-up</h1>
+      <h1>Trial Sign-up</h1>
       <p>Fill out the form below to sign up.</p>
     </div>
   </div>
