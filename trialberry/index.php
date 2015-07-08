@@ -67,13 +67,13 @@
   </header><!-- /header -->
   
   <div class="container">
-    <div class="top-masthead">
+    <div class="top-masthead-join">
       <h1>Trial Sign-up</h1>
       <p>Fill out the form below to sign up.</p>
     </div>
   </div>
   
-  <div class="form-container mbudge">
+  <div class="form-container pbudge">
     
     <div id="revuup-messages"></div>
     
