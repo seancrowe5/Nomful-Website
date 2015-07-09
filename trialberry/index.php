@@ -67,13 +67,13 @@
   </header><!-- /header -->
   
   <div class="container">
-    <div class="top-masthead">
-      <h1>REV Cycle Studio Sign-up</h1>
+    <div class="top-masthead-join pbudge">
+      <h1>Trial Sign-up</h1>
       <p>Fill out the form below to sign up.</p>
     </div>
   </div>
   
-  <div class="form-container mbudge">
+  <div class="form-container mbudges">
     
     <div id="revuup-messages"></div>
     

@@ -106,7 +106,6 @@ else {
     $partnerCookie = json_decode($returns);
     $gymID = $partnerCookie->{'gymID'};
   
-   
 
     //we have the user phone...check
     //we have the gym ID...check
@@ -121,10 +120,12 @@ else {
             $gymMember = new ParseObject("GymMembers");
             $gymMember->set("GymObjects", $gymObject);
             $gymMember->set("userPhone", $userPhone);
+            $gymMember->set("planID", $plan);
         }else{
             //there is no gymid from cookie
             $gymMember = new ParseObject("GymMembers");
             $gymMember->set("userPhone", $userPhone);
+            $gymMember->set("planID", $type);
         }
         
     } catch (ParseException $ex) {
