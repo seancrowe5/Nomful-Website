@@ -79,7 +79,6 @@
     </div>
   </div>
   
-  <div class="container mbudge">
   <div class="form-container mbudge">
     <div id="app-messages"></div>
     
@@ -105,7 +104,6 @@
     <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
     <input class="button-primary u-pull-right mbudge" type="submit" value="Continue">
     </form>
-  </div>
   </div>
   
   
