@@ -45,7 +45,7 @@ $(function() {
 		})
 		.success(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
-			//window.location = "/join/payment.php";
+			window.location = "/join/payment.php";
           
 			$(formMessages).removeClass('error');
 			$(formMessages).addClass('success');

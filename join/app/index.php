@@ -89,9 +89,9 @@
         <input class="u-full-width label_better mbudge" data-new-placeholder="cell phone" type="tel" placeholder="cell phone" name="cell-phone" id="cell-phone">
       </div>
     </div>
-      
+    
+    <h4 class="center">Please reset your password</h4>  
     <div class="row">
-      <h4 class="center">Please reset your password</h4>
       <div class="six columns">
         <input class="u-full-width label_better mbudge" data-new-placeholder="password" type="password" placeholder="password" name="password" id="password">
       </div>
@@ -105,11 +105,6 @@
     <input class="button-primary u-pull-right mbudge" type="submit" value="Continue">
     </form>
   </div>
-  
-  
-  
-  
-  
 
 <script>
 var domains = ['hotmail.com', 'gmail.com', 'aol.com'];
