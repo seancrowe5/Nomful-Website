@@ -20,7 +20,6 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         
         //i don't think these are in the right data type...parse doesn't like them
         $cell_phone = $_POST["cell-phone"];
-        $password = $_POST["password"];
 
         
         /*//build user object
@@ -56,7 +55,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
           exit;
         }*/
       
-        $contents = array('cell_phone' => $cell_phone, 'password' => $password);
+        $contents = array('cell_phone' => $cell_phone);
         
         $c=json_encode($contents);
         
