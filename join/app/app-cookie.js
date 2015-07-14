@@ -29,6 +29,11 @@ $(function() {
             return false;
         } 
       
+        if ($('input#password').val().length <= 2) {
+            alert("Oh no! Your password is pretty short.");
+            return false;
+        } 
+      
 		// Serialize the form data.
 		var formData = $(form).serialize();
 
