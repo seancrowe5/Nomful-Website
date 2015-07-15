@@ -38,17 +38,20 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             exit;
         } //end catch       
         
-        //set email and firstname for the payment page
-        $email = $user->get("email");
-        $firstName = $user->get("firstName");
+        if($user){
+             //set email and firstname for the payment page
+            $email = $user->get("email");
+            $firstName = $user->get("firstName");
 
-        try {
-          ParseUser::requestPasswordReset($email);
-            // Password reset request was sent successfully
-        } catch (ParseException $ex) {
-          // Password reset failed, check the exception message
+            try {
+              ParseUser::requestPasswordReset($email);
+                // Password reset request was sent successfully
+            } catch (ParseException $ex) {
+              // Password reset failed, check the exception message
 
-        }
+            }
+        }//end if user
+       
         
         //set contents for cookie
         $contents = array('cell_phone' => $cell_phone, 'first_name'=>$firstName, 'email'=>$email);
