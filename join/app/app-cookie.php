@@ -28,15 +28,43 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             $query->equalTo("phoneNumber", $_POST["cell-phone"]); 
             //return the frist user with that number
             $user = $query->first(); 
+<<<<<<< HEAD
         } catch (ParseException $e){
             
             //object not found
+            //don't redirect to the signup flow
+=======
+            
+        } catch (ParseException $e){
+            //objqect not found
             //don't redirect to the signup flow
             http_response_code(500);
             echo "Oops!";
             echo $e->getMessage();
             exit;
         } //end catch       
+        
+        if($user){
+             //set email and firstname for the payment page
+            $email = $user->get("email");
+            $firstName = $user->get("firstName");
+
+            try {
+              ParseUser::requestPasswordReset($email);
+                // Password reset request was sent successfully
+            } catch (ParseException $ex) {
+              // Password reset failed, check the exception message
+
+            }
+        }else{
+            //no user object
+>>>>>>> origin/dev
+            http_response_code(500);
+            echo "Looks like your phone number isn't registered with Nomful!";
+            exit;
+            
+        }//end if user
+       
         
         //set contents for cookie
         $contents = array('cell_phone' => $cell_phone, 'first_name'=>$firstName, 'email'=>$email);
