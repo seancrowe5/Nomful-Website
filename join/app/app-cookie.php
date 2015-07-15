@@ -32,6 +32,13 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         $email = $user->get("email");
         $firstName = $user->get("firstName");
         
+        try {
+          ParseUser::requestPasswordReset($eamil);
+            // Password reset request was sent successfully
+        } catch (ParseException $ex) {
+          // Password reset failed, check the exception message
+        }
+        
         //set contents for cookie
         $contents = array('cell_phone' => $cell_phone, 'first_name'=>$firstName, 'email'=>$email);
     
