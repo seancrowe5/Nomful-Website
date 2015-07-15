@@ -1,5 +1,5 @@
 <?php
-/*require 'vendor/autoload.php';
+require 'vendor/autoload.php';
 use Parse\ParseClient;
 use Parse\ParseUser;
 use Parse\ParseException;
@@ -7,7 +7,7 @@ use Parse\ParseCloud;
 //live
 //ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4aveQRkxabmIY2wzisgnGQ1UH4SVG0', 'j3W9jcVXVgWQDfamFbm7UodDiYOSPjinnEAR7EdS');
 //dev
-ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJyJVIeM0RbTMkGmHlped7dMhoksgrxm', 'fk2DwxckV3Pe4fKGRs6LH1YaZkslDTu86TS6Ouv5');*/
+ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJyJVIeM0RbTMkGmHlped7dMhoksgrxm', 'fk2DwxckV3Pe4fKGRs6LH1YaZkslDTu86TS6Ouv5');
 
     // My modifications to mailer script from:
     // http://blog.teamtreehouse.com/create-ajax-contact-form
@@ -21,42 +21,15 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         //i don't think these are in the right data type...parse doesn't like them
         $cell_phone = $_POST["cell-phone"];
 
-        
-        /*//build user object
-        $user = new ParseUser();
-        $user->set("username",      $_POST['email']);
-        $user->set("password",      $_POST['password']);
-        $user->set("email",         $_POST['email']);
-        $user->set("phoneNumber",   $_POST['cell-phone']);
-        $user->set("firstName",     $_POST['first-name']);
-        $user->set("lastName",      $_POST['last-name']);
-        $user->set("role",          "Client");
-        $user->set("motivation",    $_POST['motivation']);
-
-        //save user object to parse
-        try {
-          $user->signUp();
-          // Hooray! USER SIGNED UP...NOW DO STUFF HERE 
+        $query = ParseUser::query();
+        $query->equalTo("phoneNumber", $_POST["cell-phone"]); 
+        $user = $query->first();
             
-            
-        } catch (ParseException $ex) {
-          //OH NO! ERROR OCCURED. THOMAS 
-          // Show the error message somewhere and let the user try again.
-          http_response_code(500);
-          echo "Error: " . $ex->getCode() . " " . $ex->getMessage();
-          exit;
-        }
+        $email = $user->get("email");
+        $firstName = $user->get("firstName");
         
-        // Check that data was sent to the mailer.
-        if ( !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-          // Set a 400 (bad request) response code and exit.
-          http_response_code(400);
-          echo "Oops! There was a problem with your email. Please try again.";
-          exit;
-        }*/
-      
-        $contents = array('cell_phone' => $cell_phone);
-        
+        $contents = array('cell_phone' => $cell_phone, 'first_name'=>$firstName, 'email'=>$email);
+    
         $c=json_encode($contents);
         
         $cookieset = setcookie(
