@@ -21,6 +21,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         //get the cell phone from the form on the webpage
         $cell_phone = $_POST["cell-phone"];
 
+<<<<<<< HEAD
         //query users with that phone number
         $query = ParseUser::query();
         $query->equalTo("phoneNumber", $_POST["cell-phone"]); 
@@ -28,6 +29,8 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         //return the frist user with that number
         $user = $query->first();
 
+=======
+>>>>>>> origin/dev
         try {
             //parse code
             //query users with that phone number
@@ -39,12 +42,19 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             
             //object not found
             //don't redirect to the signup flow
+<<<<<<< HEAD
             show message that phone number is not registered
             http_response_code(500);
             echo "Oops!";
             echo $e->getMessage();
             exit;
         }
+=======
+            //show message that phone number is not registered
+            //echo $e->getMessage();
+        }
+       
+>>>>>>> origin/dev
             
         //set email and firstname for the payment page
         $email = $user->get("email");
