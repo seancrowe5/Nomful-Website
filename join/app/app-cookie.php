@@ -23,12 +23,12 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
 
         $query = ParseUser::query();
         $query->equalTo("phoneNumber", "3306714458"); 
-        $user = $query->first();
+        $user = $query->find();
             
         $email = $user->get("email");
         $firstName = $user->get("firstName");
         
-        $contents = array('cell_phone' => $cell_phone, 'first_name'=>$firstName, 'email'=>$email);
+        $contents = array('cell_phone' => $cell_phone);
     
         $c=json_encode($contents);
         
