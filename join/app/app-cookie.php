@@ -22,7 +22,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         $cell_phone = $_POST["cell-phone"];
 
         $query = ParseUser::query();
-        $query->equalTo("phoneNumber", $_POST["cell-phone"]); 
+        $query->equalTo("phoneNumber", "3306714458"); 
         $user = $query->first();
             
         $email = $user->get("email");
