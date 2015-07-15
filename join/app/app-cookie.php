@@ -28,7 +28,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         $email = $user->get("email");
         $firstName = $user->get("firstName");
         
-        $contents = array('cell_phone' => $cell_phone), 'first_name'=>$firstName, 'email'=>$email;
+        $contents = array('cell_phone' => $cell_phone, 'first_name'=>$firstName, 'email'=>$email);
     
         $c=json_encode($contents);
         
