@@ -17,7 +17,7 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
         //$email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         
         //get the cell phone from the form on the webpage
-        $cell_phone = $_POST["cell-phone"];
+        $cell_phone = $_POST["cell-phone"]; //(330) 671-4458 format
 
         try {
             //parse code
