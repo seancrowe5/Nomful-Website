@@ -18,20 +18,27 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         // Get the form fields and remove whitespace.
         //$email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         
-        //i don't think these are in the right data type...parse doesn't like them
+        //get the cell phone from the form on the webpage
         $cell_phone = $_POST["cell-phone"];
 
+        //query users with that phone number
         $query = ParseUser::query();
-        $query->equalTo("phoneNumber", "3306714458"); 
+        $query->equalTo("phoneNumber", $_POST["cell-phone"]); 
+        
+        //return the frist user with that number
         $user = $query->first();
             
+        //set email and firstname for the payment page
         $email = $user->get("email");
         $firstName = $user->get("firstName");
         
+        //set contents for cookie
         $contents = array('cell_phone' => $cell_phone, 'first_name'=>$firstName, 'email'=>$email);
     
+        //json encode the contentes
         $c=json_encode($contents);
         
+        //set the cookie
         $cookieset = setcookie(
           'user',				// Name of the cookie, required
           $c,					// The value of the cookie
