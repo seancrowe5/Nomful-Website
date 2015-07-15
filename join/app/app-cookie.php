@@ -22,7 +22,7 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
 
         try {
             //parse code
-            //query users with that phone number 
+            //query users with that phone number  
             $query = ParseUser::query();
             $query->equalTo("phoneNumber", $cell_phone); 
             //return the frist user with that number
