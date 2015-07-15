@@ -28,27 +28,27 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             $query->equalTo("phoneNumber", $_POST["cell-phone"]); 
             //return the frist user with that number
             $user = $query->first(); 
-          
-            //set email and firstname for the payment page
-            $email = $user->get("email");
-            $firstName = $user->get("firstName");
-
-            try {
-              ParseUser::requestPasswordReset($email);
-                // Password reset request was sent successfully
-            } catch (ParseException $ex) {
-              // Password reset failed, check the exception message
-            }
-          
-        } catch (ParseException $e){
             
-            //object not found
+        } catch (ParseException $e){
+            //objqect not found
             //don't redirect to the signup flow
             http_response_code(500);
             echo "Oops!";
             echo $e->getMessage();
             exit;
         } //end catch       
+        
+        //set email and firstname for the payment page
+        $email = $user->get("email");
+        $firstName = $user->get("firstName");
+
+        try {
+          ParseUser::requestPasswordReset($email);
+            // Password reset request was sent successfully
+        } catch (ParseException $ex) {
+          // Password reset failed, check the exception message
+
+        }
         
         //set contents for cookie
         $contents = array('cell_phone' => $cell_phone, 'first_name'=>$firstName, 'email'=>$email);
