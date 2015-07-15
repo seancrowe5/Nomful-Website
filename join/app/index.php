@@ -74,7 +74,7 @@
   <div class="container">
     <div class="top-masthead-join pbudge">
         <h1>Nutrition support built around you</h1>
-        <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need. Transform your health.</p>
+        <p>Nomful makes eating healthy easy. Team up with a dedicated nutrition coach to get the personalized support you need.</p>
         <br>
     </div>
   </div>
@@ -84,19 +84,9 @@
     
     <form id="ajax-app" method="post" action="app-cookie.php" novalidate>
     <div class="row">
-      <h4 class="center">Just need to verify these details you entered below</h4>
+      <h4 class="center">Please verify your phone number below.</h4>
       <div class="offset-by-three six columns">
         <input class="u-full-width label_better mbudge" data-new-placeholder="cell phone" type="tel" placeholder="cell phone" name="cell-phone" id="cell-phone">
-      </div>
-    </div>
-    
-    <h4 class="center">Please reset your password</h4>  
-    <div class="row">
-      <div class="six columns">
-        <input class="u-full-width label_better mbudge" data-new-placeholder="password" type="password" placeholder="password" name="password" id="password">
-      </div>
-      <div class="six columns">
-        <input class="u-full-width label_better mbudge" data-new-placeholder="re-type password" type="password" placeholder="re-type password" name="retype-password" id="retype-password">
       </div>
     </div>
       

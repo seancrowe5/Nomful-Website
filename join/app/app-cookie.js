@@ -24,16 +24,6 @@ $(function() {
             return false;
         }
       
-        if ($('input#password').val() != $('input#retype-password').val()) {
-            alert("Oh no! Your passwords don't match");
-            return false;
-        } 
-      
-        if ($('input#password').val().length <= 2) {
-            alert("Oh no! Your password is pretty short.");
-            return false;
-        } 
-      
 		// Serialize the form data.
 		var formData = $(form).serialize();
 
