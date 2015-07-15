@@ -58,7 +58,7 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
        
         
         //set contents for cookie
-        $contents = array('cell_phone' => $cell_phone, 'first_name'=>$firstName, 'email'=>$email);
+        $contents = array('cell_phone' => $_POST["cell-phone"], 'first_name'=>$firstName, 'email'=>$email);
     
         //json encode the contentes
         $c=json_encode($contents);
