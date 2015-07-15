@@ -28,18 +28,6 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             $query->equalTo("phoneNumber", $_POST["cell-phone"]); 
             //return the frist user with that number
             $user = $query->first(); 
-          
-            //set email and firstname for the payment page
-            $email = $user->get("email");
-            $firstName = $user->get("firstName");
-
-            try {
-              ParseUser::requestPasswordReset($email);
-                // Password reset request was sent successfully
-            } catch (ParseException $ex) {
-              // Password reset failed, check the exception message
-            }
-          
         } catch (ParseException $e){
             
             //object not found

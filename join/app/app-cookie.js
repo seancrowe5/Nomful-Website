@@ -35,13 +35,13 @@ $(function() {
 		})
 		.success(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
-//			window.location = "/join/payment.php";
-          
+			window.location = "/join/payment.php";
+/*          
 			$(formMessages).removeClass('error');
 			$(formMessages).addClass('success');
 
 			// Set the message text.
-			$(formMessages).text(response);
+			$(formMessages).text(response);*/
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
