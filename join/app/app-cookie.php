@@ -48,10 +48,9 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
                 // Password reset request was sent successfully
             } catch (ParseException $ex) {
               // Password reset failed, check the exception message
-
             }
         }else{
-            //no user object
+            //the user object was not found...show message
             http_response_code(500);
             echo "Looks like your phone number isn't registered with Nomful!";
             exit;
