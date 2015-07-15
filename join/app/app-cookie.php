@@ -28,12 +28,6 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             $query->equalTo("phoneNumber", $_POST["cell-phone"]); 
             //return the frist user with that number
             $user = $query->first(); 
-<<<<<<< HEAD
-        } catch (ParseException $e){
-            
-            //object not found
-            //don't redirect to the signup flow
-=======
             
         } catch (ParseException $e){
             //objqect not found
@@ -58,7 +52,6 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             }
         }else{
             //no user object
->>>>>>> origin/dev
             http_response_code(500);
             echo "Looks like your phone number isn't registered with Nomful!";
             exit;
