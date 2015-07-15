@@ -33,7 +33,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         $firstName = $user->get("firstName");
         
         try {
-          ParseUser::requestPasswordReset($eamil);
+          ParseUser::requestPasswordReset($email);
             // Password reset request was sent successfully
         } catch (ParseException $ex) {
           // Password reset failed, check the exception message
