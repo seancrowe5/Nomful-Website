@@ -21,14 +21,6 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         //get the cell phone from the form on the webpage
         $cell_phone = $_POST["cell-phone"];
 
-
-        //query users with that phone number
-        $query = ParseUser::query();
-        $query->equalTo("phoneNumber", $_POST["cell-phone"]); 
-        
-        //return the frist user with that number
-        $user = $query->first();
-
         try {
             //parse code
             //query users with that phone number
@@ -44,9 +36,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             echo "Oops!";
             echo $e->getMessage();
             exit;
-        } //end catch
-          //end if POST
-       
+        } //end catch       
 
             
         //set email and firstname for the payment page
