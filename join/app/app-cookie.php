@@ -39,7 +39,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         } //end catch       
         
         if($user){
-             //set email and firstname for the payment page
+             //set email and firstname for the payment page 
             $email = $user->get("email");
             $firstName = $user->get("firstName");
 
