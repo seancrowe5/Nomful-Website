@@ -1,10 +1,10 @@
 $(function() {
 
 	// Get the form.
-	var form = $('#ajax-register');
+	var form = $('#ajax-app');
 
 	// Get the messages div.
-	var formMessages = $('#register-messages');
+	var formMessages = $('#app-messages');
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {
@@ -19,40 +19,10 @@ $(function() {
             return false;
         } 
       
-        if ($('input#first-name').val().length <= 1) {
-            alert("Oh no! Is that your real first name?");
-            return false;
-        } 
-      
-        if ($('input#last-name').val().length <= 1) {
-            alert("Oh no! Is that your real last name?");
-            return false;
-        } 
-      
-        if ($('input#email').val().length <= 4) {
-            alert("Oh no! Is that your real last name?");
-            return false;
-        }
-      
         if ($('input#cell-phone').val().length != 10 ) {
             alert("Oh no! Please enter a 10 digit phone number. Just numbers.");
             return false;
         }
-      
-        if ($('input#password').val() != $('input#retype-password').val()) {
-            alert("Oh no! Your passwords don't match");
-            return false;
-        } 
-      
-        if ($('input#password').val().length <= 2) {
-            alert("Oh no! Your password is pretty short.");
-            return false;
-        } 
-      
-        if ($('input#motivation').val().length <= 2) {
-            alert("Oh no! You are not motivated?");
-            return false;
-        } 
       
 		// Serialize the form data.
 		var formData = $(form).serialize();
@@ -66,6 +36,12 @@ $(function() {
 		.success(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
 			window.location = "/join/payment.php";
+/*          
+			$(formMessages).removeClass('error');
+			$(formMessages).addClass('success');
+
+			// Set the message text.
+			$(formMessages).text(response);*/
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
