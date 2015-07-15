@@ -18,12 +18,13 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
         
         //get the cell phone from the form on the webpage
         $cell_phone = $_POST["cell-phone"]; //(330) 671-4458 format
+        $cell_phone = "(".substr($cell_phone, 0, 3).") ".substr($cell_phone, 3, 3)."-".substr($cell_phone,6);
 
         try {
             //parse code
             //query users with that phone number
             $query = ParseUser::query();
-            $query->equalTo("phoneNumber", $_POST["cell-phone"]); 
+            $query->equalTo("phoneNumber", $cell_phone); 
             //return the frist user with that number
             $user = $query->first(); 
             
