@@ -30,7 +30,7 @@ $(function() {
         } 
       
         if ($('input#email').val().length <= 4) {
-            alert("Oh no! Is that your real last name?");
+            alert("Oh no! Is that your real email?");
             return false;
         }
       
