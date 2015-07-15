@@ -32,10 +32,10 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         } catch (ParseException $e){
             //objqect not found
             //don't redirect to the signup flow
-            http_response_code(500);
+            //http_response_code(500);
             echo "Oops!";
             echo $e->getMessage();
-            exit;
+            //exit;
         } //end catch       
         
         if($user){
