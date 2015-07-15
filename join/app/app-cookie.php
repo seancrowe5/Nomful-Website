@@ -45,10 +45,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             echo $e->getMessage();
             exit;
         } //end catch
-          //end if POST
-       
-
-            
+                   
         //set email and firstname for the payment page
         $email = $user->get("email");
         $firstName = $user->get("firstName");
