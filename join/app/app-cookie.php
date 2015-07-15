@@ -21,12 +21,12 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         //i don't think these are in the right data type...parse doesn't like them
         $cell_phone = $_POST["cell-phone"];
 
-        $query = ParseUser::query();
-        $query->equalTo("phoneNumber", "3306714458"); 
-        $user = $query->find();
-            
-        $email = $user->get("email");
-        $firstName = $user->get("firstName");
+//        $query = ParseUser::query();
+//        $query->equalTo("phoneNumber", "3306714458"); 
+//        $user = $query->first();
+//            
+//        $email = $user->get("email");
+//        $firstName = $user->get("firstName");
         
         $contents = array('cell_phone' => $cell_phone);
     
