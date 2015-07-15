@@ -85,14 +85,18 @@
     <form id="ajax-app" method="post" action="app-cookie.php" novalidate>
     <div class="row">
       <h4 class="center">Please verify your phone number below.</h4>
-      <div class="offset-by-three six columns">
+      <div class="offset-by-two six columns">
         <input class="u-full-width label_better mbudge" data-new-placeholder="cell phone" type="tel" placeholder="cell phone" name="cell-phone" id="cell-phone">
       </div>
+      <div class="four columns">
+        <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
+      <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
+      <input class="button-primary mbudge" type="submit" value="Continue">
+      </div>
+      
     </div>
       
-    <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
-    <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-    <input class="button-primary u-pull-right mbudge" type="submit" value="Continue">
+    
     </form>
   </div>
 
