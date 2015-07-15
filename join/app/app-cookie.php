@@ -5,9 +5,7 @@ use Parse\ParseUser;
 use Parse\ParseException;
 use Parse\ParseQuery;
 //live
-//ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4aveQRkxabmIY2wzisgnGQ1UH4SVG0', 'j3W9jcVXVgWQDfamFbm7UodDiYOSPjinnEAR7EdS');
-//dev
-ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJyJVIeM0RbTMkGmHlped7dMhoksgrxm', 'fk2DwxckV3Pe4fKGRs6LH1YaZkslDTu86TS6Ouv5');
+ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4aveQRkxabmIY2wzisgnGQ1UH4SVG0', 'j3W9jcVXVgWQDfamFbm7UodDiYOSPjinnEAR7EdS');
 
     // My modifications to mailer script from:
     // http://blog.teamtreehouse.com/create-ajax-contact-form
@@ -19,13 +17,14 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         //$email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         
         //get the cell phone from the form on the webpage
-        $cell_phone = $_POST["cell-phone"];
+        $cell_phone = $_POST["cell-phone"]; //(330) 671-4458 format
+        $cell_phone = "(".substr($cell_phone, 0, 3).") ".substr($cell_phone, 3, 3)."-".substr($cell_phone,6);
 
         try {
             //parse code
             //query users with that phone number
             $query = ParseUser::query();
-            $query->equalTo("phoneNumber", $_POST["cell-phone"]); 
+            $query->equalTo("phoneNumber", $cell_phone); 
             //return the frist user with that number
             $user = $query->first(); 
             
@@ -59,7 +58,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
        
         
         //set contents for cookie
-        $contents = array('cell_phone' => $cell_phone, 'first_name'=>$firstName, 'email'=>$email);
+        $contents = array('cell_phone' => $_POST["cell-phone"], 'first_name'=>$firstName, 'email'=>$email);
     
         //json encode the contentes
         $c=json_encode($contents);

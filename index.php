@@ -45,6 +45,17 @@
   ================================================== -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
 
+     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-62272031-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -81,15 +92,7 @@
         </div>
       </div>
     </div>
-  </section>
-  
-  <section class="masthead masthead-3">
-    <div class="masthead-content underlay-light">
-      <h1>Real Personalized Coaching</h1>
-      <p>Diets don't work. You know that. We know that. You need real life coaching from a real life nutrition expert. Someone that will be there for you at the grocery store, while you eat, and while you cook.</p>
-    </div>
-  </section>
-  
+  </section>  
   <section class="masthead masthead-4">
     <div class="masthead-content underlay-light">
         <h1>Nutrition support built around you</h1>
