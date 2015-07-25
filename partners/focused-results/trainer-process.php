@@ -26,7 +26,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         $query = new ParseQuery("Gym");
         
         try {
-            $gymObject = $query->get("xWMyZ4YEGZ"); //hard coded gym id for Focused Results
+            $gymObject = $query->get("ZCsCgD1ILx"); //hard coded gym id for Focused Results
             
             // The object was retrieved successfully.
             //build user object
@@ -39,7 +39,6 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             $user->set("lastName",      $_POST['last-name']);
             $user->set("role",          "PT");
             $user->set("employerObject",          $gymObject);
-
 
             //save user object to parse
             try {
