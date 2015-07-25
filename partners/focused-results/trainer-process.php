@@ -21,40 +21,45 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         //i don't think these are in the right data type...parse doesn't like them
         $first_name = $_POST["first-name"];
         $cell_phone = $_POST["cell-phone"];
-        
-        //get gym object
+         
+        //new query on Gym class
         $query = new ParseQuery("Gym");
-        $query->equalTo("businessName", "MAC Wellness"); //hard coded...
-        $results = $query->find();
         
-        //echo "Successfully retrieved " . count($results) . " scores.";
-        $gymObject = $results[0];
-        
-        //build user object
-        $user = new ParseUser();
-        $user->set("username",      $_POST['email']);
-        $user->set("password",      $_POST['password']);
-        $user->set("email",         $_POST['email']);
-        $user->set("phoneNumber",   $_POST['cell-phone']);
-        $user->set("firstName",     $_POST['first-name']);
-        $user->set("lastName",      $_POST['last-name']);
-        $user->set("role",          "PT");
-        $user->set("employerObject",          $gymObject);
-
-    
-        //save user object to parse
         try {
-          $user->signUp();
-          // Hooray! USER SIGNED UP...NOW DO STUFF HERE 
-          
+            $gymObject = $query->get("xWMyZ4YEGZ"); //hard coded gym id for Focused Results
+            
+            // The object was retrieved successfully.
+            //build user object
+            $user = new ParseUser();
+            $user->set("username",      $_POST['email']);
+            $user->set("password",      $_POST['password']);
+            $user->set("email",         $_POST['email']);
+            $user->set("phoneNumber",   $_POST['cell-phone']);
+            $user->set("firstName",     $_POST['first-name']);
+            $user->set("lastName",      $_POST['last-name']);
+            $user->set("role",          "PT");
+            $user->set("employerObject",          $gymObject);
+
+
+            //save user object to parse
+            try {
+              $user->signUp();
+              // Hooray! USER SIGNED UP...NOW DO STUFF HERE 
+
+            } catch (ParseException $ex) {
+              //OH NO! ERROR OCCURED. THOMAS 
+              // Show the error message somewhere and let the user try again.
+              http_response_code(500);
+              echo "Error: " . $ex->getCode() . " " . $ex->getMessage();
+              exit;
+            }
+   
         } catch (ParseException $ex) {
-          //OH NO! ERROR OCCURED. THOMAS 
-          // Show the error message somewhere and let the user try again.
-          http_response_code(500);
-          echo "Error: " . $ex->getCode() . " " . $ex->getMessage();
-          exit;
+          // The GYM object was not retrieved successfully.
+            //check the hard coded object id you entered for the gym
+          // error is a ParseException with an error code and message.
         }
-        
+
         // Check that data was sent to the mailer.
         if ( !filter_var($email, FILTER_VALIDATE_EMAIL)) {
           // Set a 400 (bad request) response code and exit.
