@@ -59,7 +59,7 @@
     </div>
     <div class="top-masthead-join mbudge">
       <h4>Affiliate Partnership</h4>
-      <p>Nomful is proud to have partnered with the MAC. For a quick summary and our FAQ, please <a href="Nomful_Summary_FAQ_MAC.pdf">click here</a>. <br>If you have any additional questions or need help, email <a href="mailto:thomas@nomful.com">thomas@nomful.com</a> or call 847-226-1310.</p>
+      <p>Nomful is proud to have partnered with Focused Resluts. For a quick summary and our FAQ, please <a href="Nomful_Summary_FAQ_MAC.pdf">click here</a>. <br>If you have any additional questions or need help, email <a href="mailto:thomas@nomful.com">thomas@nomful.com</a> or call 847-226-1310.</p>
     </div>
   </div>
   
