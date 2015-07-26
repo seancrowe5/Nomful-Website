@@ -54,23 +54,19 @@
   
   <div class="container mbudges">
     <div class="tables center">
-      <img class="partnerlogo cell-middle" src="/../img/mac.png"/>
+      <img class="partnerlogo cell-middle" src="fitwithfr.png"/>
       <img class="partnerlogo cell-middle" src="/../img/nomful.png"/>
     </div>
     <div class="top-masthead-join mbudge">
-      <h4>Affiliate Partnership</h4>
-      <p>Nomful is proud to have partnered with Focused Resluts. For a quick summary and our FAQ, please <a href="Nomful_Summary_FAQ_MAC.pdf">click here</a>. <br>If you have any additional questions or need help, email <a href="mailto:thomas@nomful.com">thomas@nomful.com</a> or call 847-226-1310.</p>
+      <p>If you have any additional questions or need help, email <a href="mailto:thomas@nomful.com">thomas@nomful.com</a> or call 847-226-1310.</p>
     </div>
   </div>
   
     
   <div class="form-container">
     <div class="row">
-      <div class="six columns center">
+      <div class="offset-by-three six columns center">
         <a class="button" href="trainer-register.php">Trainer Registration</a>
-      </div>
-      <div class="six columns center">
-        <a class="button" href="referral.php">Submit a Referral</a>
       </div>
     </div>
   </div>
