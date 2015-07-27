@@ -1,5 +1,5 @@
 <?php 
-    //this is the co-braded page for Nomful + MAC
+    //this is the co-braded page for Nomful + MAC d
 
   $partner_info = array(
     'plan_base' => 'focusedresults', //THIS HAS TO MATCH THE ID IN STRIPE
