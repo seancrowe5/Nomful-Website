@@ -4,8 +4,8 @@ use Parse\ParseClient;
 use Parse\ParseUser;
 use Parse\ParseException;
 use Parse\ParseQuery;
-//dev
-ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJyJVIeM0RbTMkGmHlped7dMhoksgrxm', 'fk2DwxckV3Pe4fKGRs6LH1YaZkslDTu86TS6Ouv5');
+//live
+ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4aveQRkxabmIY2wzisgnGQ1UH4SVG0', 'j3W9jcVXVgWQDfamFbm7UodDiYOSPjinnEAR7EdS');
 
     // My modifications to mailer script from:
     // http://blog.teamtreehouse.com/create-ajax-contact-form
