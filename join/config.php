@@ -1,7 +1,7 @@
 <?php
 require_once('vendor/autoload.php');
 
-//live
+////live
 $stripe = array(
   "secret_key"      => "sk_live_SYYhkBbbtoAt503sMgJpGKNY",
   "publishable_key" => "pk_live_a7plqC3BMb74TAFBiefltyaf"
