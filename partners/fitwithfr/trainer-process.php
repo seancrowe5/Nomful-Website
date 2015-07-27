@@ -26,7 +26,7 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
         $query = new ParseQuery("Gym");
         
         try {
-            $gymObject = $query->get("zQKLlKiYTP"); //hard coded gym id for Focused Results
+            $gymObject = $query->get("zQKLlKiYTP"); //hard coded gym id for Focused Results: zQKLlKiYTP
             
             // The object was retrieved successfully.
             //build user object
