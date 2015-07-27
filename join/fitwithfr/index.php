@@ -4,7 +4,7 @@
   $partner_info = array(
     'plan_base' => 'focusedresults', //THIS HAS TO MATCH THE ID IN STRIPE
     'club' => 'Focused Results', // this is the NAME of the affiliate partner
-    'basic_price' => '99', // this is the PRICE of the BASIC plan for this group code
+    'basic_price' => '0', // this is the PRICE of the BASIC plan for this group code
     'premium_price' => '249', // this is the PRICE of the PREMIUM plan for this group code
     'gymID' => 'zQKLlKiYTP' //gym id dbXma3eUtI V0qgIi6L53
   );
@@ -89,7 +89,7 @@
   <div class="form-container">
     <div class="row">
       <div class="offset-by-three six columns center">
-        <a class="button" href="../">Focused Results Member Sign-up</a>
+        <a class="button" href="../">Focused Results Member TWO-WEEK FREE Sign-up</a>
       </div>
     </div>
   </div>
