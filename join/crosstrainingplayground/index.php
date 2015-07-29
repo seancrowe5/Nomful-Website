@@ -3,7 +3,7 @@
 
   $partner_info = array(
     'plan_base' => 'crosstrainingplayground', //THIS HAS TO MATCH THE ID IN STRIPE
-    'club' => 'Cross Training Playground' // this is the NAME of the affiliate partner
+    'club' => 'Cross Training Playground', // this is the NAME of the affiliate partner
     'basic_price' => '0 - 2 Weeks Free', // this is the PRICE of the BASIC plan for this group code
     'premium_price' => '249', // this is the PRICE of the PREMIUM plan for this group code
     'gymID' => 'XNDGTgMQtW' //gym id XNDGTgMQtW
