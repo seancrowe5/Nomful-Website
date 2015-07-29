@@ -42,7 +42,7 @@
   <link rel="icon" type="image/png" href="/../images/favicon.png">
 
   <!-- SCRIPTS
-  ================================================== -->
+  ================================================== --> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
 
 
