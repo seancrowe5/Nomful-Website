@@ -54,7 +54,7 @@
   
   <div class="container mbudges">
     <div class="tables center">
-      <img class="partnerlogo cell-middle" src="ctplayground.png"/>
+      <img class="partnerlogo cell-middle" src="/../img/ctplayground.png"/>
       <img class="partnerlogo cell-middle" src="/../img/nomful.png"/>
     </div>
     <div class="top-masthead-join mbudge">
