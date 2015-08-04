@@ -71,7 +71,7 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
           //saved successfully
 
         } catch (ParseException $ex) {  
-          // Execute any logic that should take place if the save fails.
+          // Execute any logic that should take place if the save fails. 
           // error is a ParseException object with an error code and message.
             http_response_code(500);
             echo 'Failed to create new object, with error message: ' + $ex->getMessage();
