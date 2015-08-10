@@ -51,7 +51,7 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
         //get the gym object for REVUUP: Wacv1Ck6Tf
         $query = new ParseQuery("Gym");
         try {
-          $gymObject = $query->get("XNDGTgMQtW"); //for dailey method use only //XNDGTgMQtW cross 3wpXUaiaFJ//dailey method
+          $gymObject = $query->get("KGy2pEm6H5"); //for dailey method use only //XNDGTgMQtW cross 3wpXUaiaFJ//dailey method XNDGTgMQtW
           // The object was retrieved successfully.
         } catch (ParseException $ex) {
           // The object was not retrieved successfully.
