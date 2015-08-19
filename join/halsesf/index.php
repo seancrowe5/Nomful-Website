@@ -5,7 +5,6 @@
     'plan_base' => 'henry', //THIS HAS TO MATCH THE ID IN STRIPE
     'club' => 'Henry', // this is the NAME of the affiliate partner
     'basic_price' => '99', // this is the PRICE of the BASIC plan for this group code
-    'premium_price' => '249', // this is the PRICE of the PREMIUM plan for this group code
     'premium_price' => '199', // this is the PRICE of the PREMIUM plan for this group code
     'gymID' => 'ZeXbgXbcfy' //gym id for henry   
   );
