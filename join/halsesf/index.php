@@ -2,7 +2,7 @@
     //this is the co-braded page for Nomful + MAC
 
   $partner_info = array(
-    'plan_base' => 'Henry', //THIS HAS TO MATCH THE ID IN STRIPE
+    'plan_base' => 'henry', //THIS HAS TO MATCH THE ID IN STRIPE
     'club' => 'Henry', // this is the NAME of the affiliate partner
     'basic_price' => '99', // this is the PRICE of the BASIC plan for this group code
     'premium_price' => '249', // this is the PRICE of the PREMIUM plan for this group code
