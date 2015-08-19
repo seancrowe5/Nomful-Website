@@ -185,17 +185,17 @@ require_once('./config.php');
           <li>Around-the-clock nutrition support</li>
           <li>Simple, photo-based meal logging</li>
         </ul>
-        <button id="join-basic-plan">join basic plan</button>
+        <button id="join-basic-plan">Join Healthy Start</button>
       </div>
       <div class="six columns">
         <h3><span class="group-price"><?php echo '$' . $premiumPrice; ?></span> <span class="og-price-small"><?php echo '$' . $premiumOGPrice; ?></span> <span class="per_month"> per month</span></h3>
         <ul class="no-dec">
-          <li>Everything in basic</li>
+          <li>Everything in Healthy Start</li>
           <li>Extensive diet analysis</li>
           <li>Weekly phone call check-ins</li>
           <li>Comprehensive meal plan support</li>
         </ul>
-        <button id="join-premium-plan">join premium plan</button>
+        <button id="join-premium-plan">Join Transformational</button>
       </div>
     </div>
   </div>  
