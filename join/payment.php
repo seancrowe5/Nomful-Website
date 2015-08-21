@@ -206,7 +206,7 @@ require_once('./config.php');
             data-key          =   "<?php echo $stripe['publishable_key']; ?>"
             data-amount       =   "<?php echo $basicPrice*100; ?>" 
             data-description  =   "Basic Plan" //title at top
-            data-panel-label  =   "Pay" //blue button _______ $99.00
+            data-panel-label  =   "Submit" //blue button _______ $99.00
             data-email        =   "<?php echo $email; ?>" //prefills the email if we already know it
             data-label        =   "" //blue button to initiate pay flow
             >
@@ -218,7 +218,7 @@ require_once('./config.php');
             data-key          =   "<?php echo $stripe['publishable_key']; ?>"
             data-amount       =   "<?php echo $premiumPrice*100; ?>" 
             data-description  =   "Premium Plan" //title at top
-            data-panel-label  =   "Pay" //blue button _______ $99.00
+            data-panel-label  =   "Submit" //blue button _______ $99.00
             data-email        =   "<?php echo $email; ?>" //prefills the email if we already know it
             data-label        =   "" //blue button to initiate pay flow
             >
