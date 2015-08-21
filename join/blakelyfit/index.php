@@ -2,11 +2,11 @@
     //this is the co-braded page for Nomful + MAC
 
   $partner_info = array(
-    'plan_base' => 'henry', //THIS HAS TO MATCH THE ID IN STRIPE
-    'club' => 'Henry', // this is the NAME of the affiliate partner
+    'plan_base' => 'blakelyfit', //THIS HAS TO MATCH THE ID IN STRIPE
+    'club' => 'Blakelyfit', // this is the NAME of the affiliate partner
     'basic_price' => '99', // this is the PRICE of the BASIC plan for this group code
     'premium_price' => '199', // this is the PRICE of the PREMIUM plan for this group code
-    'gymID' => 'ZeXbgXbcfy' //gym id for henry   
+    'gymID' => 'JHFOIGfado' //gym id for fit   
   );
 
   $c = json_encode($partner_info);
@@ -77,7 +77,7 @@
   
   <div class="container mbudges">
     <div class="tables center">
-      <img class="partnerlogo cell-middle" src="/../img/henry-logo.jpeg"/>
+      <img class="partnerlogo cell-middle" src="/../img/blakelyfit.png"/>
       <img class="partnerlogo cell-middle" src="/../img/nomful.png"/>
     </div>
     <div class="top-masthead-join mbudges">
