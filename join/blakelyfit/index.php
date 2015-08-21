@@ -4,7 +4,7 @@
   $partner_info = array(
     'plan_base' => 'blakelyfit', //THIS HAS TO MATCH THE ID IN STRIPE
     'club' => 'Blakelyfit', // this is the NAME of the affiliate partner
-    'basic_price' => '99', // this is the PRICE of the BASIC plan for this group code
+    'basic_price' => '0 - 10 Days Free', // this is the PRICE of the BASIC plan for this group code
     'premium_price' => '199', // this is the PRICE of the PREMIUM plan for this group code
     'gymID' => 'JHFOIGfado' //gym id for fit   
   );
