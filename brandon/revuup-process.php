@@ -19,7 +19,7 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
         
         //i don't think these are in the right data type...parse doesn't like them
         $first_name = $_POST["first-name"];
-        $email = $_POST["email"];
+        $email = $_POST["email"]; 
         
         //save user to parse
          //PARSE
