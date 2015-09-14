@@ -16,19 +16,23 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
 
 // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the form fields and remove whitespace.
+        // Get the form fields and remove whitespace. 
      
         $name = $_POST["name"];
         $phone = $_POST["cell-phone"];
+    
+        $query = new ParseQuery("Gym");
         
-        $perryGymID = 'CoFfrJ9Uwz';
-        
-        //we just need the user phone and gym object
-        //let's now associate the user with REVUUP as 'paying' customers
-        $gymMember = new ParseObject("GymMembers");
-        $gymMember->set("GymObjects", $perryGymID);
-        $gymMember->set("userPhone", $_POST['cell-phone']);
-        $gymMember->set("name", $name);
+        try {
+            $perryGymID = $query->get("CoFfrJ9Uwz");
+            // The object was retrieved successfully.
+          
+            //we just need the user phone and gym object
+            //let's now associate the user with REVUUP as 'paying' customers
+            $gymMember = new ParseObject("GymMembers");
+            $gymMember->set("GymObjects", $perryGymID);
+            $gymMember->set("userPhone", $_POST['cell-phone']);
+            $gymMember->set("name", $name);
 
         //save the object ot parse
         try {
@@ -41,6 +45,13 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
             http_response_code(500);
             echo 'Failed to create new object, with error message: ' + $ex->getMessage();
         }
+      
+            
+        } catch (ParseException $ex) {
+          // The object was not retrieved successfully.
+          // error is a ParseException with an error code and message.
+        }
+        
       
 
         // Set the recipient email address.
