@@ -27,7 +27,7 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
             $perryGymID = $query->get("CoFfrJ9Uwz");
             // The object was retrieved successfully.
           
-            //we just need the user phone and gym object
+            //we just need the user phone and gym object 
             //let's now associate the user with REVUUP as 'paying' customers
             $gymMember = new ParseObject("GymMembers");
             $gymMember->set("GymObjects", $perryGymID);
