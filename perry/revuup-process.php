@@ -21,7 +21,7 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
         $name = $_POST["name"];
         $phone = $_POST["cell-phone"];
         
-        $perryGymID = '';
+        $perryGymID = 'CoFfrJ9Uwz';
         
         //we just need the user phone and gym object
         //let's now associate the user with REVUUP as 'paying' customers
