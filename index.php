@@ -59,7 +59,7 @@
 
     
   <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
   <![endif]-->
 
 </head>
@@ -72,8 +72,7 @@
   <section class="masthead masthead-intro">
     <div class="masthead-intro-content underlay-dark">
       <h1>Eat better. Live better.</h1>
-      <p>No more dieting. Let’s get you eating healthy again. Team up with a coach that knows nutrition inside and out.</p>
-        
+      <p>No more dieting. Let’s get you eating healthy again. Team up with a coach that knows nutrition inside and out.</p> 
       <a class="gbutton" href="/join/">Join</a>
     </div>
   </section>
