@@ -1,5 +1,6 @@
-<?php include 'header.php';?>
-<div class="row">
+<?php require 'headers.php';?>
+<div class="container">
+<div class="row" style="padding-top: 200px;">
 <p dir="ltr"><span>Nomful&rsquo;s Privacy Policy</span></p>
 <p dir="ltr"><span>Protecting your privacy is really important to us. Accordingly, we&rsquo;re providing this Privacy Policy to explain our practices regarding the collection, use and disclosure of information that we receive when you use our Services (defined as the services included in &ldquo;Services&rdquo; as defined in both our </span><a href="http://nomful.com/terms.php"><span>Customer Terms of Service</span></a><span>. This Privacy Policy applies only to those websites, services and applications included within &ldquo;Services&rdquo; and doesn&rsquo;t apply to any third-party websites, services or applications, even if they are accessible through our Services. Also, please note that, unless we define a term in this Privacy Policy, all capitalized words used in this Privacy Policy have the same meanings as in our Terms of Service.</span></p>
 <h3 dir="ltr"><span>How do we collect and use information?</span></h3>
@@ -30,4 +31,5 @@
 <p dir="ltr"><span>Please contact us at </span><a href="mailto:founders@nomful.com"><span>founders@nomful.com</span></a><span> if you have any questions about our Privacy Policy.</span></p>
       
 </div>
-<?php include 'footer.php';?>
+</div>
+<?php require 'footers.php';?>
