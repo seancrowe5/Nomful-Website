@@ -16,19 +16,19 @@
         <span class="explainer-step-number">1</span>
         <h4>Personalized for you</h4>
         <p>Real coaching from the experts in habit-based nutrition. They get to know you, and together make a plan that works.</p>
-        <img src="img/iphoneCall.jpg"/>
+        <img src="img1/iphoneCall.jpg"/>
       </div>
       <div class="one-third column explainer-step">
         <span class="explainer-step-number">2</span>
         <h4>Pictures, not calories</h4>
         <p>Instantly share meals with your coach and get feedback. We focus on building a healthy lifestyle, not counting calories.</p>
-        <img src="img/marketingscreen-meal.jpg"/>
+        <img src="img1/marketingscreen-meal.jpg"/>
       </div>
       <div class="one-third column explainer-step">
         <span class="explainer-step-number">3</span>
         <h4>Everyday support</h4>
         <p>What's for dinner? What's whole wheat? You have your coach's attention everyday to answer questions and give feedback.</p>
-        <img src="img/chat.jpg"/>
+        <img src="img1/chat.jpg"/>
       </div>
     </div>
   </div>
