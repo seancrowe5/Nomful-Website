@@ -32,10 +32,9 @@
       <p class="copyright">&copy; 2015 Nomful, Inc. - All Rights Reserved</p>
     </div>
   </div>
-</footer>
-
-<script src="js1/index.js"></script>  
+</footer> 
     
+<script src="js1/index.js"></script> 
 
 </body>
 </html>
