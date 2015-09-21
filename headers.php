@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="css1/skeleton.css">
   <link rel="stylesheet" href="css1/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
+  <link rel='stylesheet prefetch' href='https://daneden.github.io/animate.css/animate.min.css'>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

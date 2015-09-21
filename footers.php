@@ -1,6 +1,4 @@
 
-<script src="js1/index.js"></script> 
-
 <footer>
   <div class="top-footer">
     <div class="learn-more">
@@ -36,6 +34,7 @@
   </div>
 </footer> 
     
+<script src="js1/index.js"></script> 
 
 </body>
 </html>
