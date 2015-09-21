@@ -9,8 +9,8 @@
   
 <section class="masthead masthead-explainer">
   <div class="container masthead-explainer-content">
-    <h2 class="bold">Daily Accountability</h2>
-    <h4>Have a nutrition coach in your pocket while you shop, cook, eat, and exercise.</h4>
+    <h2 class="bold">Have confidence in what you eat</h2>
+    <h4>There's a nutrition coach in your pocket while you shop, cook, eat, and exercise.</h4>
     <div class="row">
       <div class="one-third column explainer-step">
         <span class="explainer-step-number">1</span>
