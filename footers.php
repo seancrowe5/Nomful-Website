@@ -3,7 +3,7 @@
   <div class="top-footer">
     <div class="learn-more">
       <h6 class="hide-less-tablet uppercase">Learn more</h6>
-      <img class="footer-logo show-less-tablet" src="img/nomful.png"/>
+      <img class="footer-logo show-less-tablet" src="img1/nomful-white.png"/>
       <!--<ul class="learn-more-list list-left">
         <li><a href="#">Partners</a></li>
         <li><a href="#">About</a></li>
