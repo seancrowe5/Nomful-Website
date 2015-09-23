@@ -32,9 +32,9 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css1/normalize.css">
-  <link rel="stylesheet" href="css1/skeleton.css">
-  <link rel="stylesheet" href="css1/style.css">
+  <link rel="stylesheet" href="/../css1/normalize.css">
+  <link rel="stylesheet" href="/../css1/skeleton.css">
+  <link rel="stylesheet" href="/../css1/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel='stylesheet prefetch' href='https://daneden.github.io/animate.css/animate.min.css'>
 
@@ -66,7 +66,7 @@
 <body>
 
 <div class="mobile-nav"> <!-- Hidden if the screen is larger than XXX px -->
-  <a href="http://nomful.com"><img class="logo-mobile" src="img1/nomful-partners.png"></a>
+  <a href="http://nomful.com"><img class="logo-mobile" src="/../img1/nomful-partner-black.png"></a>
   <div class="button_container" id="toggle">
     <span class="top"></span>
     <span class="middle"></span>
@@ -75,10 +75,10 @@
   <div class="overlay" id="overlay">
     <nav class="overlay-menu">
       <ul>
-        <li ><a href="#">Home</a></li>
-        <li ><a href="https://nomful.com/join/">Sign-up</a></li>
+        <li><a href="https://nomful.com/">Home</a></li>
+        <li><a href="https://nomful.com/join/">Sign-up</a></li>
         <!--<li><a href="#">About</a></li>-->
-        <li><a href="/partners.php">Partners</a></li>
+        <li><a href="https://nomful.com/partners/">Partners</a></li>
       </ul>
     </nav>
   </div>
@@ -86,11 +86,11 @@
 
 <header>
   <div class="header">
-    <a href="http://nomful.com"><img class="logo" src="img1/nomful-partners.png"></a>
+    <a href="http://nomful.com"><img class="logo" id="partnerimage" src="/../img1/nomful-partner-white.png"></a>
     <nav class="reg-menu">
       <ul>
         <!--<li><a href="#">About</a></li> -->
-        <li><a href="/partners.php">Partners</a></li>
+        <li><a href="https://nomful.com/partners/">Partners</a></li>
         <li><a href="/join/" class="sign-up capitalize">Sign up</a></li>
       </ul>
     </nav>

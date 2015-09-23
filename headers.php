@@ -75,10 +75,10 @@
   <div class="overlay" id="overlay">
     <nav class="overlay-menu">
       <ul>
-        <li ><a href="#">Home</a></li>
-        <li ><a href="https://nomful.com/join/">Sign-up</a></li>
-        <!--<li><a href="#">About</a></li>
-        <li><a href="#">Partners</a></li>-->
+        <li><a href="https://nomful.com/">Home</a></li>
+        <li><a href="https://nomful.com/join/">Sign-up</a></li>
+        <!--<li><a href="#">About</a></li>-->
+        <li><a href="https://nomful.com/partners/">Partners</a></li>
       </ul>
     </nav>
   </div>
@@ -89,8 +89,8 @@
     <a href="http://nomful.com"><img class="logo" src="img1/nomful.png"></a>
     <nav class="reg-menu">
       <ul>
-        <!--<li><a href="#">About</a></li>
-        <li><a href="#">Partners</a></li>-->
+        <!--<li><a href="#">About</a></li>-->
+        <li><a href="https://nomful.com/partners/">Partners</a></li>
         <li><a href="https://nomful.com/join/" class="sign-up capitalize">Sign up</a></li>
       </ul>
     </nav>

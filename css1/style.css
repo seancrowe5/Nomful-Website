@@ -766,6 +766,11 @@ input {
   margin-top: 15px;
 }
 
+.lb_label.top {
+  color: white;
+  padding-left: 10px;
+}
+
 .success {
   padding: 1em;
   margin-bottom: 0.75rem;
