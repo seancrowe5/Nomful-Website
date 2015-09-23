@@ -36,7 +36,7 @@
     <h2 class="bold">Interested in holding your clients accountable?</h2>
     <h5>Fill the form out below and we will be in contact with you shortly!</h5>
     
-    <script src="js1/jquery.label_better.js"></script>
+    <script src="/../js1/jquery.label_better.js"></script>
     <script src="partners-join-form.js"></script>
     <form id="ajax-partners-join" method="post" action="partners-join-form.php" class="container-720" novalidate>
     <div id="partners-join-message"></div>
