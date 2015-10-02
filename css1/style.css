@@ -305,7 +305,8 @@ span.explainer-step-number {
 }
 
 .explainer-step img {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding-bottom: 50px;
 }
 
@@ -314,6 +315,19 @@ span.explainer-step-number {
   font-size: 17px;
 }
 
+/* Larger than tablet */
+@media (min-width: 750px) {
+  
+  .explainer-step {
+    display: inline-block;
+    width: 30%;
+    margin-left: 4%;
+  }
+
+  .explainer-step:first-child {
+    margin-left: 0; 
+  }
+}
 
 
 /* ----------------------------------------------------------------------- */
@@ -323,7 +337,7 @@ span.explainer-step-number {
 .masthead-join {
   padding-top: 75px;
   padding-bottom: 75px;
-  height: 850px;
+  min-height: 850px;
   background-image: url('/img1/masthead-you.jpg');
   background-position: 30% 50%;
   background-size: cover;
@@ -371,10 +385,14 @@ span.join-time {
 @media (min-width: 750px) {
   .masthead-join {
     padding-top: 150px;
-    height: 680px;
+    min-height: 680px;
     background-image: url('/img1/masthead-you.jpg');
     background-position: 30% 0%;
     background-size: cover;
+  }
+  
+  .masthead-join-content {
+    width: 100%;
   }
   
   #bootcamp, #healthy-start {
@@ -386,6 +404,7 @@ span.join-time {
   }
   
   #join-title {
+    padding: 0px 40px;
     margin-bottom: 100px
   }
   
@@ -401,6 +420,17 @@ span.join-time {
     border-color: rgb(85, 144, 125) !important;
   }
 
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .masthead-join-content {
+    width: 80%;
+  }
+  
+  #join-title {
+    padding: 0px;
+  }
 }
 
 /* ----------------------------------------------------------------------- */
@@ -458,8 +488,9 @@ ul.social-media-icons {
 }
 
 ul.social-media-icons img {
-  width: 55px;
-  height: 55px;
+  max-width: 55px;
+  max-height: 55px;
+  width: 18%;
 }
 
 .social-media-icons li {
