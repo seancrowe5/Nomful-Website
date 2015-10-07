@@ -3,7 +3,7 @@
 <section class="masthead-top">
   <div class="container masthead-top-content">
     <h2>We get you eating healthy, with the best coaches and simplest tools</h2>
-    <a href="https://nomful.com/join/"><button class="button-primary" id="top-button">Get Started</button></a>
+    <a href="https://itunes.apple.com/US/app/id991589420?mt=8#"><button class="button-primary" id="top-button">Get Started</button></a>
   </div>
 </section>  
   
@@ -46,7 +46,7 @@
         <li>Quick meal sharing</li>
         <li>Help with recipes, questions, etc.</li>
       </ul>
-      <a href="https://nomful.com/join/"><button class="button join-button">Get Started</button></a>
+      <a href="https://itunes.apple.com/US/app/id991589420?mt=8#"><button class="button join-button">Get Started</button></a>
     </div>
     <div id="bootcamp">
       <h4>12-Week Boot Camp</h4>
@@ -58,7 +58,7 @@
         <li>Quick meal sharing</li>
         <li>Weekly progress tracking</li>
       </ul>
-      <a href="https://nomful.com/join/"><button class="button-primary join-button">Get Started</button></a>
+      <a href="https://itunes.apple.com/US/app/id991589420?mt=8#"><button class="button-primary join-button">Get Started</button></a>
     </div>
     
   </div>
