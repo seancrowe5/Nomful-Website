@@ -60,7 +60,7 @@
       </ul>
       <a href="https://itunes.apple.com/US/app/id991589420?mt=8#"><button class="button-primary join-button">Get Started</button></a>
     </div>
-    
+    <h4 class="question-contact">Have a question? <a href="contact.php">Get in touch with us!</a></h4>
   </div>
 </section>  
 

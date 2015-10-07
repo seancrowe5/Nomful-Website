@@ -5,8 +5,8 @@
       <h6 class="hide-less-tablet uppercase">Learn more</h6>
       <img class="footer-logo show-less-tablet" src="img1/nomful-white.png"/>
       <ul class="learn-more-list list-left">
-        <li><a href="https://nomful.com">Home</a></li>
         <li><a href="https://nomful.com/partners/">Partners</a></li>
+        <li><a href="https://nomful.com/contact.php">Contact</a></li>
       </ul>
       <ul class="learn-more-list list-right">
         <li><a href="https://nomful.com/privacy.php">Privacy</a></li>

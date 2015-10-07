@@ -381,6 +381,10 @@ span.join-time {
   font-size: 15px;
 }
 
+h4.question-contact {
+  padding: 60px 60px 0px;
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead-join {
@@ -418,6 +422,11 @@ span.join-time {
   .join-button:hover {
     background-color: rgba(110, 177, 155, .6) !important;
     border-color: rgb(85, 144, 125) !important;
+  }
+  
+  h4.question-contact {
+    padding: 0px;
+    padding-top: 60px;
   }
 
 }
@@ -800,6 +809,10 @@ input {
 .lb_label.top {
   color: white;
   padding-left: 10px;
+}
+
+textarea#message {
+  margin-top: 15px;
 }
 
 .success {
