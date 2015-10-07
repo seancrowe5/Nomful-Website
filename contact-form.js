@@ -35,6 +35,7 @@ $(function() {
         }
       
         $('input.button-primary.u-pull-right').fadeOut(1000);
+        $('.row').fadeOut(1000);
 		// Serialize the form data.
 		var formData = $(form).serialize();
 
@@ -53,7 +54,7 @@ $(function() {
 			// Set the message text.
 			$(formMessages).text(response);
 
-			/*// Hide the form.
+            /*// Hide the form.
 			$('.partners-join-content').hide();
             $('#success-partners-join').fadeIn(1000);*/
 		})
