@@ -4,7 +4,9 @@
         // Get the form fields and remove whitespace.
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $name = $_POST["name"];
-        $message  = $_POST["message"];
+        $cell_phone = $_POST["cell-phone"];
+        $message = $_POST["message"];
+        
       
         // Check that data was sent to the mailer.
         if ( !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -19,11 +21,11 @@
         $recipient = "thomas@nomful.com";
 
         // Set the email subject.
-        $subject = "New contact from $email";
+        $subject = "New Contact Message! - $name";
 
         // Build the email content.
-        $email_content .= "Name: $name\n\n";
-        $email_content .= "Email:      $email\n\n";
+        $email_content = "Name: $name \n\n";
+        $email_content .= "Email: $email\n\n";
         $email_content .= "Message: $message\n\n";
 
         // Build the email headers.
@@ -33,7 +35,7 @@
         if (mail($recipient, $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You!";
+            echo "Thank You! Have an awesome day :)";
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);

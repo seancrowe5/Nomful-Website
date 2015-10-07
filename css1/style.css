@@ -305,7 +305,8 @@ span.explainer-step-number {
 }
 
 .explainer-step img {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding-bottom: 50px;
 }
 
@@ -314,6 +315,19 @@ span.explainer-step-number {
   font-size: 17px;
 }
 
+/* Larger than tablet */
+@media (min-width: 750px) {
+  
+  .explainer-step {
+    display: inline-block;
+    width: 30%;
+    margin-left: 4%;
+  }
+
+  .explainer-step:first-child {
+    margin-left: 0; 
+  }
+}
 
 
 /* ----------------------------------------------------------------------- */
@@ -323,7 +337,7 @@ span.explainer-step-number {
 .masthead-join {
   padding-top: 75px;
   padding-bottom: 75px;
-  height: 850px;
+  min-height: 850px;
   background-image: url('/img1/masthead-you.jpg');
   background-position: 30% 50%;
   background-size: cover;
@@ -367,14 +381,22 @@ span.join-time {
   font-size: 15px;
 }
 
+h4.question-contact {
+  padding: 60px 60px 0px;
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead-join {
     padding-top: 150px;
-    height: 680px;
+    min-height: 680px;
     background-image: url('/img1/masthead-you.jpg');
     background-position: 30% 0%;
     background-size: cover;
+  }
+  
+  .masthead-join-content {
+    width: 100%;
   }
   
   #bootcamp, #healthy-start {
@@ -386,6 +408,7 @@ span.join-time {
   }
   
   #join-title {
+    padding: 0px 40px;
     margin-bottom: 100px
   }
   
@@ -400,7 +423,23 @@ span.join-time {
     background-color: rgba(110, 177, 155, .6) !important;
     border-color: rgb(85, 144, 125) !important;
   }
+  
+  h4.question-contact {
+    padding: 0px;
+    padding-top: 60px;
+  }
 
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .masthead-join-content {
+    width: 80%;
+  }
+  
+  #join-title {
+    padding: 0px;
+  }
 }
 
 /* ----------------------------------------------------------------------- */
@@ -458,8 +497,9 @@ ul.social-media-icons {
 }
 
 ul.social-media-icons img {
-  width: 55px;
-  height: 55px;
+  max-width: 55px;
+  max-height: 55px;
+  width: 18%;
 }
 
 .social-media-icons li {
@@ -771,6 +811,10 @@ input {
   padding-left: 10px;
 }
 
+textarea#message {
+  margin-top: 15px;
+}
+
 .success {
   padding: 1em;
   margin-bottom: 0.75rem;
@@ -793,4 +837,45 @@ input {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ---------------------------- CONTACT PAGE ----------------------------- */
+/* ----------------------------------------------------------------------- */
+
+.contact-top {
+  height: 850px;
+  background-image: url('/img1/contact.jpg');
+  background-position: 40% 0%;
+  background-size: cover;
+  margin-top: -60px;
+}
+
+.contact-top-content {
+  position: relative;
+  top: 220px;
+  color: white;
+}
+
+.contact-top-content form {
+  color: black;
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  
+  .contact-top {
+    height: 850px;
+    background-position: 10% 0%;
+  }
+  
+  .contact-top-content {
+    top: 320px;
+    padding: 0 7%;
+  }
+  
 }
