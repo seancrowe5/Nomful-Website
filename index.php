@@ -1,9 +1,11 @@
 <?php require("headers.php"); ?>
   
+<link href="css1/popup.css" rel="stylesheet">
 <section class="masthead-top">
   <div class="container masthead-top-content">
     <h2>We get you eating healthy, with the best coaches and simplest tools</h2>
     <a href="https://itunes.apple.com/US/app/id991589420?mt=8#"><button class="button-primary" id="top-button">Get Started</button></a>
+    <a href="/content.html" class="default_popup">Default AJAX</a>
   </div>
 </section>  
   
@@ -63,5 +65,21 @@
     <h4 class="question-contact">Have a question? <a href="contact.php">Get in touch with us!</a></h4>
   </div>
 </section>  
+
+<script src="js1/jquery.popup.js"></script>
+
+	<script>
+		$(function(){
+
+			/*-------------------------------
+
+				GENERAL EXAMPLES
+
+			-------------------------------*/
+
+			// Default usage
+			$('.default_popup').popup();
+        });
+      </script>
 
 <?php require("footers.php"); ?>
