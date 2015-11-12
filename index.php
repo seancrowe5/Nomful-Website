@@ -38,7 +38,7 @@
   <div class="container masthead-join-content">
     <h2 id="join-title">Forget fads and restrictions, build a lifestyle right for you</h2>
     <div id="healthy-start">
-      <h4>30 Day Healthy Start</h4>
+      <h4>21 Day Healthy Start</h4>
       <h2>$49</h2>
       <ul class="join-props">
         <li>Initial phone assesment</li>
