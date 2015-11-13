@@ -5,16 +5,7 @@ $name = "sean";
 $phoneNumber = "3306714458";
 
 
-$fields = array("title" => "Notes",
-               "value" => "This is much easier than I thought it would be.",
-               "short" => false);
-
-$attachments = array(   "fallback" => "New open task [Urgent]: <http://nomful.com>",
-                        "pretext" => "New open task [Urgent]: <http://url_to_task|Test out Slack message attachments>",
-                        "color" => "#D00000",
-                        "fields" => $fields);
-
-$payload = array("text" => "Name: $name signed up with phone: <sms://$phoneNumber> "); 
+$payload = array("text" => '<@sean> <sms://3306714458|sean>'); 
 
 $data_string = json_encode($payload);                                                                                   
                                                                                                                      
