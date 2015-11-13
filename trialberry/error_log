@@ -1,0 +1,10 @@
+[11-Jun-2015 10:27:32 America/Chicago] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/titful/public_html/revuup/revuup-process.php on line 2
+[11-Jun-2015 10:27:32 America/Chicago] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/titful/public_html/revuup/revuup-process.php on line 2
+[11-Jun-2015 10:27:32 America/Chicago] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home/titful/public_html/revuup/revuup-process.php on line 2
+[11-Jun-2015 10:28:59 America/Chicago] PHP Fatal error:  Class 'ParseQuery' not found in /home/titful/public_html/revuup/revuup-process.php on line 48
+[11-Jun-2015 10:29:35 America/Chicago] PHP Fatal error:  Class 'ParseObject' not found in /home/titful/public_html/revuup/revuup-process.php on line 62
+[11-Jun-2015 11:23:53 America/Chicago] PHP Fatal error:  Uncaught exception 'Parse\ParseException' with message 'Object not found.' in /home/titful/public_html/revuup/vendor/parse/php-sdk/src/Parse/ParseQuery.php:93
+Stack trace:
+#0 /home/titful/public_html/revuup/revuup-process.php(54): Parse\ParseQuery->get('L78TLmZYLa')
+#1 {main}
+  thrown in /home/titful/public_html/revuup/vendor/parse/php-sdk/src/Parse/ParseQuery.php on line 93
