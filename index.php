@@ -17,7 +17,7 @@
       <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number-a" id="phone-number-a">
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-      <input class="button-primary" type="submit" value="Get in touch">
+      <input class="button-primary" type="submit" value="Find a coach">
     </div>
     </form>
     
@@ -27,7 +27,7 @@
       <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number-b" id="phone-number-b">
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-      <input class="button-primary" type="submit" value="Get in touch">
+      <input class="button-primary" type="submit" value="find a coach">
     </div>
     </form>
     
@@ -36,7 +36,7 @@
       <input class="u-full-width label_better" data-new-placeholder="email" type="email" placeholder="email" name="email-c" id="email-c">
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-      <input class="button-primary" type="submit" value="Get in touch">
+      <input class="button-primary" type="submit" value="find a coach">
     </div>
     </form>
     
@@ -61,7 +61,7 @@
       </div>
       <div class="explainer-step">
         <span class="explainer-step-number">3</span>
-        <h4>Everyday support</h4>
+        <h4>Daily support</h4>
         <p>What's for dinner? What's whole wheat? You have your coach's attention everyday to answer questions and give feedback.</p>
         <img src="img1/chat.jpg"/>
       </div>
