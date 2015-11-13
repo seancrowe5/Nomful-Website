@@ -14,7 +14,7 @@ $attachments = array(   "fallback" => "New open task [Urgent]: <http://nomful.co
                         "color" => "#D00000",
                         "fields" => $fields);
 
-$payload = array("text" => "Name: $name signed up with phone: $phoneNumber <http://nomful.com>"); 
+$payload = array("text" => "Name: $name signed up with phone: <sms:$phoneNumber> "); 
 
 $data_string = json_encode($payload);                                                                                   
                                                                                                                      
