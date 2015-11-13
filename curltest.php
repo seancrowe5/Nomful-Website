@@ -11,9 +11,10 @@ $fields = array("title" => "Notes",
 
 $attachments = array(   "fallback" => "New open task [Urgent]: <https://www.nomful.com>",
                         "pretext" => "New open task [Urgent]: <https://www.nomful.com>",
-                        "color" => "#D00000");
+                        "color" => "#D00000",
+                        "fields" => $fields);
 
-$payload = array("text" => "Name: $name signed up with phone: $phoneNumber",
+$payload = array(
                 "attachments" => $attachments); 
 
 $data_string = json_encode($payload);                                                                                   
