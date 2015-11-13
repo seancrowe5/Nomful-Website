@@ -3,30 +3,24 @@
 
 $name = "sean";
 $phoneNumber = "3306714458";
-
-
-    
+//sms:3306714458
 $payload = array(
-
-    {
+{
    "attachments":[
       {
-         "fallback":"New Nashville [Urgent]: sms:3306714458",
-         "pretext":"New Nashville [Urgent]: sms:3306714458",
+         "fallback":"New open task [Urgent]: <http://url_to_task|Test out Slack message attachments>",
+         "pretext":"New open task [Urgent]: <http://url_to_task|Test out Slack message attachments>",
          "color":"#D00000",
          "fields":[
             {
-               "title":"NASHVILLE",
-               "value":"@thomas @sean text them now",
+               "title":"Notes",
+               "value":"This is much easier than I thought it would be.",
                "short":false
             }
          ]
       }
    ]
 }
-
-
-
 
 );                                                                    
 $data_string = json_encode($payload);                                                                                   
