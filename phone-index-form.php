@@ -14,13 +14,8 @@
         // Build the email content.
         $email_content = "Phone: $phone_number \n\n";
 
-
-        // Build the email headers.
-        $email_headers = "From: <tennispolska@gmail.com>";
-
-        $email_content = "3306714458";
-
-        $payload = array("text" => "New person is signing up!! \n$email_content");                                                                    
+      
+        $payload = array("text" => "Hey @sean @thomas, there is a new person is signing up!! \n$email_content");                                                                    
         $data_string = json_encode($payload);                                                                                   
 
         $ch = curl_init('https://hooks.slack.com/services/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');                                                                      
@@ -32,10 +27,8 @@
             'Content-Length: ' . strlen($data_string))                                                                       
         );                                                                                                                   
 
-      
-      
         // Send the email.
-        if (curl_exec($ch)) {
+        if (curl_exec($ch) || mail($recipient, $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Thank You! Have an awesome day :)";
