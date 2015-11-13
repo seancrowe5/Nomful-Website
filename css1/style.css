@@ -2,7 +2,7 @@
 /* -------------------------- TOP NAV & MASTHEAD ------------------------- */
 /* ----------------------------------------------------------------------- */
 
- #ajax-email-index {
+#ajax-phone-name-index, #ajax-email-index {
   display: none;
 }
 
