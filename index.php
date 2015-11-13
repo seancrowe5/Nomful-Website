@@ -4,9 +4,20 @@
 <section class="masthead-top">
   <div class="container masthead-top-content">
     <h2>We get you eating healthy, with the best coaches and simplest tools</h2>
-    <a href="https://itunes.apple.com/US/app/id991589420?mt=8#"><button class="button-primary" id="top-button">Get Started</button></a>
-    <a href="/content.html" class="default_popup">Default AJAX</a>
-  </div>
+    
+    <script src="/js1/jquery.label_better.js"></script>
+    <script src="contact-form.js"></script>
+    <form id="ajax-phone-index" method="post" action="phone-index-form.php" class="container-720" novalidate>
+    <div id="index-message"></div>
+    <div class="row">
+      <div class="six columns">
+        <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number" id="phone-number">
+      </div>
+      <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
+      <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
+      <input class="button-primary u-pull-right" type="submit" value="Get in touch">
+    </div>
+    </form>
 </section>  
   
 <section class="masthead masthead-explainer">
@@ -65,21 +76,41 @@
     <h4 class="question-contact">Have a question? <a href="contact.php">Get in touch with us!</a></h4>
   </div>
 </section>  
-
-<script src="js1/jquery.popup.js"></script>
-
-	<script>
-		$(function(){
-
-			/*-------------------------------
-
-				GENERAL EXAMPLES
-
-			-------------------------------*/
-
-			// Default usage
-			$('.default_popup').popup();
-        });
-      </script>
+  
+  <script>  
+  $("input.label_better").label_better({
+    position: "top",
+    animationTime: 400,
+    easing: "bounce",
+    offset: 10,
+    hidePlaceholderOnFocus: true
+  });
+  
+  /*$(document).ready(function(){ 
+    $("#first-name").focus();
+  });*/
+  
+</script>
+<script src="javascripts/scale.fix.js"></script>
+<script src="js1/formatter.js"></script>
+  
+  <script>
+    new Formatter(document.getElementById('phone-number'), {
+    'pattern': '({{999}}) {{999}} - {{9999}}',
+    'persistent': false
+  });
+  </script>
+  
+<!--  <script>
+  $(document).ready(function() {
+     $('input[type="submit"]').prop('disabled', true);
+     $('input[type="text"]').keyup(function() {
+        if($('input#phone-number').val() != 16) {
+           $('input[type="submit"]').prop('disabled', false);
+        }
+     });
+ });
+  
+  </script>-->
 
 <?php require("footers.php"); ?>
