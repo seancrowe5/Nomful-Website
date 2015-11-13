@@ -9,8 +9,8 @@ $fields = array("title" => "Notes",
                "value" => "This is much easier than I thought it would be.",
                "short" => false);
 
-$attachments = array(   "fallback" => "New open task [Urgent]: <http://www.nomful.com>",
-                        "pretext" => "New open task [Urgent]: <http://www.nomful.com>",
+$attachments = array(   "fallback" => "New open task [Urgent]: <https://www.nomful.com>",
+                        "pretext" => "New open task [Urgent]: <https://www.nomful.com>",
                         "color" => "#D00000",
                         "fields" => $fields);
 
