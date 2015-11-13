@@ -44,10 +44,20 @@ img.logo-mobile {
   bottom: -20px;
 }
 
+h1#top-headline {
+  font-weight: 900;
+  text-align: left;
+}
+
+h3#subline {
+  text-align: left;
+  width: 60%;
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead-top-content {
-    top: 200px;
+    top: 50px;
   }
   
   .mobile-nav {
@@ -175,8 +185,9 @@ img.logo-mobile {
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .masthead-top-content {
-      width: 50%;
+      width: 100%;
   }
+  
 }
 
 

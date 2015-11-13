@@ -2,13 +2,16 @@
   
 <section class="masthead-top">
   <div class="container masthead-top-content">
-    <h2>We get you eating healthy, with the best coaches and simplest tools</h2>
+    <h1 id="top-headline">Your personal trainer for what you eat.</h1>
+    
+    <h3 id="subline">A nutrition coach in your pocket while you shop, cook, eat, and exercise.</h3>
     
     <script src="/js1/jquery.label_better.js"></script>
     <script src="phone-index-form.js"></script>
     <script src="phone-name-index-form.js"></script>
     <script src="email-index-form.js"></script>
     <div id="index-message-top"><div id="index-message"></div></div>
+    
     <form id="ajax-phone-index" method="post" action="phone-index-form.php" class="container-720" novalidate>
     <div class="row">
       <div class="six columns">
