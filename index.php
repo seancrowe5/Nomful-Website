@@ -24,7 +24,7 @@
     <div class="row">
       <div class="six columns">
         <input class="u-full-width label_better" data-new-placeholder="name" type="text" placeholder="name" name="name" id="name">
-        <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number" id="phone-number">
+        <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number-a" id="phone-number-a">
       </div>
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
@@ -122,6 +122,11 @@
   
   <script>
     new Formatter(document.getElementById('phone-number'), {
+    'pattern': '({{999}}) {{999}} - {{9999}}',
+    'persistent': false
+  });
+    
+    new Formatter(document.getElementById('phone-number-a'), {
     'pattern': '({{999}}) {{999}} - {{9999}}',
     'persistent': false
   });
