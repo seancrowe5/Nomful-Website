@@ -7,7 +7,7 @@ $phoneNumber = "3306714458";
 
 $fields = array("title" => "Notes",
                "value" => "This is much easier than I thought it would be.",
-               "short" => false);
+               "short" => 0);
 
 $attachments = array(   "fallback" => "New open task [Urgent]: <https://www.nomful.com>",
                         "pretext" => "New open task [Urgent]: <https://www.nomful.com>",
