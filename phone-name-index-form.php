@@ -2,6 +2,7 @@
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
+        $name = $_POST["name"];
         $phone_number = $_POST["phone-number"];
       
         // Set the recipient email address.
@@ -12,7 +13,9 @@
         $subject = "New Contact Message!";
 
         // Build the email content.
-        $email_content = "Phone: $phone_number \n\n";
+        $email_content = "Name: $name \n\n";
+        $email_content .= "Phone: $phone_number \n\n";
+      
 
 
         // Build the email headers.

@@ -1,7 +1,7 @@
 $(function() {
 
 	// Get the form.
-	var form = $('#ajax-phone-index');
+	var form = $('#ajax-email-index');
 
 	// Get the messages div.
 	var formMessages = $('#index-message');
@@ -19,10 +19,10 @@ $(function() {
             return false;
         } 
       
-        if ($('input#phone-number').val().length != 16) {
-            alert("Oh no! Is that a real phone number?");
+        if ($('input#email').val().length <= 7) {
+            alert("Oh no! Please enter a valid email.");
             return false;
-        }  
+        }
       
         /*$('input.button-primary.u-pull-right').fadeOut(1000);
         $('.row').fadeOut(1000);*/

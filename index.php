@@ -1,14 +1,15 @@
 <?php require("headers.php"); ?>
   
-<link href="css1/popup.css" rel="stylesheet">
 <section class="masthead-top">
   <div class="container masthead-top-content">
     <h2>We get you eating healthy, with the best coaches and simplest tools</h2>
     
     <script src="/js1/jquery.label_better.js"></script>
-    <script src="contact-form.js"></script>
+    <script src="phone-index-form.js"></script>
+    <script src="phone-name-index-form.js"></script>
+    <script src="email-index-form.js"></script>
+    <div id="index-message-top"><div id="index-message"></div></div>
     <form id="ajax-phone-index" method="post" action="phone-index-form.php" class="container-720" novalidate>
-    <div id="index-message"></div>
     <div class="row">
       <div class="six columns">
         <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number" id="phone-number">
@@ -18,6 +19,30 @@
       <input class="button-primary u-pull-right" type="submit" value="Get in touch">
     </div>
     </form>
+    
+    <form id="ajax-phone-name-index" method="post" action="phone-name-index-form.php" class="container-720" novalidate>
+    <div class="row">
+      <div class="six columns">
+        <input class="u-full-width label_better" data-new-placeholder="name" type="text" placeholder="name" name="name" id="name">
+        <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number" id="phone-number">
+      </div>
+      <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
+      <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
+      <input class="button-primary u-pull-right" type="submit" value="Get in touch">
+    </div>
+    </form>
+    
+    <form id="ajax-email-index" method="post" action="email-index-form.php" class="container-720" novalidate>
+    <div class="row">
+      <div class="six columns">
+        <input class="u-full-width label_better" data-new-placeholder="email" type="email" placeholder="email" name="email" id="email">
+      </div>
+      <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
+      <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
+      <input class="button-primary u-pull-right" type="submit" value="Get in touch">
+    </div>
+    </form>
+    
 </section>  
   
 <section class="masthead masthead-explainer">
@@ -91,7 +116,8 @@
   });*/
   
 </script>
-<script src="javascripts/scale.fix.js"></script>
+
+<script src="js1/scale.fix.js"></script>
 <script src="js1/formatter.js"></script>
   
   <script>
@@ -100,17 +126,6 @@
     'persistent': false
   });
   </script>
-  
-<!--  <script>
-  $(document).ready(function() {
-     $('input[type="submit"]').prop('disabled', true);
-     $('input[type="text"]').keyup(function() {
-        if($('input#phone-number').val() != 16) {
-           $('input[type="submit"]').prop('disabled', false);
-        }
-     });
- });
-  
-  </script>-->
+
 
 <?php require("footers.php"); ?>

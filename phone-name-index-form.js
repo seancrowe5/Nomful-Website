@@ -1,7 +1,7 @@
 $(function() {
 
 	// Get the form.
-	var form = $('#ajax-phone-index');
+	var form = $('#ajax-phone-name-index');
 
 	// Get the messages div.
 	var formMessages = $('#index-message');
@@ -16,6 +16,11 @@ $(function() {
         } 
       
         if ($('input#sp-phone-r').val().length != 0) {
+            return false;
+        } 
+      
+        if ($('input#name').val().length <= 2) {
+            alert("Oh no! Is that your real name?");
             return false;
         } 
       

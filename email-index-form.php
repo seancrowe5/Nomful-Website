@@ -2,7 +2,15 @@
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
-        $phone_number = $_POST["phone-number"];
+        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+
+        // Check that data was sent to the mailer.
+        if ( !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+          // Set a 400 (bad request) response code and exit.
+          http_response_code(400);
+          echo "Oops! There was a problem with your email. Please try again.";
+          exit;
+        }
       
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
@@ -12,11 +20,10 @@
         $subject = "New Contact Message!";
 
         // Build the email content.
-        $email_content = "Phone: $phone_number \n\n";
-
-
+        $email_content = "Email: $email \n\n";
+      
         // Build the email headers.
-        $email_headers = "From: <tennispolska@gmail.com>";
+        $email_headers = "From: <$email>";
 
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
