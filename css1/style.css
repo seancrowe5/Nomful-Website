@@ -2,6 +2,10 @@
 /* -------------------------- TOP NAV & MASTHEAD ------------------------- */
 /* ----------------------------------------------------------------------- */
 
+#ajax-phone-name-index, #ajax-email-index {
+  display: none;
+}
+
 .mobile-nav {
   position: relative;
   display: block;
@@ -21,14 +25,14 @@ img.logo-mobile {
 .masthead-top {
   height: 650px;
   background-image: url('/img1/main-woman.jpg');
-  background-position: 65% 50%;
+  background-position: 54% 50%;
   background-size: cover;
-  margin-top: -40px;
+  margin-top: -30px;
 }
 
 .masthead-top-content {
   position: relative;
-  top: 240px;
+  top: 90px;
 }
 
 .header {
@@ -44,10 +48,33 @@ img.logo-mobile {
   bottom: -20px;
 }
 
+h1#top-headline {
+  font-weight: 900;
+}
+
+h4#subline {
+  padding: 0px 10px;
+  margin-top: 45px;
+}
+
+.lb_label.top {
+  color: #888;
+  padding-left: 10px;
+}
+
+input.button-primary {
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  margin-top: 0px;
+  width: 100%;
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead-top-content {
-    top: 200px;
+    top: 50px;
   }
   
   .mobile-nav {
@@ -98,7 +125,7 @@ img.logo-mobile {
   .masthead-top {
     height: 570px;
     background-image: url('/img1/main-woman.jpg');
-    background-position: 60% 30%;
+    background-position: 44% 30%;
     background-size: cover;
     padding-top: 120px;
     margin-top: 0px;
@@ -106,6 +133,18 @@ img.logo-mobile {
   
   .masthead-top-content {
     width: 80%;
+  }
+  
+  h1#top-headline {
+    text-align: left;
+    width: 80%;
+  }
+
+  h4#subline {
+    padding: 0px;
+    margin-top: 45px;
+    text-align: left;
+    width: 70%;
   }
   
   #top-button {
@@ -175,7 +214,21 @@ img.logo-mobile {
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .masthead-top-content {
-      width: 50%;
+      width: 80%;
+  }
+  
+  h1#top-headline {
+    text-align: left;
+    width: 60%;
+  }
+
+  h4#subline {
+    width: 60%;
+    max-width: 500px;
+  }
+  
+  .container-370 {
+    margin-left: 55px;
   }
 }
 
@@ -597,7 +650,7 @@ img.download-appstore {
   background: #FFF;
 }
 .button_container span {
-  background: #FF5252;
+  background: #55907D;
   border: none;
   height: 5px;
   width: 100%;
@@ -798,7 +851,7 @@ img.download-appstore {
 /* -------------------------------- FORMS -------------------------------- */
 /* ----------------------------------------------------------------------- */
 
-#sp-website-r, #sp-phone-r {
+#sp-website-r, #sp-phone-r, #index-message-top {
   display: none;
 }
 
@@ -806,10 +859,10 @@ input {
   margin-top: 15px;
 }
 
-.lb_label.top {
+/*.lb_label.top {
   color: white;
   padding-left: 10px;
-}
+}*/
 
 textarea#message {
   margin-top: 15px;

@@ -28,7 +28,7 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container, .container-980, .container-720 {
+.container, .container-980, .container-720, .container-480, .container-370 {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -37,6 +37,8 @@
 .container { max-width: 1140px; }
 .container-980 { max-width: 980px; }
 .container-720 { max-width: 720px; }
+.container-480 { max-width: 480px; margin: 0px; }
+.container-370 { max-width: 370px; }
 .column,
 .columns {
   width: 100%;
@@ -209,8 +211,12 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: rgba(110, 177, 155, 1);
-  border-color: rgba(110, 177, 155, 1); }
+  background-color: rgb(85, 187, 77);
+  border-color: rgba(110, 177, 155, 1);
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;}
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -222,7 +228,7 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: rgba(110, 177, 155, .7);
+  background-color: rgba(85, 187, 77, .8);
   border-color: rgba(110, 177, 155, 1); }
 
 
@@ -244,7 +250,8 @@ select {
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
