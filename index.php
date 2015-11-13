@@ -10,7 +10,7 @@
     <script src="phone-index-form.js"></script>
     <script src="phone-name-index-form.js"></script>
     <script src="email-index-form.js"></script>
-    <div id="index-message-top"><div id="index-message"></div></div>
+    <div id="index-message-top" class="container-480"><div id="index-message"></div></div>
     
     <form id="ajax-phone-index" method="post" action="phone-index-form.php" class="container-370 u-pull-left" novalidate>
     <div class="row">

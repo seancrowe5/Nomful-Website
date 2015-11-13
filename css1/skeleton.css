@@ -28,7 +28,7 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container, .container-980, .container-720, .container-370 {
+.container, .container-980, .container-720, .container-480, .container-370 {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -37,6 +37,7 @@
 .container { max-width: 1140px; }
 .container-980 { max-width: 980px; }
 .container-720 { max-width: 720px; }
+.container-480 { max-width: 480px; margin: 0px; }
 .container-370 { max-width: 370px; }
 .column,
 .columns {
