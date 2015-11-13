@@ -118,12 +118,12 @@
 <script src="js1/formatter.js"></script>
   
   <script>
-    new Formatter(document.getElementById('phone-number'), {
+    new Formatter(document.getElementById('phone-number-a'), {
     'pattern': '({{999}}) {{999}} - {{9999}}',
     'persistent': false
   });
     
-    new Formatter(document.getElementById('phone-number-a'), {
+    new Formatter(document.getElementById('phone-number-b'), {
     'pattern': '({{999}}) {{999}} - {{9999}}',
     'persistent': false
   });
