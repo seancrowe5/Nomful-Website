@@ -6,11 +6,11 @@ $phoneNumber = "3306714458";
 
 
 $fields = array("title" => "Notes",
-               "value" => "This is much easier than I thought it would be.",
-               "short" => False);
+               "value" => "This is much easier than I thought it would be.");
 
-$attachments = array(   "fallback" => "New open task [Urgent]: <https://www.nomful.com>",
-                        "pretext" => "New open task [Urgent]: <https://www.nomful.com>",
+$attachments = array(   "fallback" => "hey this is the fallback",
+                        "text" => "hihi",
+                        "pretext" => "oh hey an",
                         "color" => "#D00000",
                         "fields" => $fields);
 
