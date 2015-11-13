@@ -5,7 +5,7 @@ $name = "sean";
 $phoneNumber = "3306714458";
 //sms:3306714458
 $payload = array(
-{
+
    "attachments":[
       {
          "fallback":"New open task [Urgent]: <http://url_to_task|Test out Slack message attachments>",
@@ -20,7 +20,7 @@ $payload = array(
          ]
       }
    ]
-}
+
 
 );                                                                    
 $data_string = json_encode($payload);                                                                                   
