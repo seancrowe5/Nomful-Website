@@ -19,12 +19,12 @@ $(function() {
             return false;
         } 
       
-        if ($('input#name').val().length <= 2) {
+        if ($('input#name-b').val().length <= 2) {
             alert("Oh no! Is that your real name?");
             return false;
         } 
       
-        if ($('input#phone-number-a').val().length != 16) {
+        if ($('input#phone-number-b').val().length != 16) {
             alert("Oh no! Is that a real phone number?");
             return false;
         }  

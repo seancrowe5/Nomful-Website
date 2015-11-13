@@ -2,7 +2,7 @@
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
-        $phone_number = $_POST["phone-number"];
+        $phone_number = $_POST["phone-number-a"];
         $phone_number_strip = preg_replace("/[^0-9]/","",$phone_number);
       
         // Set the recipient email address.

@@ -12,34 +12,28 @@
     <script src="email-index-form.js"></script>
     <div id="index-message-top"><div id="index-message"></div></div>
     
-    <form id="ajax-phone-index" method="post" action="phone-index-form.php" class="container-720" novalidate>
+    <form id="ajax-phone-index" method="post" action="phone-index-form.php" class="container-370 u-pull-left" novalidate>
     <div class="row">
-      <div class="six columns">
-        <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number" id="phone-number">
-      </div>
+      <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number-a" id="phone-number-a">
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
       <input class="button-primary" type="submit" value="Get in touch">
     </div>
     </form>
     
-    <form id="ajax-phone-name-index" method="post" action="phone-name-index-form.php" class="container-720" novalidate>
+    <form id="ajax-phone-name-index" method="post" action="phone-name-index-form.php" class="container-370 u-pull-left" novalidate>
     <div class="row">
-      <div class="six columns">
-        <input class="u-full-width label_better" data-new-placeholder="name" type="text" placeholder="name" name="name" id="name">
-        <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number-a" id="phone-number-a">
-      </div>
+      <input class="u-full-width label_better" data-new-placeholder="name" type="text" placeholder="name" name="name-b" id="name-b">
+      <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number-b" id="phone-number-b">
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
       <input class="button-primary" type="submit" value="Get in touch">
     </div>
     </form>
     
-    <form id="ajax-email-index" method="post" action="email-index-form.php" class="container-720" novalidate>
+    <form id="ajax-email-index" method="post" action="email-index-form.php" class="container-370 u-pull-left" novalidate>
     <div class="row">
-      <div class="six columns">
-        <input class="u-full-width label_better" data-new-placeholder="email" type="email" placeholder="email" name="email" id="email">
-      </div>
+      <input class="u-full-width label_better" data-new-placeholder="email" type="email" placeholder="email" name="email-c" id="email-c">
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
       <input class="button-primary" type="submit" value="Get in touch">

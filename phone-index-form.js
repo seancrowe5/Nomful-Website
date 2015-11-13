@@ -19,7 +19,7 @@ $(function() {
             return false;
         } 
       
-        if ($('input#phone-number').val().length != 16) {
+        if ($('input#phone-number-a').val().length != 16) {
             alert("Oh no! Is that a real phone number?");
             return false;
         }  

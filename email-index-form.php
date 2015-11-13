@@ -2,7 +2,7 @@
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $email = filter_var(trim($_POST["email-c"]), FILTER_SANITIZE_EMAIL);
 
         // Check that data was sent to the mailer.
         if ( !filter_var($email, FILTER_VALIDATE_EMAIL)) {

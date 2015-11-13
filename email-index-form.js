@@ -19,7 +19,7 @@ $(function() {
             return false;
         } 
       
-        if ($('input#email').val().length <= 7) {
+        if ($('input#email-c').val().length <= 7) {
             alert("Oh no! Please enter a valid email.");
             return false;
         }

@@ -58,17 +58,13 @@ h4#subline {
   padding-left: 10px;
 }
 
-input#phone-number {
-  margin-top: 15px;
-  height: 43px;
-}
-
 input.button-primary {
   height: 45px;
   font-size: 20px;
   font-weight: 700;
   position: relative;
   margin-top: 0px;
+  width: 100%;
 }
 
 /* Larger than tablet */
@@ -214,9 +210,22 @@ input.button-primary {
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .masthead-top-content {
-      width: 100%;
+      width: 80%;
   }
   
+  h1#top-headline {
+    text-align: left;
+    width: 60%;
+  }
+
+  h4#subline {
+    width: 60%;
+    max-width: 500px;
+  }
+  
+  .container-370 {
+    margin-left: 55px;
+  }
 }
 
 
@@ -846,10 +855,10 @@ input {
   margin-top: 15px;
 }
 
-.lb_label.top {
+/*.lb_label.top {
   color: white;
   padding-left: 10px;
-}
+}*/
 
 textarea#message {
   margin-top: 15px;
