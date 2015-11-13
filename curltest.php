@@ -3,7 +3,7 @@
 
 $name = "sean";
 $phoneNumber = "3306714458";
-//test
+
 
 $payload = array("text" => '<@sean> <sms://3306714458|sean>'); 
 
