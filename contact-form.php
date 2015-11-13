@@ -1,5 +1,5 @@
 <?php
-    // Only process POST reqeusts.  dd
+    // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
