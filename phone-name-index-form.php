@@ -14,7 +14,7 @@
 
         // Build the email content.
         $email_content = "Name: $name \n";
-        $email_content .= "Phone: $phone_number \n\n";
+        $email_content .= "Phone: <sms://$phone_number> \n\n";
       
       
         $payload = array("text" => "Hey @sean @thomas, you've got a Nashville!! \n$email_content\n\n");                                                                    
