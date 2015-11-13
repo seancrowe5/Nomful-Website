@@ -35,7 +35,7 @@
       
       
         // Send the email.
-        if ($result = curl_exec($ch)) {
+        if (curl_exec($ch)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Thank You! Have an awesome day :)";
