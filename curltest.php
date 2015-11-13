@@ -13,9 +13,9 @@ $attachments = array(   "fallback" => "hey this is the fallback",
                         "pretext" => "oh hey an",
                         "color" => "#D00000",
                         "fields" => $fields);
-$attachment = json_encode($attachments); 
-$payload = array(
-                "attachments" => $attachment); 
+
+$payload = array("tetxt" => "New user",
+                "attachments" => $attachments); 
 
 $data_string = json_encode($payload);                                                                                   
                                                                                                                      
