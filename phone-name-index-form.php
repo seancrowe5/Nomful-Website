@@ -4,6 +4,7 @@
         // Get the form fields and remove whitespace.
         $name = $_POST["name"];
         $phone_number = $_POST["phone-number-a"];
+        $phone_number = preg_replace("/[^0-9]/","",$phone_number);
       
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.

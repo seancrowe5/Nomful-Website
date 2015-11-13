@@ -3,6 +3,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
         $phone_number = $_POST["phone-number"];
+        $phone_number = preg_replace("/[^0-9]/","",$phone_number);
       
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
