@@ -3,7 +3,7 @@
 
 $name = "sean";
 $phoneNumber = "3306714458";
-sms:3306714458
+
 
 $fields = array("title" => "Notes",
                "value" => "This is much easier than I thought it would be.",
