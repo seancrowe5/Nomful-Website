@@ -14,8 +14,7 @@ $attachments = array(   "fallback" => "hey this is the fallback",
                         "color" => "#D00000",
                         "fields" => $fields);
 
-$payload = array("tetxt" => "New user",
-                "attachments" => $attachments); 
+$payload = array("tetxt" => "New user <https://slack.com>"); 
 
 $data_string = json_encode($payload);                                                                                   
                                                                                                                      
