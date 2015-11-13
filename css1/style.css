@@ -125,7 +125,7 @@ input.button-primary {
   .masthead-top {
     height: 570px;
     background-image: url('/img1/main-woman.jpg');
-    background-position: 60% 30%;
+    background-position: 44% 30%;
     background-size: cover;
     padding-top: 120px;
     margin-top: 0px;
@@ -137,12 +137,14 @@ input.button-primary {
   
   h1#top-headline {
     text-align: left;
-    width: 60%;
+    width: 80%;
   }
 
-  h3#subline {
+  h4#subline {
+    padding: 0px;
+    margin-top: 45px;
     text-align: left;
-    width: 60%;
+    width: 70%;
   }
   
   #top-button {
