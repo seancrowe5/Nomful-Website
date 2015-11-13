@@ -3,7 +3,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
         $phone_number = $_POST["phone-number"];
-        $phone_number = preg_replace("/[^0-9]/","",$phone_number);
+        $phone_number_strip = preg_replace("/[^0-9]/","",$phone_number);
       
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
@@ -13,10 +13,10 @@
         $subject = "New Contact Message!";
 
         // Build the email content.
-        $email_content = "Phone: <sms://$phone_number> \n\n";
+        $email_content = "Phone: <sms://$phone_number_strip|$phone_number> \n\n";
 
       
-        $payload = array("text" => "Hey @sean @thomas, you've got a Nashville!! \n$email_content\n\n");                                                                    
+        $payload = array("text" => "Hey <@sean> <@thomas>, you've got a Nashville!! \n$email_content\n\n");                                                                    
         $data_string = json_encode($payload);                                                                                   
 
         $ch = curl_init('https://hooks.slack.com/services/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');                                                                      

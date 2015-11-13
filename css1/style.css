@@ -51,7 +51,6 @@ h1#top-headline {
 
 h3#subline {
   text-align: left;
-  width: 60%;
 }
 
 /* Larger than tablet */
@@ -116,6 +115,16 @@ h3#subline {
   
   .masthead-top-content {
     width: 80%;
+  }
+  
+  h1#top-headline {
+    text-align: left;
+    width: 60%;
+  }
+
+  h3#subline {
+    text-align: left;
+    width: 60%;
   }
   
   #top-button {
