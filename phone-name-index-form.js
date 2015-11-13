@@ -52,7 +52,7 @@ $(function() {
 			$(formMessages).text(response);
 
             // Hide the form.
-			$('#ajax-phone-index').hide();
+			$('#ajax-phone-name-index').hide();
             $('#index-message-top').fadeIn(700);
             
 		})
