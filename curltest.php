@@ -11,8 +11,7 @@ $fields = array("title" => "Notes",
 
 $attachments = array(   "fallback" => "New open task [Urgent]: <https://www.nomful.com>",
                         "pretext" => "New open task [Urgent]: <https://www.nomful.com>",
-                        "color" => "#D00000",
-                        "fields" => $fields);
+                        "color" => "#D00000");
 
 $payload = array("text" => "Name: $name signed up with phone: $phoneNumber",
                 "attachments" => $attachments); 
