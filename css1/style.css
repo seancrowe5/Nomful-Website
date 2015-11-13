@@ -2,10 +2,6 @@
 /* -------------------------- TOP NAV & MASTHEAD ------------------------- */
 /* ----------------------------------------------------------------------- */
 
-#ajax-phone-name-index, #ajax-email-index {
-  display: none;
-}
-
 .mobile-nav {
   position: relative;
   display: block;
@@ -25,14 +21,14 @@ img.logo-mobile {
 .masthead-top {
   height: 650px;
   background-image: url('/img1/main-woman.jpg');
-  background-position: 54% 50%;
+  background-position: 65% 50%;
   background-size: cover;
-  margin-top: -30px;
+  margin-top: -40px;
 }
 
 .masthead-top-content {
   position: relative;
-  top: 90px;
+  top: 240px;
 }
 
 .header {
@@ -48,33 +44,10 @@ img.logo-mobile {
   bottom: -20px;
 }
 
-h1#top-headline {
-  font-weight: 900;
-}
-
-h4#subline {
-  padding: 0px 10px;
-  margin-top: 45px;
-}
-
-.lb_label.top {
-  color: #888;
-  padding-left: 10px;
-}
-
-input.button-primary {
-  height: 45px;
-  font-size: 20px;
-  font-weight: 700;
-  position: relative;
-  margin-top: 0px;
-  width: 100%;
-}
-
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead-top-content {
-    top: 50px;
+    top: 200px;
   }
   
   .mobile-nav {
@@ -125,7 +98,7 @@ input.button-primary {
   .masthead-top {
     height: 570px;
     background-image: url('/img1/main-woman.jpg');
-    background-position: 44% 30%;
+    background-position: 60% 30%;
     background-size: cover;
     padding-top: 120px;
     margin-top: 0px;
@@ -133,18 +106,6 @@ input.button-primary {
   
   .masthead-top-content {
     width: 80%;
-  }
-  
-  h1#top-headline {
-    text-align: left;
-    width: 80%;
-  }
-
-  h4#subline {
-    padding: 0px;
-    margin-top: 45px;
-    text-align: left;
-    width: 70%;
   }
   
   #top-button {
@@ -214,21 +175,7 @@ input.button-primary {
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .masthead-top-content {
-      width: 80%;
-  }
-  
-  h1#top-headline {
-    text-align: left;
-    width: 60%;
-  }
-
-  h4#subline {
-    width: 60%;
-    max-width: 500px;
-  }
-  
-  .container-370 {
-    margin-left: 55px;
+      width: 50%;
   }
 }
 
@@ -650,7 +597,7 @@ img.download-appstore {
   background: #FFF;
 }
 .button_container span {
-  background: #55907D;
+  background: #FF5252;
   border: none;
   height: 5px;
   width: 100%;
@@ -851,7 +798,7 @@ img.download-appstore {
 /* -------------------------------- FORMS -------------------------------- */
 /* ----------------------------------------------------------------------- */
 
-#sp-website-r, #sp-phone-r, #index-message-top {
+#sp-website-r, #sp-phone-r {
   display: none;
 }
 
@@ -859,10 +806,10 @@ input {
   margin-top: 15px;
 }
 
-/*.lb_label.top {
+.lb_label.top {
   color: white;
   padding-left: 10px;
-}*/
+}
 
 textarea#message {
   margin-top: 15px;

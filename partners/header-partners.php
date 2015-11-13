@@ -76,7 +76,7 @@
     <nav class="overlay-menu">
       <ul>
         <li><a href="https://nomful.com/">Home</a></li>
-        <li><a href="https://itunes.apple.com/US/app/id991589420?mt=8#">Sign-up</a></li>
+        <li><a href="https://nomful.com/join/">Sign-up</a></li>
         <!--<li><a href="#">About</a></li>-->
         <li><a href="https://nomful.com/partners/">Partners</a></li>
       </ul>
@@ -91,7 +91,7 @@
       <ul>
         <!--<li><a href="#">About</a></li> -->
         <li><a href="https://nomful.com/partners/">Partners</a></li>
-        <li><a href="https://itunes.apple.com/US/app/id991589420?mt=8#">Sign-up</a></li>
+        <li><a href="/join/" class="sign-up capitalize">Sign up</a></li>
       </ul>
     </nav>
   </div>
