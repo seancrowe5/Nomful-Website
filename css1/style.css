@@ -2,6 +2,10 @@
 /* -------------------------- TOP NAV & MASTHEAD ------------------------- */
 /* ----------------------------------------------------------------------- */
 
+#ajax-phone-name-index, #ajax-email-index {
+  display: none;
+}
+
 .mobile-nav {
   position: relative;
   display: block;
