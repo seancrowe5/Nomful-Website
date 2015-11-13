@@ -4,7 +4,31 @@
 $name = "sean";
 $phoneNumber = "3306714458";
 
-$payload = array("text" => "Name: $name signed up with phone: $phoneNumber");                                                                    
+
+    
+$payload = array(
+
+    {
+   "attachments":[
+      {
+         "fallback":"New Nashville [Urgent]: sms:3306714458",
+         "pretext":"New Nashville [Urgent]: sms:3306714458",
+         "color":"#D00000",
+         "fields":[
+            {
+               "title":"NASHVILLE",
+               "value":"@thomas @sean text them now",
+               "short":false
+            }
+         ]
+      }
+   ]
+}
+
+
+
+
+);                                                                    
 $data_string = json_encode($payload);                                                                                   
                                                                                                                      
 $ch = curl_init('https://hooks.slack.com/services/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');                                                                      
