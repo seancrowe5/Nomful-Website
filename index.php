@@ -4,7 +4,7 @@
   <div class="container masthead-top-content">
     <h1 id="top-headline">Your personal trainer for what you eat.</h1>
     
-    <h3 id="subline">A nutrition coach in your pocket while you shop, cook, eat, and exercise.</h3>
+    <h4 id="subline">A nutrition coach in your pocket while you shop, cook, eat, and exercise.</h4>
     
     <script src="/js1/jquery.label_better.js"></script>
     <script src="phone-index-form.js"></script>
@@ -19,7 +19,7 @@
       </div>
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-      <input class="button-primary u-pull-right" type="submit" value="Get in touch">
+      <input class="button-primary" type="submit" value="Get in touch">
     </div>
     </form>
     
@@ -31,7 +31,7 @@
       </div>
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-      <input class="button-primary u-pull-right" type="submit" value="Get in touch">
+      <input class="button-primary" type="submit" value="Get in touch">
     </div>
     </form>
     
@@ -42,7 +42,7 @@
       </div>
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-      <input class="button-primary u-pull-right" type="submit" value="Get in touch">
+      <input class="button-primary" type="submit" value="Get in touch">
     </div>
     </form>
     

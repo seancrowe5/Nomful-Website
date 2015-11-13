@@ -209,7 +209,7 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: rgba(110, 177, 155, 1);
+  background-color: rgb(85, 187, 77);
   border-color: rgba(110, 177, 155, 1); }
 .button.button-primary:hover,
 button.button-primary:hover,
