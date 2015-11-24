@@ -1,6 +1,6 @@
 $(function() {
 
-	// Get the form.
+	// Get the form. 
 	var form = $('#ajax-email-index');
 
 	// Get the messages div.
