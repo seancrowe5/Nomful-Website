@@ -40,6 +40,8 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
 </html>
 
 <?php
+    require('/vendor/autoload.php');
+
     $MailChimp = new \Drewm\MailChimp('458779a92e35ef155beeb58b445fd2ee-us10');
     $result = $MailChimp->call('lists/subscribe', array(
                     'id'                => '297cbd7828',
