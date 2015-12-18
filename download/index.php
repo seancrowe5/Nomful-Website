@@ -10,11 +10,9 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
                 var phone = form.phone.value;
                 var linkData = {
                     tags: [],
-                    channel: 'Website',
+                    channel: 'Flyer Landing Page',
                     feature: 'TextMeTheApp',
-                    data: {
-                        "foo": "bar"
-                    }
+                    data: {}
                 };
                 var options = {};
                 var callback = function(err, result) {
