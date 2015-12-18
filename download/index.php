@@ -45,7 +45,7 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
     $result = $MailChimp->call('lists/subscribe', array(
                     'id'                => '297cbd7828',
                     'email'             => array('email'=>'crowesp2@miamioh.edu'),
-                    'merge_vars'        => array('FNAME'=>'Sean', 'LNAME'=>'Crowe'),
+                    'merge_vars'        => array('FNAME'=>'Sean', 'LNAME'=>'Crowe', 'SIGNUP' => 'Nomful Download Landing'),
                     'double_optin'      => false,
                     'update_existing'   => true,
                     'replace_interests' => false,
