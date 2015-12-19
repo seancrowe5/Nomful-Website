@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
-        //optimizely
         <script src="//cdn.optimizely.com/js/3820750056.js"></script>
 
   <!-- Basic Page Needs
