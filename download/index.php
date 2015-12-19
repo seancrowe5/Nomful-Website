@@ -111,6 +111,7 @@
 <?php 
     //call parse cloud
     require 'vendor/autoload.php';
+    use Parse\ParseClient;
     use Parse\ParseCloud;
 
     ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJyJVIeM0RbTMkGmHlped7dMhoksgrxm', 'fk2DwxckV3Pe4fKGRs6LH1YaZkslDTu86TS6Ouv5');
