@@ -107,6 +107,13 @@
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
       <input class="button-primary" type="submit" value="Find a coach">
     </div>
+        
+        //call parse cloud
+        <?php 
+        
+        echo 'HELLO';
+        
+        ?>
     </form>
     
 </section>  
