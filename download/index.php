@@ -108,12 +108,15 @@
       <input class="button-primary" type="submit" value="Find a coach">
     </div>
         
-        //call parse cloud
-        <?php 
-        
-        echo 'HELLO';
-        
-        ?>
+<?php 
+    //call parse cloud
+    require 'autoload.php';
+    use Parse\ParseCloud;
+
+    ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJyJVIeM0RbTMkGmHlped7dMhoksgrxm', 'fk2DwxckV3Pe4fKGRs6LH1YaZkslDTu86TS6Ouv5');
+    ParseCloud::run("sendInstallEmail", array("from" => "sean is here"));
+     
+?>
     </form>
     
 </section>  
