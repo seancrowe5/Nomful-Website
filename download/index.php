@@ -81,6 +81,9 @@
 </head>
 <body>
 
+  <div class="mobile-nav-download"> <!-- Hidden if the screen is larger than XXX px -->
+    <a href="http://nomful.com"><img src="/../img1/nomful.png"></a>
+  </div>
 
   <header>
     <div class="header">
@@ -88,30 +91,33 @@
     </div>
   </header>
   
-  <section class="masthead-top">
+  <section class="download-masthead-top">
   <div class="container masthead-top-content">
-    <h1 id="top-headline">Your personal trainer for what you eat.</h1>
-    
-    <h4 id="subline">A nutrition coach in your pocket while you shop, cook, eat, and exercise.</h4>
-    
-    <script src="/js1/jquery.label_better.js"></script>
-    <script src="phone-index-form.js"></script>
-    <script src="phone-name-index-form.js"></script>
-    <script src="email-index-form.js"></script>
-    <div id="index-message-top" class="container-480"><div id="index-message"></div></div>
-    
-    <form id="ajax-phone-index" class="container-370 u-pull-left" onsubmit="sendSMS(this); return false;" novalidate>
-    <div class="row">
-      <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone_number_a" id="phone_number_a">
-      <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
-      <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-      <input class="button-primary" type="submit" value="Find a coach">
+    <div class="download-form-box">
+      <h2>You're almost finished!</h2>
+      <div class="parallelogram progress-fill"><p>&nbsp;</p></div><div class="parallelogram"><p class="parallel-text-budge">Download App</p></div><div class="parallelogram"><p class="parallel-text-budge">Choose Coach</p></div>
+      
+      <script src="/js1/jquery.label_better.js"></script>
+      <script src="phone-index-form.js"></script>
+      <script src="phone-name-index-form.js"></script>
+      <script src="email-index-form.js"></script>
+      <div id="index-message-top" class="container-480"><div id="index-message"></div></div>
+
+      <form id="ajax-phone-index" class="container-370" onsubmit="sendSMS(this); return false;" novalidate>
+      <div class="row">
+        <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone_number_a" id="phone_number_a">
+        <input class="u-full-width label_better" data-new-placeholder="email" type="email" placeholder="email" name="email_c" id="email_c">
+        <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
+        <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
+        <input class="button-primary" type="submit" value="Start 3 days free" id="download-cta">
+      </div>
+      </form>
     </div>
-  
+    
+    <img id="download-phone-right" src="/../img1/marketingscreen-meal.jpg"/>
         
     <?php 
-    
-        //call parse cloud
+       /* //call parse cloud
         require 'vendor/autoload.php';
         use Parse\ParseClient;
         use Parse\ParseCloud;
@@ -119,11 +125,9 @@
 
         //run cloud code and pass it an email
         $email = ''; //email here!
-        ParseCloud::run("sendInstallEmail", array("toEmail" => "sean.crowe@me.com"));
-
-    
+        ParseCloud::run("sendInstallEmail", array("toEmail" => "sean.crowe@me.com"));*/
     ?>
-    </form>
+    
     
 </section>  
   
@@ -153,36 +157,6 @@
     </div>
   </div>
 </section>
-  
-  <section class="masthead masthead-join">
-  <div class="container masthead-join-content">
-    <h2 id="join-title">Forget fads and restrictions, build a lifestyle right for you</h2>
-    <div id="healthy-start">
-      <h4>21 Day Healthy Start</h4>
-      <h2>$49</h2>
-      <ul class="join-props">
-        <li>Initial phone assesment</li>
-        <li>Daily feedback and support</li>
-        <li>Quick meal sharing</li>
-        <li>Help with recipes, questions, etc.</li>
-      </ul>
-      <a href="https://itunes.apple.com/US/app/id991589420?mt=8#"><button class="button join-button">Get Started</button></a>
-    </div>
-    <div id="bootcamp">
-      <h4>12-Week Boot Camp</h4>
-      <h2>$199</h2>
-      <ul class="join-props">
-        <li>Complete Personalized Evaluation</li>
-        <li>Regular phone assesments</li>
-        <li>Daily accountability</li>
-        <li>Quick meal sharing</li>
-        <li>Weekly progress tracking</li>
-      </ul>
-      <a href="https://itunes.apple.com/US/app/id991589420?mt=8#"><button class="button-primary join-button">Get Started</button></a>
-    </div>
-    <h4 class="question-contact">Have a question? <a href="contact.php">Get in touch with us!</a></h4>
-  </div>
-</section>  
 
 <!--        <form onsubmit="sendSMS(this); return false;">
         	<input id="phone" name="phone" type="tel" placeholder="(650) 123-4567" />
@@ -220,7 +194,7 @@
   <div class="top-footer">
     <div class="learn-more">
       <h6 class="hide-less-tablet uppercase">Learn more</h6>
-      <img class="footer-logo show-less-tablet" src="img1/nomful-white.png"/>
+      <img class="footer-logo show-less-tablet" src="/../img1/nomful-white.png"/>
       <ul class="learn-more-list list-left">
         <li><a href="https://nomful.com/partners/">Partners</a></li>
         <li><a href="https://nomful.com/contact.php">Contact</a></li>
@@ -251,7 +225,7 @@
   </div>
 </footer> 
     
-<script src="/../js1/index.js"></script> 
+<script src="/../js1/index.js"></script>
 
 </body>
 </html>
