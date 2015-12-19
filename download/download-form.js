@@ -1,7 +1,7 @@
 $(function() {
 
 	// Get the form.
-	var form = $('#ajax-phone-index');
+	var form = $('#ajax-download');
 
 	// Get the messages div.
 	var formMessages = $('#index-message');
