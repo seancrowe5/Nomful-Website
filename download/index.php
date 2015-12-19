@@ -107,8 +107,10 @@
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
       <input class="button-primary" type="submit" value="Find a coach">
     </div>
+  
         
 <?php 
+/*
     //call parse cloud
     require 'vendor/autoload.php';
     use Parse\ParseClient;
@@ -119,6 +121,7 @@
     $email = 'sean.crowe@me.com';
     ParseCloud::run("sendInstallEmail", array("toEmail" => "sean.crowe@me.com"));
      
+*/
 ?>
     </form>
     
