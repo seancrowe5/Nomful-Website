@@ -84,7 +84,29 @@
             alert("Sorry, something went wrong.");
           }
           else {
+              //message sent
             alert("SMS sent!");
+              //send us slack when form filled out
+ 
+              //send slack notificaiton
+            $payload = array("text" => "Hey <@sean> <@thomas>, someone just filled out the form online.  see if they are signing up :)”); 
+
+            $data_string = json_encode($payload);                                                                                   
+
+            $ch = curl_init('https://hooks.slack.com/services/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');                                                                      
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
+                'Content-Type: application/json',                                                                                
+                'Content-Length: ' . strlen($data_string))                                                                       
+            );                                                                                                                   
+            // Send the slack.
+            if (curl_exec($ch) {
+                // Set a 200 (okay) response code.
+                //http_response_code(200);
+            }
+
           }
         };
         branch.sendSMS(phone, linkData, options, callback);
