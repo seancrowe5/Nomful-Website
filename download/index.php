@@ -51,7 +51,7 @@
 
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <![endif]--> 
   
         <script src="//cdn.optimizely.com/js/3820750056.js"></script>
   
