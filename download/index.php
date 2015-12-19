@@ -89,6 +89,7 @@
               //send us slack when form filled out
  
               //send slack notificaiton
+              /*
             $payload = array("text" => "Hey <@sean> <@thomas>, someone just filled out the form online.  see if they are signing up :)”); 
 
             $data_string = json_encode($payload);                                                                                   
@@ -104,9 +105,9 @@
             // Send the slack.
             if (curl_exec($ch) {
                 // Set a 200 (okay) response code.
-                //http_response_code(200);
+                http_response_code(200);
             }
-
+            */
           }
         };
         branch.sendSMS(phone, linkData, options, callback);
