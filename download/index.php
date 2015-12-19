@@ -109,20 +109,20 @@
     </div>
   
         
-<?php 
-/*
-    //call parse cloud
-    require 'vendor/autoload.php';
-    use Parse\ParseClient;
-    use Parse\ParseCloud;
-    ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJyJVIeM0RbTMkGmHlped7dMhoksgrxm', 'fk2DwxckV3Pe4fKGRs6LH1YaZkslDTu86TS6Ouv5');
+    <?php 
+    
+        //call parse cloud
+        require 'vendor/autoload.php';
+        use Parse\ParseClient;
+        use Parse\ParseCloud;
+        ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJyJVIeM0RbTMkGmHlped7dMhoksgrxm', 'fk2DwxckV3Pe4fKGRs6LH1YaZkslDTu86TS6Ouv5');
 
-    //run cloud code and pass it an email
-    $email = 'sean.crowe@me.com';
-    ParseCloud::run("sendInstallEmail", array("toEmail" => "sean.crowe@me.com"));
-     
-*/
-?>
+        //run cloud code and pass it an email
+        $email = 'sean.crowe@me.com';
+        ParseCloud::run("sendInstallEmail", array("toEmail" => "sean.crowe@me.com"));
+
+    
+    ?>
     </form>
     
 </section>  
