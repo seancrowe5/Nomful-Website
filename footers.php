@@ -29,7 +29,8 @@
   <div class="bottom-footer">
     <div class="container">
       <h6 class="made-with">Made with <i class="fa fa-heart"></i> in Chicago</h6>
-      <p class="copyright">&copy; 2015 Nomful, Inc. - All Rights Reserved</p>
+      <a href="https://mixpanel.com/f/partner"><img id="mixpanel" src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics"/></a>
+      <p class="copyright">&copy; 2015 Nomful, Inc. - All Rights Reserved </p>
     </div>
   </div>
 </footer> 
