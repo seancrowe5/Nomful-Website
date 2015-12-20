@@ -91,6 +91,7 @@ branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG');
                     }
               };
               branch.sendSMS(phone, linkData, options, callback);
+          };
     </script>
 </head>
 <body>
