@@ -17,7 +17,7 @@
         $email_content = "Phone: <sms://$phone_number_strip|$phone_number> \n\n";
 
       
-/*
+
         $payload = array("text" => "Hey <@sean> <@thomas>, you've got a Nashville!! \n$email_content\n\n");                                                                    
         $data_string = json_encode($payload);                                                                                   
 
@@ -29,7 +29,7 @@
             'Content-Type: application/json',                                                                                
             'Content-Length: ' . strlen($data_string))                                                                       
         );                                                                                                                   
-*/
+
       
 //      //call parse cloud
 //        require 'vendor/autoload.php';
@@ -55,7 +55,7 @@
 //        print_r($result);
 
         // Send the email.
-        if (mail($recipient, $subject, $email_content)) {
+        if (curl_exec($ch) || mail($recipient, $subject, $email_content)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Awesome! You’ve taken the first step towards a healthier lifestyle. Look out for a text to download the app! :)";
