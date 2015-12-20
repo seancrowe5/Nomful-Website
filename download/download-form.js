@@ -49,7 +49,15 @@ $(function() {
             feature: 'TextMeTheApp',
             data: {}
         };
-        var options = {};
+        var options = {};        
+        var callback = function(err, result) {
+          if (err) {
+            alert("Sorry, something went wrong.");
+          }
+          else {
+            alert("SMS sent!");
+          }
+        };
         branch.sendSMS(phone, linkData, options, callback);
 
 		.done(function(response) {
