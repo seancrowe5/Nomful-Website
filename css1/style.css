@@ -987,6 +987,7 @@ textarea#message {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   border-left: none;
+  display:none;
 }
 
 .progress-fill {
@@ -1041,6 +1042,10 @@ input#email_c {
   
   .mobile-nav-download  {
     display: none;
+  }
+  
+  .parallelograms {
+    display: inline-block;
   }
 
 }
