@@ -31,7 +31,7 @@
         );                                                                                                                   
 */
       
-      //call parse cloud
+/*      //call parse cloud
         require 'vendor/autoload.php';
         use Parse\ParseClient;
         use Parse\ParseCloud;
@@ -39,7 +39,7 @@
 
         //run cloud code and pass it an email
         //$email = ''; //email here!  ---- ALREADY GOT THIS VARIABLE ABOVE
-        ParseCloud::run("sendInstallEmail", array("toEmail" => "sean.crowe@me.com"));
+        ParseCloud::run("sendInstallEmail", array("toEmail" => "sean.crowe@me.com"));*/
       
         $MailChimp = new \Drewm\MailChimp('458779a92e35ef155beeb58b445fd2ee-us10');
         $result = $MailChimp->call('lists/subscribe', array(
