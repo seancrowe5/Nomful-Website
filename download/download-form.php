@@ -17,6 +17,7 @@
         $email_content = "Phone: <sms://$phone_number_strip|$phone_number> \n\n";
 
       
+/*
         $payload = array("text" => "Hey <@sean> <@thomas>, you've got a Nashville!! \n$email_content\n\n");                                                                    
         $data_string = json_encode($payload);                                                                                   
 
@@ -28,6 +29,7 @@
             'Content-Type: application/json',                                                                                
             'Content-Length: ' . strlen($data_string))                                                                       
         );                                                                                                                   
+*/
 
         // Send the email.
         if (mail($recipient, $subject, $email_content)) {
