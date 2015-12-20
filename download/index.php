@@ -57,7 +57,7 @@
 branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
 
             function sendSMS(form) {
-                var phone = form.phone.value;
+                var phone = form.phone_number_a.value;
                 var linkData = {
                     tags: [],
                     channel: 'Download Landing Page',
@@ -75,7 +75,7 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
                     }
                 };
                 branch.sendSMS(phone, linkData, options, callback);
-                form.phone.value = "";
+                form.phone_number_a.value = "";
             }
 
       
