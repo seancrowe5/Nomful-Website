@@ -53,32 +53,30 @@
   <![endif]-->
   
   <script>
-      (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-v1.8.3.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
+    (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-v1.8.3.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
 branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
 
-            function sendSMS(form) {
-                var phone = form.phone_number_a.value;
-                var linkData = {
-                    tags: [],
-                    channel: 'Download Landing Page',
-                    feature: 'TextMeTheApp',
-                    data: {
-                    }
-                };
-                var options = {};
-                var callback = function(err, result) {
-                    if (err) {
-                        alert("Sorry, something went wrong.");
-                    }
-                    else {
-                        alert("SMS sent!");
-                    }
-                };
-                branch.sendSMS(phone, linkData, options, callback);
-                form.phone_number_a.value = "";
-            }
-
-      
+          function sendSMS(form) {
+              var phone = form.phone_number_a.value;
+              var linkData = {
+                  tags: [],
+                  channel: 'Download Landing Page',
+                  feature: 'TextMeTheApp',
+                  data: {
+                  }
+              };
+              var options = {};
+              var callback = function(err, result) {
+                  if (err) {
+                      alert("Sorry, something went wrong.");
+                  }
+                  else {
+                      alert("SMS sent!");
+                  }
+              };
+              branch.sendSMS(phone, linkData, options, callback);
+              form.phone_number_a.value = "";
+          }
   </script>
 </head>
 <body>
@@ -102,7 +100,7 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
       <script src="download-form.js"></script>
       <div id="download-message-top" class="container-480"><div id="download-message"></div></div>
 
-      <form id="ajax-download" method="post" action="download-form.php" class="container-370" novalidate>
+      <form id="ajax-download" onsubmit="sendSMS(this);" method="post" action="download-form.php" class="container-370" novalidate>
       <div class="row">
         <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone_number_a" id="phone_number_a">
         <input class="u-full-width label_better" data-new-placeholder="email" type="email" placeholder="email" name="email_c" id="email_c">
