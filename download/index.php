@@ -57,12 +57,12 @@
 <body>
 
   <div class="mobile-nav-download"> <!-- Hidden if the screen is larger than XXX px -->
-    <a href="http://nomful.com"><img src="/../img1/nomful.png"></a>
+    <a href="http://nomful.com"><img src="/../img1/white-logo.png"></a>
   </div>
 
   <header>
     <div class="header">
-      <a href="http://nomful.com"><img class="logo" src="/../img1/nomful.png"></a>
+      <a href="http://nomful.com"><img class="logo" src="/../img1/white-logo.png"></a>
     </div>
   </header>
   
@@ -86,7 +86,7 @@
       </form>
     </div>
     
-    <img id="download-phone-right" src="/../img1/marketingscreen-meal.jpg"/>    
+    <img id="download-phone-right" src="/../img1/marketingscreen-meal.png"/>    
     
 </section>  
   
