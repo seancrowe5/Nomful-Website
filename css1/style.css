@@ -1021,9 +1021,10 @@ input#email_c {
   margin: 0 auto;
 }
 
-/*#download-message-top {
+.download-message-top-style {
+  display: block;
   margin: 30px auto 0px;
-}*/
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {

@@ -50,8 +50,7 @@ $(function() {
 
             // Hide the form.
 			$('#ajax-download').hide();
-            $('#download-message-top').fadeIn(700);
-            $('img#download-phone-right').fadeOut(2000);
+            $('#download-message-top').fadeIn(700).addClass('download-message-top-style');
             
 		})
 		.fail(function(data) {
