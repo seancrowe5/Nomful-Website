@@ -67,15 +67,14 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
               };
               var options = {};
               var callback = function(err, result) {
-                  if (err) {
+/*                  if (err) {
                       alert("Sorry, something went wrong.");
                   }
                   else {
                       alert("SMS sent!");
-                  }
+                  }*/
               };
               branch.sendSMS(phone, linkData, options, callback);
-              form.phone_number_a.value = "";
           }
   </script>
 </head>
