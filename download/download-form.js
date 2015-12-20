@@ -29,6 +29,7 @@ $(function() {
             return false;
         }
       
+        var phone = $('input#phone_number_a').val();
 		// Serialize the form data.
 		var formData = $(form).serialize();
 
@@ -71,9 +72,6 @@ $(function() {
 	});
 
 });
-
-
-
 
 
 

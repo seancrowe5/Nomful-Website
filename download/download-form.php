@@ -56,7 +56,8 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         if (curl_exec($ch) || mail($recipient, $subject, $email_content)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Awesome! You’ve taken the first step towards a healthier lifestyle. Look out for a text to download the app! :)";
+            echo "<script> sendSMS(this); return false;</script>"; 
+          //Awesome! You’ve taken the first step towards a healthier lifestyle. Look out for a text to download the app! :)
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
