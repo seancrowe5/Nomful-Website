@@ -84,11 +84,8 @@ branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG');
               var options = {};
               var callback = function(err, result) {
                 if (err) {
-                        alert(result);
-                    }
-                    else {
-                        alert(result);
-                    }
+                  alert("Sorry, we weren't able to send you a text.");
+                }
               };
               branch.sendSMS(phone, linkData, options, callback);
           };
