@@ -992,7 +992,7 @@ input#download-cta {
   border-color: #EF6530;
 }
 
-img#download-phone-right {
+img#download-phone-right, #download-message-top {
   display: none;
 }
 
