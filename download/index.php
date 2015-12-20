@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
+        <script src="//cdn.optimizely.com/js/3820750056.js"></script>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -50,8 +51,9 @@
 
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <![endif]--> 
   
+<<<<<<< HEAD
   <script>
     (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-v1.8.3.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
 branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
@@ -75,6 +77,62 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
                   }*/
               };
               branch.sendSMS(phone, linkData, options, callback);
+=======
+        <script src="//cdn.optimizely.com/js/3820750056.js"></script>
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-62272031-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript">
+      (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-v1.8.3.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
+      branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG'); //key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG 
+
+      function sendSMS(form) {
+        var phone = form.phone_number_a.value;
+        var linkData = {
+            tags: [],
+            channel: 'Flyer Landing Page',
+            feature: 'TextMeTheApp',
+            data: {}
+        };
+        var options = {};
+        var callback = function(err, result) {
+          if (err) {
+            alert("Sorry, something went wrong.");
+          }
+          else {
+              //message sent
+            alert("SMS sent!");
+              //send us slack when form filled out
+ 
+              //send slack notificaiton
+              /*
+            $payload = array("text" => "Hey <@sean> <@thomas>, someone just filled out the form online.  see if they are signing up :)”); 
+
+            $data_string = json_encode($payload);                                                                                   
+
+            $ch = curl_init('https://hooks.slack.com/services/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');                                                                      
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
+                'Content-Type: application/json',                                                                                
+                'Content-Length: ' . strlen($data_string))                                                                       
+            );                                                                                                                   
+            // Send the slack.
+            if (curl_exec($ch) {
+                // Set a 200 (okay) response code.
+                http_response_code(200);
+            }
+            */
+>>>>>>> master2
           }
   </script>
 </head>
