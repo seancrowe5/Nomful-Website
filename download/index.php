@@ -70,7 +70,7 @@
   <div class="container masthead-top-content">
     <div class="download-form-box">
       <h2>You're almost finished!</h2>
-      <div class="parallelogram progress-fill"><p>&nbsp;</p></div><div class="parallelogram"><p class="parallel-text-budge">Download App</p></div><div class="parallelogram"><p class="parallel-text-budge">Choose Coach</p></div>
+      <div class="parallelogram progress-fill"><p>&nbsp;</p></div><div class="parallelogram"><p class="parallel-text-budge">Download App</p></div><div class="parallelograms"><p class="parallel-text-budge">Choose Coach</p></div>
       
       <script src="download-form.js"></script>
       <div id="download-message-top" class="container-480"><div id="download-message"></div></div>

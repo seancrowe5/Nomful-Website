@@ -967,13 +967,25 @@ textarea#message {
 
 .parallelogram {
   width: 130px;
-  height: 30px;
-  -webkit-transform: skew(-25deg);
-     -moz-transform: skew(-25deg);
-       -o-transform: skew(-25deg);
+  height: 20px;
   background-color: white;
   display: inline-block;
-  border: 3px solid #3D90C1;
+  border: 2px solid #3D90C1;
+}
+
+.parallelogram:first-of-type{
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.parallelograms {
+  width: 130px;
+  height: 20px;
+  background-color: white;
+  display: inline-block;
+  border: 2px solid #3D90C1;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
   border-left: none;
 }
 
@@ -982,7 +994,7 @@ textarea#message {
 }
 
 .parallel-text-budge {
-  top: 3px;
+  top: -1px;
   position: relative;
 }
 
@@ -1044,7 +1056,7 @@ input#email_c {
     margin-top: 0px;
   }
   
-  .parallelogram {
+  .parallelogram, .parallelograms {
     width: 145px;
   }
   
