@@ -76,7 +76,7 @@ input.button-primary {
   .masthead-top-content {
     top: 50px;
   }
-  
+
   .mobile-nav {
     display: none;
   }
@@ -227,7 +227,7 @@ input.button-primary {
     max-width: 500px;
   }
   
-  .container-370 {
+  .left55 {
     margin-left: 55px;
   }
 }
@@ -932,3 +932,156 @@ textarea#message {
   }
   
 }
+
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ---------------------------- DOWNLOAD PAGE ---------------------------- */
+/* ----------------------------------------------------------------------- */
+
+.mobile-nav-download {
+  height: 150px;
+  width: 100%;
+  background: rgba(255,255,255,.4); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  position: absolute;
+}
+
+.mobile-nav-download img {
+  width: 250px;
+  margin-top: 15px;
+}
+
+.download-masthead-top {
+  height: 650px;
+  background-image: url('/img1/background-fruit.png');
+  background-position: 54% 50%;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+.parallelogram {
+  width: 130px;
+  height: 20px;
+  background-color: white;
+  display: inline-block;
+  border: 2px solid #3D90C1;
+}
+
+.parallelogram:first-of-type{
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.parallelograms {
+  width: 130px;
+  height: 20px;
+  background-color: white;
+  display: inline-block;
+  border: 2px solid #3D90C1;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-left: none;
+  display:none;
+}
+
+.progress-fill {
+  background: #3D90C1;
+}
+
+.parallel-text-budge {
+  top: -1px;
+  position: relative;
+}
+
+input#download-cta {
+  font-family: 'Open Sans';
+  background-color: #EF6530;
+  border-color: #EF6530;
+}
+
+img#download-phone-right, #download-message-top {
+  display: none;
+}
+
+input#email_c {
+  margin-top: 0px;
+}
+
+.download-form-box {
+  width: 100%;
+  background-color: rgba(255,255,255,.8);
+  padding: 30px 0px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.download-message-top-style {
+  display: block;
+  margin: 30px auto 0px;
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  
+  .download-masthead-top {
+    padding-top: 120px;
+  }
+  
+  .download-form-box {
+    width: 60%;
+    min-width: 500px;
+    max-width: 570px;
+  }
+  
+  .mobile-nav-download  {
+    display: none;
+  }
+  
+  .parallelograms {
+    display: inline-block;
+  }
+
+}
+
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  
+  .download-masthead-top {
+    height: 570px;
+    background-image: url('/img1/background-fruit.png');
+    background-position: 44% 30%;
+    background-size: cover;
+    margin-top: 0px;
+  }
+  
+  .parallelogram, .parallelograms {
+    width: 145px;
+  }
+  
+  .download-form-box {
+    display: inline-block;
+    float: left;
+  }
+  
+  img#download-phone-right {
+    display: inline-block;
+    width: 260px;
+    top: -60px;
+    position: relative;
+    float: left;
+    margin-left: 7%;
+  }
+  
+  
+  
+}
+
+  

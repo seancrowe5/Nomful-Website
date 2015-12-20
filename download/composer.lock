@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "04884b289c444adc57a13ea197b0da2d",
-    "content-hash": "a120723968395480bbe77b75a1a154a9",
+    "hash": "0bbb3c45b16082c0044a510fff162a2a",
+    "content-hash": "075467d8e18c19475e77a07f4aa74a85",
     "packages": [
         {
             "name": "drewm/mailchimp-api",
@@ -43,6 +43,59 @@
             "description": "Super-simple, minimum abstraction MailChimp API v2 wrapper",
             "homepage": "https://github.com/drewm/mailchimp-api",
             "time": "2015-07-07 15:38:25"
+        },
+        {
+            "name": "parse/php-sdk",
+            "version": "1.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ParsePlatform/parse-php-sdk.git",
+                "reference": "ba0400e187029d40070b5456455b85e91b337e53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ParsePlatform/parse-php-sdk/zipball/ba0400e187029d40070b5456455b85e91b337e53",
+                "reference": "ba0400e187029d40070b5456455b85e91b337e53",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "~2.5",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Parse\\": "src/Parse/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Parse Platform License"
+            ],
+            "authors": [
+                {
+                    "name": "Parse",
+                    "homepage": "https://github.com/parseplatform/parse-php-sdk/contributors"
+                }
+            ],
+            "description": "Parse PHP SDK",
+            "homepage": "https://github.com/parseplatform/parse-php-sdk",
+            "keywords": [
+                "parse",
+                "sdk"
+            ],
+            "time": "2015-11-30 07:33:06"
         }
     ],
     "packages-dev": [],
