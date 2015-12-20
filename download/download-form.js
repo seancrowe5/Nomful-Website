@@ -4,7 +4,7 @@ $(function() {
 	var form = $('#ajax-download');
 
 	// Get the messages div.
-	var formMessages = $('#index-message');
+	var formMessages = $('#download-message');
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {
@@ -50,7 +50,7 @@ $(function() {
 
             // Hide the form.
 			$('#ajax-download').hide();
-            $('#index-message-top').fadeIn(700);
+            $('#download-message-top').fadeIn(700);
             
 		})
 		.fail(function(data) {

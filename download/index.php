@@ -74,7 +74,7 @@
       
       <script src="/js1/jquery.label_better.js"></script>
       <script src="download-form.js"></script>
-      <div id="index-message-top" class="container-480"><div id="index-message"></div></div>
+      <div id="download-message-top" class="container-480"><div id="download-message"></div></div>
 
       <form id="ajax-download" method="post" action="download-form.php" class="container-370" novalidate>
       <div class="row">
