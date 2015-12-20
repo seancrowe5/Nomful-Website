@@ -72,6 +72,7 @@ $(function() {
             // Hide the form.
 			$('#ajax-download').hide();
             $('#download-message-top').fadeIn(700);
+            $('img#download-phone-right').fadeOut(2000);
             
 		})
 		.fail(function(data) {
