@@ -84,10 +84,10 @@ branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG');
               var options = {};
               var callback = function(err, result) {
                 if (err) {
-                        alert(err);
+                        alert(result);
                     }
                     else {
-                        alert("SMS sent!");
+                        alert(result);
                     }
               };
               branch.sendSMS(phone, linkData, options, callback);
