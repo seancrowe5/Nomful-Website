@@ -781,8 +781,9 @@ img.eatingRight-meal {
   padding-top: 75px;
   padding-bottom: 75px;
   min-height: 880px;
-  background-image: url('/img1/masthead-you.jpg');
-  background-size: cover;
+  background-color: rgba(158, 200, 243, 0.35);
+  /*background-image: url('/img1/masthead-you.jpg');
+  background-size: cover;*/
   color: #060606;
 }
 
@@ -812,6 +813,22 @@ img.eatingRight-meal {
   font-weight: 500;
   margin-top: 13px;
   margin-bottom: 13px;
+}
+
+ul.coach-specialties {
+  list-style: none;
+  width: 100%;
+  margin-top: -15px;
+  margin-bottom: 155px;
+}
+
+ul.coach-specialties li {
+  float: left;
+  width: 44%;
+  border: 2px solid #7ECAAF;
+  border-radius: 5px;
+  margin: 3% 2% 0%;
+  background-color: rgba(126, 202, 175, 0.3);
 }
 
 /* Larger than tablet */

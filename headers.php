@@ -92,6 +92,6 @@
 
 <header>
   <div class="header">
-    <a href="http://nomful.com"><img class="logo" src="img1/nomful-white-logo-60.png"></a>
+    <a href="http://nomful.com"><img class="logo" id="top" src="img1/nomful-white-logo-60.png"></a>
   </div>
 </header>
