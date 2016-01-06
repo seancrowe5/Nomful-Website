@@ -1,5 +1,28 @@
 <?php require("headers.php"); ?>
 
+<script>
+    (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-v1.8.3.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
+branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2'); 
+
+          function sendSMS(form) {
+              var phone = form.phone_number_a.value;
+              var linkData = {
+                  tags: [],
+                  channel: 'Download Landing Page',
+                  feature: 'TextMeTheApp',
+                  data: {
+                  }
+              };
+              var options = {};
+              var callback = function(err, result) {
+                if (err) {
+                  alert("Sorry, we weren't able to send you a text.");
+                }
+              };
+              branch.sendSMS(phone, linkData, options, callback);
+          };
+</script>
+
 <section class="masthead-top">
   <div class="container masthead-top-content">
     <h1 id="top-headline">A nutrition coach in your pocket</h1>
@@ -31,7 +54,7 @@
         <script src="phone-index-form.js"></script>
         <div id="branch-message-top" class="container-480"><div id="branch-message"></div></div>
       
-        <form id="ajax-phone-index" method="post" action="phone-index-form.php" novalidate>
+        <form id="ajax-phone-index" onsubmit="sendSMS(this)" method="post" action="phone-index-form.php" novalidate>
         <div class="row">
           <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number-a" id="phone-number-a">
           <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
