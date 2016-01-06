@@ -204,7 +204,7 @@ branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG');
   
 <!--  <script>  
   $("input.label_better").label_better({
-    position: "top",
+    position: "top", 
     animationTime: 400,
     easing: "bounce",
     offset: 10,
