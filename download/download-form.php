@@ -37,7 +37,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         );                                                                                                                   
 
         //run cloud code and pass it an email
-        ParseCloud::run("sendInstallEmail", array("toEmail" => $email ));
+        //ParseCloud::run("sendInstallEmail", array("toEmail" => $email ));
       
         $MailChimp = new \Drewm\MailChimp('458779a92e35ef155beeb58b445fd2ee-us10');
         $result = $MailChimp->call('lists/subscribe', array(
