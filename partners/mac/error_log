@@ -1,3 +1,0 @@
-[15-Jun-2015 09:15:08 America/Chicago] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/titful/public_html/partners/mac/trainer-process.php on line 2
-[15-Jun-2015 09:15:08 America/Chicago] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/titful/public_html/partners/mac/trainer-process.php on line 2
-[15-Jun-2015 09:15:08 America/Chicago] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home/titful/public_html/partners/mac/trainer-process.php on line 2
