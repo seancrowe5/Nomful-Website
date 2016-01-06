@@ -23,7 +23,7 @@ require 'vendor/autoload.php';
             'double_optin'      => false,
             'update_existing'   => true,
             'replace_interests' => false,
-            'send_welcome'      => true,
+            'send_welcome'      => false,
         ));
         
         //TESTING EMAIL INFO FOR THOMAS
