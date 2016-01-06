@@ -136,7 +136,7 @@
       case "atendpage":
         $(window).scroll(function(){
           var yPos = $(window).scrollTop();
-          if (yPos >= ($(document).height() - $(window).height()) ) {
+          if (yPos >= 1000 ) {
             el.openWindow();
           } else {
             if (yPos + 300 < ($(document).height() - $(window).height()) ) {
