@@ -4,7 +4,7 @@ $(function() {
 	var form = $('#ajax-phone-index');
 
 	// Get the messages div.
-	var formMessages = $('#index-message');
+	var formMessages = $('#branch-message');
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {
@@ -48,7 +48,7 @@ $(function() {
 
             // Hide the form.
 			$('#ajax-phone-index').hide();
-            $('#index-message-top').fadeIn(700);
+            $('#branch-message-top').fadeIn(700);
             
 		})
 		.fail(function(data) {

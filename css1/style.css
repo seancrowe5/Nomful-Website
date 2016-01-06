@@ -668,12 +668,12 @@ img.eatingRight-meal {
     float: left;
   }
   
-.eatingRight-point {
-  width: 50%;
-  display: inline;
-  float: left;
-  margin: 20px 0px 0px 80px;
-}
+  .eatingRight-point {
+    width: 50%;
+    display: inline;
+    float: left;
+    margin: 20px 0px 0px 80px;
+  }
   
 }
 
@@ -690,6 +690,10 @@ img.eatingRight-meal {
   img.eatingRight-meal {
     width: 285px;
     margin: 0px 5%;
+  }
+  
+  .point-box {
+    padding: 0px 10px 0px;
   }
   
 }
