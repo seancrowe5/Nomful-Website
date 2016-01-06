@@ -54,7 +54,7 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
         <script src="phone-index-form.js"></script>
         <div id="branch-message-top" class="container-480"><div id="branch-message"></div></div>
       
-        <form id="ajax-phone-index" onsubmit="sendSMS(this)" method="post" action="phone-index-form.php" novalidate>
+        <form id="ajax-phone-index" onsubmit="sendSMS(this);" novalidate>
         <div class="row">
           <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number-a" id="phone-number-a">
           <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
