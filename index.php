@@ -24,6 +24,23 @@ branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG');
               branch.sendSMS(phone, linkData, options, callback);
           };
 </script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 
 <script>
  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -136,24 +153,79 @@ branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG');
       <img src="img1/Brittany.jpg">
       <h4>Brittany C.</h4>
       <p>I was born and raised in upstate New York. After receiving my Bachelor's Degree in Nutrition and Dietetics from Syracuse University, I moved to South Carolina for a dietetic internship and have lived here ever since. I enjoy cooking, Pure Barre, blogging, renovating, and being on social media. I’m also a dog lover!</p>
+      
+      <ul class="coach-specialties">
+        <li>Weight Mgmt</li>
+        <li>Diabetes Mgt</li>
+        <li>Heart Health</li>
+        <li>Celiac Diets</li>
+        <li>Vegetarian</li>
+        <li>Whole Foods</li>
+      </ul>
     </div>
     
     <div class="coachIntro-box">
       <img src="img1/Emily.jpg">
       <h4>Emily G.</h4>
       <p>I come from a close-knit Irish family - youngest of seven kids! My passion for nutrition began when I was diagnosed with type 1 diabetes. I decided then that I wanted to help people like me, which is why I’m becoming a certified diabetes educator. I enjoy yoga, cooking, reading nutrition blogs, and binging on reality TV.</p>
+      
+      <ul class="coach-specialties">
+        <li>Diabetes Mgt</li>
+        <li>Heart Health</li>
+        <li>Clean Eating</li>
+        <li>Weight Mgmt</li>
+        <li>GI Disorders</li>
+        <li>Vegetarian</li>
+      </ul>
     </div>
     
     <div class="coachIntro-box">
       <img src="img1/Amy.jpg">
       <h4>Amy D.</h4>
       <p>Born and raised in New Orleans, I've always had a passion for food. When I'm not helping people reach their health goals, I'm spending too much time browsing the aisles of Whole Foods, recipe testing for my blog, The Balanced Dietitian, trying new meals at local restaurants, or walking through beautiful Audubon Park!</p>
+      
+      <ul class="coach-specialties">
+        <li>Weight Mgmt</li>
+        <li>Gluten Free</li>
+        <li>Dairy Free</li>
+        <li>Clean Eating</li>
+        <li>Low Glycemic</li>
+        <li>Mediter Diet</li>
+      </ul>
     </div>
-    
-    
-    
   </div>
 </section>
+  
+  
+<section class="masthead masthead-join">
+  <div class="container masthead-join-content">
+    <h2 id="join-title">Forget fads and restrictions, build a lifestyle right for you</h2>
+    <div id="healthy-start">
+      <h4>21 Day Healthy Start</h4>
+      <h2>$49</h2>
+      <ul class="join-props">
+        <li>Initial phone assesment</li>
+        <li>Daily feedback and support</li>
+        <li>Quick meal sharing</li>
+        <li>Help with recipes, questions, etc.</li>
+      </ul>
+      <a href="#top"><button class="button join-button">Get Started</button></a>
+    </div>
+    <div id="bootcamp">
+      <h4>12-Week Boot Camp</h4>
+      <h2>$199</h2>
+      <ul class="join-props">
+        <li>Complete Personalized Evaluation</li>
+        <li>Regular phone assesments</li>
+        <li>Daily accountability</li>
+        <li>Quick meal sharing</li>
+        <li>Weekly progress tracking</li>
+      </ul>
+      <a href="#top"><button class="button-primary join-button">Get Started</button></a>
+    </div>
+    <h4 class="question-contact">Have a question? <a href="contact.php">Get in touch with us!</a></h4>
+  </div>
+</section> 
   
 <div class="subscribe-me">
   <h2>Interested in Nomful?</h2>
