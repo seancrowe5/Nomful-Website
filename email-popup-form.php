@@ -1,4 +1,5 @@
 <?php
+require 'vendor/autoload.php';
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
@@ -25,6 +26,17 @@
         // Build the email headers.
         $email_headers = "From: <$email>";
       
+                //ADD USER TO MAILCHIMP
+        $MailChimp = new \Drewm\MailChimp('458779a92e35ef155beeb58b445fd2ee-us10');
+        $result = $MailChimp->call('lists/subscribe', array(
+            'id'                => '297cbd7828',
+            'email'             => array('email'=>$email),
+            'merge_vars'        => array('TYPE' => 'Trial'),
+            'double_optin'      => false,
+            'update_existing'   => true,
+            'replace_interests' => false,
+            'send_welcome'      => false,
+        ));
       
         $payload = array("text" => "Hey <@sean> <@thomas>, you've got a subscriber!! \n$email_content\n\n");                                                                    
         $data_string = json_encode($payload);                                                                                   
