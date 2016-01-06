@@ -118,7 +118,7 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
     <h2 class="bold">Everyone is different. Our coaches have a wide range of specialties for you to choose from.</h2>
     
     <div class="coachIntro-box">
-      <img src="img1/Steph.jpg">
+      <img src="img1/Brittany.jpg">
       <h4>Brittany C.</h4>
       <p>I was born and raised in upstate New York. After receiving my Bachelor's Degree in Nutrition and Dietetics from Syracuse University, I moved to South Carolina for a dietetic internship and have lived here ever since. I enjoy cooking, Pure Barre, blogging, renovating, and being on social media. I’m also a dog lover!</p>
     </div>
