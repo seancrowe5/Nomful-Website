@@ -39,8 +39,7 @@ $(function() {
         
 		.done(function(response) {
           
-          var targeted_popup_class = jQuery(this).attr('data-popup-open');
-        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+$('[data-popup=popup-1]').fadeIn(350);
         $('body').css('overflow', 'hidden');
         e.preventDefault();
           

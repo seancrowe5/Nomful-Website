@@ -121,8 +121,10 @@
   
   $(function() {
     //----- OPEN
-    $('[data-popup-open]').on('click', function(e)  {
-        
+    $('[data-popup-open]').on('click', function(e)  {        
+        $('[data-popup=popup-1]').fadeIn(350);
+        $('body').css('overflow', 'hidden');
+        e.preventDefault();
     });
  
     //----- CLOSE
