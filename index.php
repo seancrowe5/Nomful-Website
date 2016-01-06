@@ -42,7 +42,7 @@ branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG');
     
     <h5 id="subline">Daily accountability and support from an expert in nutrition while you shop, cook, eat, and exercise.</h5>
     
-    <h4 id="top-CTA">Schedule <span>FREE </span>consulation!</h4>
+    <h4 id="top-CTA">Schedule <span>FREE </span>consultation!</h4>
     
     <script src="email-index-form.js"></script>
     <div id="index-message-top" class="container-480"><div id="index-message"></div></div>
@@ -86,7 +86,7 @@ branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG');
   <div class="container masthead-testimonial-content">
     
     <div class="testimonial-box">
-      <img class="testimonial-profile" src="img1/Jody.jpg">
+      <img class="testimonial-profile" src="img1/chelsea.png">
       <div class="testimonial-stars-row">
         <img class="testimonial-stars" src="img1/star.png">
         <img class="testimonial-stars" src="img1/star.png">
@@ -95,7 +95,7 @@ branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG');
         <img class="testimonial-stars" src="img1/star.png">
       </div>
       <h5>"The Nomful program allowed me to break my bad habits!"</h5>
-      <h6>-Jody, XX</h6>
+      <h6>-Chelsea, 29</h6>
     </div>
     
   </div>
@@ -176,7 +176,7 @@ branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG');
 	<script type="text/javascript">
 		$(document).ready( function() {
 			$(".subscribe-me").subscribeBetter({
-                trigger: "onidle",
+                trigger: "atendpage",
                 delay: 100
 			});
 		});
