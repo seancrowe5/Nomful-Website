@@ -206,7 +206,7 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
 <script src="js1/formatter.js"></script>
   
   <script>
-    new Formatter(document.getElementById('phone-number-a'), {
+    new Formatter(document.getElementById('phone_number_a'), {
     'pattern': '({{999}}) {{999}} - {{9999}}',
     'persistent': false
   });
