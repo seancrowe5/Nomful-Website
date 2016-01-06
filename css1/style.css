@@ -519,7 +519,7 @@ div#popup-message {
 /* ----------------------------------------------------------------------- */
 
 .masthead-testimonial {
-  height: 400px;
+  height: 270px;
 }
 
 .testimonial-box {
@@ -544,25 +544,34 @@ img.testimonial-profile {
 
 img.testimonial-stars {
   display: inline;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
-.testimonial-box h4 {
+.testimonial-box h5 {
   margin-bottom: 7px;
   font-weight: 500;
   margin-top: 9px;
 }
 
-.testimonial-box h5 {
+.testimonial-box h6 {
+  font-size: 19px;
   padding-bottom: 10px;    
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
   
+  .masthead-testimonial {
+    height: 300px;
+  }
+  
   .testimonial-box {
     max-width: 600px;
+  }
+  
+  .testimonial-box h5 {
+    padding: 0px 70px;
   }
   
 }
@@ -571,12 +580,12 @@ img.testimonial-stars {
 @media (min-width: 1000px) {
   
   .masthead-testimonial {
-    height: 350px;
+    height: 300px;
   }
   
   .testimonial-box {
     display: block;
-    margin: 120px auto 30px;
+    margin: 100px auto 30px;
   }
   
 }
@@ -615,7 +624,7 @@ img.eatingRight-meal {
 .point-box p {
   margin-bottom: 0px;
   text-align: left;
-  padding: 0px 12px;
+  padding-left: 12px;
 }
 
 .point-box {
@@ -696,6 +705,7 @@ img.eatingRight-meal {
   padding-bottom: 75px;
   min-height: 880px;
   background-image: url('/img1/masthead-you.jpg');
+  background-size: cover;
   color: #060606;
 }
 
