@@ -1,8 +1,11 @@
 <?php
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the form fields and remove whitespace.
-        $phone_number = $_POST["phone-number-a"];
+
+        http_response_code(200);
+        echo "yessss";
+        /*// Get the form fields and remove whitespace.
+        $phone_number = $_POST["phone_number_a"];
         $phone_number_strip = preg_replace("/[^0-9]/","",$phone_number);
       
         // Set the recipient email address.
@@ -37,7 +40,7 @@
             // Set a 500 (internal server error) response code.
             http_response_code(500);
             echo "Oops! Something went wrong.";
-        }
+        }*/
 
     } else {
         // Not a POST request, set a 403 (forbidden) response code.

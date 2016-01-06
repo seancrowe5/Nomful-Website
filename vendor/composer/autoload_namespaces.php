@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Mandrill' => array($vendorDir . '/mandrill/mandrill/src'),
+    'Drewm' => array($vendorDir . '/drewm/mailchimp-api/src'),
 );

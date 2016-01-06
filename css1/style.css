@@ -2,10 +2,6 @@
 /* -------------------------- TOP NAV & MASTHEAD ------------------------- */
 /* ----------------------------------------------------------------------- */
 
-#ajax-phone-name-index, #ajax-email-index {
-  display: none;
-}
-
 .mobile-nav {
   position: relative;
   display: block;
@@ -24,20 +20,25 @@ img.logo-mobile {
 
 .masthead-top {
   height: 650px;
-  background-image: url('/img1/main-woman.jpg');
-  background-position: 54% 50%;
+  background-image: url('/img1/hero-home.jpg');
+  background-position: 14% 50%;
   background-size: cover;
   margin-top: -30px;
 }
 
 .masthead-top-content {
   position: relative;
-  top: 90px;
+  top: 130px;
 }
 
 .header {
-  display: none;
+  margin-bottom: -78px;
+  padding-top: 10px;
   text-align: left;
+}
+
+img.logo {
+  height: 44px;
 }
 
 #top-button {
@@ -50,11 +51,34 @@ img.logo-mobile {
 
 h1#top-headline {
   font-weight: 900;
+  text-transform: uppercase;
+  color: #fafafa;
+  letter-spacing: 0px;
 }
 
-h4#subline {
+h5#subline {
+  color: #fafafa;
   padding: 0px 10px;
-  margin-top: 45px;
+  margin-top: 30px;
+}
+
+h4#top-CTA {
+
+}
+
+h4#top-CTA {
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 40px;
+  color: #fafafa;
+}
+
+h4#top-CTA span {
+  border-bottom: 5px solid #FF8B35;
+}
+
+img#orange-arrow {
+  display: none;
 }
 
 .lb_label.top {
@@ -71,10 +95,160 @@ input.button-primary {
   width: 100%;
 }
 
+input#email-c {
+  width: 90%;
+  display: inline;
+  height: 42px;
+  border: none;
+  font-size: 17px;
+  margin-right: 5px;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input#submit-c {
+  width: 90%;
+  display: inline;
+  text-transform: none;
+  margin-left: -3px;
+  text-align: center;
+  background-color: #FF8B35;
+  border: none;
+  font-size: 21px;
+}
+  
+
+/* Outer */
+.popup {
+  width:100%;
+  height:100%;
+  display:none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  background:rgba(0,0,0,0.75);
+}
+
+/* Inner */
+.popup-inner {
+  max-width:700px;
+  width: 85%;
+  padding: 20px 10px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  box-shadow:0px 2px 6px rgba(0,0,0,1);
+  border-radius:3px;
+  background:#fff;
+}
+
+/* Close Button */
+.popup-close , .sb .sb-close-btn{
+  width:30px;
+  height:30px;
+  padding-top:4px;
+  display:inline-block;
+  position:absolute;
+  top:0px;
+  right:0px;
+  transition:ease 0.25s all;
+  -webkit-transform:translate(50%, -50%);
+  transform:translate(50%, -50%);
+  border-radius:1000px;
+  background:rgba(0,0,0,0.8);
+  font-family:Arial, Sans-Serif;
+  font-size:20px;
+  text-align:center;
+  line-height:100%;
+  color:#fff;
+}
+
+.popup-close:hover , .sb .sb-close-btn:hover {
+  -webkit-transform:translate(50%, -50%) rotate(180deg);
+  transform:translate(50%, -50%) rotate(180deg);
+  background:rgba(0,0,0,1);
+  text-decoration:none;
+}
+
+
+.sb {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 3%;
+  width: 94%;
+  height: 210px;
+  background: white;
+  padding: 10px 0px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+  z-index: 1999;
+  opacity: 0;
+}
+
+.sb form input[type='text'], .sb form input[type='password'], .sb form input[type='email'], .sb form textarea{
+  margin: 0;
+  display: inline;
+  background: #f7f7f7;
+  padding: 18px 10px;
+  font-size: 15px;
+  width: 230px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+.sb form input[type='email']:focus , .sb form input[type='email']:active {
+  border: 1px solid black;
+}
+
+.sb form input[type='submit'] {
+  background: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  background: #EF6530;
+  color: white;
+  width: 80px;
+  margin-left: 5px;
+  padding: 0px 1px;
+  text-align: center;
+  height: 37px;
+}
+
+div#popup-message {
+  position: relative;
+  left: 5%;
+  width: 90%;
+}
+
+input#started-cta {
+  font-family: 'Open Sans';
+  background-color: #EF6530;
+  border-color: #EF6530;
+}
+
+form#ajax-phone-index {
+  width: 90%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.branch-message {
+  text-align: center;
+  margin: 0px auto 20px;
+  font-size: 21px;
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead-top-content {
-    top: 50px;
+    top: 40px;
+    width: 80%;
   }
 
   .mobile-nav {
@@ -83,15 +257,18 @@ input.button-primary {
   
   header {
     display: block;
-    position: fixed;
+/*  position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: transparent;
     color:#fff;
     z-index: 1000;
     height: 120px;
-    overflow: hidden;
+    overflow: hidden;*/
+    padding: 0px;
+    position: relative;
+    margin-bottom: -112px;
+    width: 100%;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -110,7 +287,7 @@ input.button-primary {
   }
 
   img.logo {
-    height: 54px;
+    height: 44px;
     padding: 25px 0px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -124,27 +301,53 @@ input.button-primary {
 
   .masthead-top {
     height: 570px;
-    background-image: url('/img1/main-woman.jpg');
-    background-position: 44% 30%;
+    background-position: 34% 30%;
     background-size: cover;
     padding-top: 120px;
     margin-top: 0px;
   }
   
-  .masthead-top-content {
-    width: 80%;
-  }
-  
   h1#top-headline {
     text-align: left;
     width: 80%;
+    min-width: 550px;
   }
 
-  h4#subline {
+  h5#subline {
     padding: 0px;
-    margin-top: 45px;
     text-align: left;
     width: 70%;
+  }
+  
+  h4#top-CTA {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 500px;
+    text-align: left;
+  }
+  
+  input#email-c {
+    height: 45px;
+    width: 270px;
+    font-size: 19px;
+  }
+  
+  input#submit-c {
+    width: 160px;
+    padding: 0px 1px;
+    font-size: 22px;
+    height: 45px;
+    top: 1px;
+  }
+  
+  img#orange-arrow {
+    width: 75px;
+    display: inline;
+    float: left;
+    margin-top: -20px;
+    -ms-transform: rotate(77deg);
+    -webkit-transform: rotate(77deg);
+    transform: rotate(77deg);
   }
   
   #top-button {
@@ -209,6 +412,22 @@ input.button-primary {
     background-color: rgba(110, 177, 155, .8);
   }
   
+  .sb {
+    left: 15%;
+    width: 70%;
+    height: 210px;
+    padding: 20px 0px;
+  }
+  
+  .sb form input[type='text'], .sb form input[type='password'], .sb form input[type='email'], .sb form textarea{
+    font-size: 16px;
+    width: 270px;
+  }
+
+  .sb form input[type='submit'] {
+    font-size: 16px;
+    width: 130px;
+  }
 }
 
 /* Larger than desktop */
@@ -220,16 +439,21 @@ input.button-primary {
   h1#top-headline {
     text-align: left;
     width: 60%;
+    min-width: 550px;
   }
 
-  h4#subline {
-    width: 60%;
-    max-width: 500px;
+  h5#subline {
+    width: 50%;
+    max-width: 550px;
   }
   
-  .left55 {
-    margin-left: 55px;
+  .sb {
+    left: 22.5%;
+    width: 55%;
+    height: 170px;
+    padding: 30px 0px 40px;
   }
+
 }
 
 
@@ -313,74 +537,256 @@ input.button-primary {
 
 
 /* ----------------------------------------------------------------------- */
-/* ----------------------------- MASTHEAD YOU ----------------------------- */
+/* ------------------------- MASTHEAD TESTIMONIAL ------------------------ */
 /* ----------------------------------------------------------------------- */
 
-.masthead-you {
-  height: 680px;
-  background-image: url('/img1/masthead-you.jpg');
-  background-position: 30% 50%;
-  background-size: cover;
+.masthead-testimonial {
+  height: 270px;
 }
 
-.masthead-you-content {
-  position: relative;
-  top: 340px;
-  background-color: rgba(255,255,255,.3);
+.testimonial-box {
+  padding: 0px 11px;
+  margin-top: 90px;
+  background-color: #BFDBD1;
+  border: none;
+  border-radius: 10px;
 }
 
-
-
-/* ----------------------------------------------------------------------- */
-/* ------------------------ MASTHEAD - EXPLAINER ------------------------- */
-/* ----------------------------------------------------------------------- */
-
-.masthead-explainer {
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-
-span.explainer-step-number {
-  background-color: rgb(110, 177, 155);
+img.testimonial-profile {
+  height: 110px;
+  margin-top: -57px;
+  border: 2px solid #f1f1f1;
   border-radius: 50%;
-  color: white;
+}
+
+.testimonial-stars-row {
   display: block;
-  font-size: 28px;
-  height: 50px;
-  box-sizing: border-box;
-  width: 50px;
-  line-height: 28px;
-  margin: 30px auto 10px;
-  padding: 10px;
-  -webkit-box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    2px 2px 8px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         2px 2px 8px 0px rgba(50, 50, 50, 0.75);
 }
 
-.explainer-step img {
-  width: 100%;
-  max-width: 300px;
-  padding-bottom: 50px;
+img.testimonial-stars {
+  display: inline;
+  width: 25px;
+  height: 25px;
 }
 
+.testimonial-box h5 {
+  margin-bottom: 0px;
+  font-weight: 500;
+}
 
-.explainer-step p {
-  font-size: 17px;
+.testimonial-box h6 {
+  font-size: 19px;
+  padding-bottom: 10px;    
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
   
-  .explainer-step {
-    display: inline-block;
-    width: 30%;
-    margin-left: 4%;
+  .masthead-testimonial {
+    height: 300px;
   }
+  
+  .testimonial-box {
+    max-width: 600px;
+  }
+  
+  .testimonial-box h5 {
+    padding: 0px 70px;
+  }
+  
+}
 
-  .explainer-step:first-child {
-    margin-left: 0; 
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  
+  .masthead-testimonial {
+    height: 300px;
+  }
+  
+  .testimonial-box {
+    display: block;
+    margin: 100px auto 30px;
+  }
+  
+}
+
+/* ----------------------------------------------------------------------- */
+/* ---------------------- MASTHEAD - EATING RIGHT ------------------------ */
+/* ----------------------------------------------------------------------- */
+
+.masthead-eatingRight {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  min-height: 880px;
+  background-image: url('/img1/eat-right.jpg');
+  background-position: 30% 50%;
+  background-size: cover;
+  color: #fafafa;
+}
+
+.masthead-eatingRight-content h2 {
+  letter-spacing: 0px;
+  margin-bottom: 50px;
+}
+
+img.eatingRight-meal {
+  width: 225px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.eatingRight-point {
+  margin-left: 15%;
+  margin-right: 9%;
+  margin-top: 40px;
+}
+  
+.point-box p {
+  margin-bottom: 0px;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.point-box {
+  font-size: 21px;
+  line-height: 1.4em;
+  width: 100%;
+  background-color: rgba(255,255,255,.9);
+  color: #050505;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#point-box-green {
+  background-color: #7ECAAF;
+}
+
+.point-box-img {
+  display: block;
+  height: 110px;
+  float: left;
+  margin-left: -62px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.9);
+}
+
+.point-box-person {
+  font-size: 19px;
+  font-style: italic;
+  text-indent: 2px;
+  text-align: left;
+}
+  
+/* Larger than tablet */
+@media (min-width: 750px) {
+  
+  .masthead-eatingRight {
+    min-height: 550px;
+  }
+  
+  img.eatingRight-meal {
+    float: left;
+  }
+  
+  .eatingRight-point {
+    width: 50%;
+    display: inline;
+    float: left;
+    margin: 20px 0px 0px 80px;
+  }
+  
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  
+  .eatingRight-point{
+    min-width: 380px;
+    width: 47%;
+    max-width: 530px;
+    margin: 7% 0px 0px 50px;
+  }
+  
+  img.eatingRight-meal {
+    width: 285px;
+    margin: 0px 5%;
+  }
+  
+  .point-box {
+    padding: 0px 10px 0px;
+  }
+  
+}
+
+
+
+/* ----------------------------------------------------------------------- */
+/* ---------------------- MASTHEAD - COACH INTRO ------------------------- */
+/* ----------------------------------------------------------------------- */
+
+.masthead-coachIntro {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  min-height: 880px;
+  background-image: url('/img1/masthead-you.jpg');
+  background-size: cover;
+  color: #060606;
+}
+
+.masthead-coachIntro-content h2 {
+  letter-spacing: 0px;
+  margin-bottom: 50px;
+}
+
+.coachIntro-box {
+  padding: 0px 11px;
+  margin-top: 90px;
+  background-color: #f1f1f1;
+  border: 2px solid #1c1c1c;
+  border-radius: 10px;
+}
+
+.coachIntro-box img {
+  display: block;
+  margin: 0 auto;
+  height: 110px;
+  margin-top: -57px;
+  border-radius: 50%;
+  border: 2px solid #1c1c1c;
+}
+
+.coachIntro-box h4 {
+  font-weight: 500;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  
+  .masthead-coachIntro {
+    min-height: 500px;
+  }
+  
+  .coachIntro-box {
+    width: 80%;
+    max-width: 560px;
+    margin: 90px auto 30px;
   }
 }
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  
+  .coachIntro-box {
+    width: 26.5%;
+    max-width: 560px;
+    display: inline-block;
+    margin: 60px 10px 20px;
+  }
+  
+}
+
 
 
 /* ----------------------------------------------------------------------- */

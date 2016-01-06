@@ -48,6 +48,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
 
+  <link rel="stylesheet" type="text/css" href="css1/subscribe-better.css" />
+  <script type="text/javascript" src="js1/jquery.subscribe-better.js"></script>
+  
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -68,7 +71,7 @@
 </head>
 <body>
 
-<div class="mobile-nav"> <!-- Hidden if the screen is larger than XXX px -->
+<!--<div class="mobile-nav"> Hidden if the screen is larger than XXX px 
   <a href="http://nomful.com"><img class="logo-mobile" src="img1/nomful.png"></a>
   <div class="button_container" id="toggle">
     <span class="top"></span>
@@ -80,22 +83,15 @@
       <ul>
         <li><a href="https://nomful.com/">Home</a></li>
         <li><a href="https://itunes.apple.com/US/app/id991589420?mt=8#">Sign-up</a></li>
-        <!--<li><a href="#">About</a></li>-->
+        <li><a href="#">About</a></li>
         <li><a href="https://nomful.com/partners/">Partners</a></li>
       </ul>
     </nav>
   </div>
-</div>
+</div>-->
 
 <header>
   <div class="header">
-    <a href="http://nomful.com"><img class="logo" src="img1/nomful.png"></a>
-    <nav class="reg-menu">
-      <ul>
-        <!--<li><a href="#">About</a></li>-->
-        <li><a href="https://nomful.com/partners/">Partners</a></li>
-        <li><a href="https://itunes.apple.com/US/app/id991589420?mt=8#" class="sign-up capitalize">Sign up</a></li>
-      </ul>
-    </nav>
+    <a href="http://nomful.com"><img class="logo" src="img1/nomful-white-logo-60.png"></a>
   </div>
 </header>
