@@ -12,7 +12,7 @@ $(function() {
 		e.preventDefault();
         
          //send optimizely
-        // ensures the optimizely object is defined globally using
+        // ensures the optimizely object is defined globally usingg
         window['optimizely'] = window['optimizely'] || [];
 
         // sends a tracking call to Optimizely for the given event name. 
