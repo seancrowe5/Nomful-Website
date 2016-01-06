@@ -45,15 +45,15 @@
     
     <div class="eatingRight-point">
       <div class="point-box tables">
-        <div class="cells"><img class="point-box-img" src="img1/emily.png" /></div>
+        <div class="cells"><img class="point-box-img" src="img1/Ashley.png" /></div>
         <div class="cells"><p>I just have to track food with photos, not calories. And then my coach, Emily, gives me a personalized plan just for me.</p></div>
       </div>
     </div>
     
     <div class="eatingRight-point">
-      <div class="point-box tables">
+      <div class="point-box tables" id="point-box-green">
         <div class="cells"><img class="point-box-img" src="img1/emily.png" /></div>
-        <div class="cells"><p>I just have to track food with photos, not calories. And then my coach, Emily, gives me a personalized plan just for me.</p></div>
+        <div class="cells"><p>With photos, I can see  what you're eating, when you're eating it, and how big your portions are. All I need to help re-align your diet!</p></div>
       </div>
     </div>
     

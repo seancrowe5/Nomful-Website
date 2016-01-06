@@ -548,12 +548,9 @@ img.eatingRight-meal {
 }
 
 .eatingRight-point {
-  width: 300px;
-  height: 350px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  background-color: green;
+  margin-left: 15%;
+  margin-right: 9%;
+  margin-top: 40px;
 }
   
 .point-box p {
@@ -563,11 +560,15 @@ img.eatingRight-meal {
 .point-box {
   font-size: 21px;
   line-height: 1.4em;
-  width: 85%;
+  width: 100%;
   background-color: rgba(255,255,255,.9);
   color: #050505;
   padding: 10px;
   border-radius: 10px;
+}
+
+#point-box-green {
+  background-color: #7ECAAF;
 }
 
 .point-box-img {
@@ -577,14 +578,13 @@ img.eatingRight-meal {
   margin-left: -62px;
   border-radius: 50%;
   border: 2px solid rgba(255,255,255,.9);
-  
 }
   
 /* Larger than tablet */
 @media (min-width: 750px) {
   
   .masthead-eatingRight {
-    min-height: 650px;
+    min-height: 550px;
   }
   
   img.eatingRight-meal {
@@ -592,15 +592,23 @@ img.eatingRight-meal {
   }
   
 .eatingRight-point {
-  width: 60%;
+  width: 50%;
+  display: inline;
   float: left;
-  margin: 10px 0% 0% 10px;
+  margin: 20px 0px 0px 80px;
 }
   
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  
+  .eatingRight-point{
+    min-width: 380px;
+    width: 47%;
+    max-width: 530px;
+    margin: 7% 0px 0px 50px;
+  }
   
   img.eatingRight-meal {
     width: 285px;
