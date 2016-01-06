@@ -2,10 +2,6 @@
 /* -------------------------- TOP NAV & MASTHEAD ------------------------- */
 /* ----------------------------------------------------------------------- */
 
-#ajax-phone-name-index, #ajax-email-index {
-  display: none;
-}
-
 .mobile-nav {
   position: relative;
   display: block;
@@ -24,7 +20,7 @@ img.logo-mobile {
 
 .masthead-top {
   height: 650px;
-  background-image: url('/img1/main-woman.jpg');
+  background-image: url('/img1/hero-home.jpg');
   background-position: 54% 50%;
   background-size: cover;
   margin-top: -30px;
@@ -50,11 +46,15 @@ img.logo-mobile {
 
 h1#top-headline {
   font-weight: 900;
+  text-transform: uppercase;
+  color: #fafafa;
+  letter-spacing: 0px;
 }
 
-h4#subline {
+h5#subline {
+  color: #fafafa;
   padding: 0px 10px;
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 .lb_label.top {
@@ -74,7 +74,7 @@ input.button-primary {
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead-top-content {
-    top: 50px;
+    top: 40px;
   }
 
   .mobile-nav {
@@ -83,15 +83,17 @@ input.button-primary {
   
   header {
     display: block;
-    position: fixed;
+/*    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: transparent;
     color:#fff;
     z-index: 1000;
     height: 120px;
-    overflow: hidden;
+    overflow: hidden;*/
+    position: relative;
+    margin-bottom: -108px;
+    width: 100%;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -110,7 +112,7 @@ input.button-primary {
   }
 
   img.logo {
-    height: 54px;
+    height: 44px;
     padding: 25px 0px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -124,7 +126,6 @@ input.button-primary {
 
   .masthead-top {
     height: 570px;
-    background-image: url('/img1/main-woman.jpg');
     background-position: 44% 30%;
     background-size: cover;
     padding-top: 120px;
@@ -140,11 +141,51 @@ input.button-primary {
     width: 80%;
   }
 
-  h4#subline {
+  h5#subline {
     padding: 0px;
-    margin-top: 45px;
     text-align: left;
     width: 70%;
+  }
+  
+  h4#top-CTA {
+    font-weight: 600;
+    width: 50%;
+    max-width: 450px;
+    margin-top: 70px;
+  }
+  
+  h4#top-CTA span {
+    border-bottom: 5px solid #FF8B35;
+  }
+  
+  img#orange-arrow {
+    -ms-transform: rotate(77deg);
+    -webkit-transform: rotate(77deg);
+    transform: rotate(77deg);
+    width: 75px;
+    display: inline;
+    float: left;
+    margin-top: -20px;
+  }
+
+  input#email-c {
+    width: 270px;
+    display: inline;
+    height: 45px;
+    border: none;
+    font-size: 19px;
+    margin-right: 5px;
+  }
+  
+  input#submit-c {
+    width: 160px;
+    display: inline;
+    text-transform: none;
+    padding: 0px 1px;
+    text-align: center;
+    background-color: #FF8B35;
+    border-color: #FF8B35;
+    font-size: 21px;
   }
   
   #top-button {
@@ -222,9 +263,9 @@ input.button-primary {
     width: 60%;
   }
 
-  h4#subline {
-    width: 60%;
-    max-width: 500px;
+  h5#subline {
+    width: 50%;
+    max-width: 550px;
   }
   
   .left55 {

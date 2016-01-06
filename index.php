@@ -1,44 +1,26 @@
 <?php require("headers.php"); ?>
-  
+
 <section class="masthead-top">
   <div class="container masthead-top-content">
-    <h1 id="top-headline">Your personal trainer for what you eat.</h1>
+    <h1 id="top-headline">A nutrition coach in your pocket</h1>
     
-    <h4 id="subline">A nutrition coach in your pocket while you shop, cook, eat, and exercise.</h4>
+    <h5 id="subline">Daily accountability and support from an expert in nutrition while you shop, cook, eat, and exercise.</h5>
     
-    <script src="/js1/jquery.label_better.js"></script>
-    <script src="phone-index-form.js"></script>
-    <script src="phone-name-index-form.js"></script>
+    <h4 id="top-CTA">Schedule <span>FREE </span>consulation!</h4>
+    
     <script src="email-index-form.js"></script>
     <div id="index-message-top" class="container-480"><div id="index-message"></div></div>
     
-    <form id="ajax-phone-index" method="post" action="phone-index-form.php" class="container-370 u-pull-left left55" novalidate>
+    <form id="ajax-email-index" method="post" action="email-index-form.php" class="u-pull-left" novalidate>
     <div class="row">
-      <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number-a" id="phone-number-a">
+      <input class="u-full-width label_better" data-new-placeholder="email" type="email" placeholder="Enter your email" name="email-c" id="email-c">
       <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
       <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-      <input class="button-primary" type="submit" value="Find a coach">
+      <input class="button-primary" id="submit-c" type="submit" value="Get Started">
     </div>
     </form>
     
-    <form id="ajax-phone-name-index" method="post" action="phone-name-index-form.php" class="container-370 u-pull-left left55" novalidate>
-    <div class="row">
-      <input class="u-full-width label_better" data-new-placeholder="name" type="text" placeholder="name" name="name-b" id="name-b">
-      <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number-b" id="phone-number-b">
-      <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
-      <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-      <input class="button-primary" type="submit" value="find a coach">
-    </div>
-    </form>
-    
-    <form id="ajax-email-index" method="post" action="email-index-form.php" class="container-370 u-pull-left left55" novalidate>
-    <div class="row">
-      <input class="u-full-width label_better" data-new-placeholder="email" type="email" placeholder="email" name="email-c" id="email-c">
-      <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
-      <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-      <input class="button-primary" type="submit" value="find a coach">
-    </div>
-    </form>
+    <img id="orange-arrow" src="img1/orange-arrow.png"/>
     
 </section>  
   
@@ -98,8 +80,30 @@
     <h4 class="question-contact">Have a question? <a href="contact.php">Get in touch with us!</a></h4>
   </div>
 </section>  
+ 
   
-  <script>  
+  
+<div class="subscribe-me">
+  <h2>Subscribe our Newsletter</h2>
+  <a href="#close" class="sb-close-btn">x</a>
+  <p>Subscribe to our mailing list to get updates to your email inbox</p>
+  <form>
+    <input type="email" placeholder="Email Address">
+    <input type="submit" value="Sign up">
+  </form>
+</div>
+
+  
+	<script type="text/javascript">
+		$(document).ready( function() {
+			$(".subscribe-me").subscribeBetter({
+                trigger: "onidle"
+			});
+		});
+
+	</script>
+  
+<!--  <script>  
   $("input.label_better").label_better({
     position: "top",
     animationTime: 400,
@@ -112,7 +116,7 @@
     $("#first-name").focus();
   });*/
   
-</script>
+</script>-->
 
 <script src="js1/scale.fix.js"></script>
 <script src="js1/formatter.js"></script>

@@ -35,7 +35,9 @@
   </div>
 </footer> 
     
+<!--
 <script src="js1/index.js"></script> 
+-->
 
 </body>
 </html>
