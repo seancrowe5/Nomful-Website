@@ -56,7 +56,7 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
       
         <form id="ajax-phone-index" onsubmit="sendSMS(this);" method="post" action="phone-index-form.php" novalidate>
         <div class="row">
-          <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone-number-a" id="phone-number-a">
+          <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone_number_a" id="phone_number_a">
           <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
           <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
           <input class="button-primary" type="submit" value="Find a coach">

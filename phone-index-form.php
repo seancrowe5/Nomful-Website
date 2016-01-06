@@ -5,7 +5,7 @@
         http_response_code(200);
         echo "yessss";
         /*// Get the form fields and remove whitespace.
-        $phone_number = $_POST["phone-number-a"];
+        $phone_number = $_POST["phone_number_a"];
         $phone_number_strip = preg_replace("/[^0-9]/","",$phone_number);
       
         // Set the recipient email address.
