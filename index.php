@@ -28,35 +28,35 @@
     <div class="popup-inner">
         <h2>Wow! This is Awesome! (Popup #1)</h2>
         <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam. Nulla luctus luctus ipsum at ultricies. Nullam nec velit dui. Nullam sem eros, pulvinar sed pellentesque ac, feugiat et turpis. Donec gravida ipsum cursus massa malesuada tincidunt. Nullam finibus nunc mauris, quis semper neque ultrices in. Ut ac risus eget eros imperdiet posuere nec eu lectus.</p>
-        <p><a data-popup-close="popup-1" href="#">Close</a></p>
         <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
     </div>
 </div>
   
-<section class="masthead masthead-explainer">
-  <div class="container masthead-explainer-content">
-    <h2 class="bold">Have confidence in what you eat</h2>
-    <!--<h4>There's a nutrition coach in your pocket while you shop, cook, eat, and exercise.</h4>-->
-    <div class="row">
-      <div class="explainer-step">
-        <span class="explainer-step-number">1</span>
-        <h4>Personalized for you</h4>
-        <p>Real coaching from the experts in habit-based nutrition. They get to know you, and together make a plan that works.</p>
-        <img src="img1/iphoneCall.jpg"/>
-      </div>
-      <div class="explainer-step">
-        <span class="explainer-step-number">2</span>
-        <h4>Pictures, not calories</h4>
-        <p>Instantly share meals with your coach and get feedback. We focus on building a healthy lifestyle, not counting calories.</p>
-        <img src="img1/marketingscreen-meal.jpg"/>
-      </div>
-      <div class="explainer-step">
-        <span class="explainer-step-number">3</span>
-        <h4>Daily support</h4>
-        <p>What's for dinner? What's whole wheat? You have your coach's attention everyday to answer questions and give feedback.</p>
-        <img src="img1/chat.jpg"/>
+<section class="masthead masthead-space">
+  <div class="container">
+    
+  </div>
+</section>
+  
+<section class="masthead masthead-eatingRight">
+  <div class="container masthead-eatingRight-content">
+    <h2 class="bold">Eating Right Can Be Easy</h2>
+    <img class="eatingRight-meal" src="img1/iphone-meal.png"/>
+    
+    <div class="eatingRight-point">
+      <div class="point-box tables">
+        <div class="cells"><img class="point-box-img" src="img1/emily.png" /></div>
+        <div class="cells"><p>I just have to track food with photos, not calories. And then my coach, Emily, gives me a personalized plan just for me.</p></div>
       </div>
     </div>
+    
+    <div class="eatingRight-point">
+      <div class="point-box tables">
+        <div class="cells"><img class="point-box-img" src="img1/emily.png" /></div>
+        <div class="cells"><p>I just have to track food with photos, not calories. And then my coach, Emily, gives me a personalized plan just for me.</p></div>
+      </div>
+    </div>
+    
   </div>
 </section>
   

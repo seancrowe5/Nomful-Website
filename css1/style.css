@@ -70,6 +70,7 @@ h4#top-CTA {
   font-weight: 600;
   margin-bottom: 5px;
   margin-top: 40px;
+  color: #fafafa;
 }
 
 h4#top-CTA span {
@@ -114,68 +115,60 @@ input#submit-c {
   border: none;
   font-size: 21px;
 }
-    
-
-
-
-
-
-
-
-
+  
 
 /* Outer */
 .popup {
-    width:100%;
-    height:100%;
-    display:none;
-    position:fixed;
-    top:0px;
-    left:0px;
-    background:rgba(0,0,0,0.75);
+  width:100%;
+  height:100%;
+  display:none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  background:rgba(0,0,0,0.75);
 }
- 
+
 /* Inner */
 .popup-inner {
-    max-width:700px;
-    width:90%;
-    padding:40px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
-    box-shadow:0px 2px 6px rgba(0,0,0,1);
-    border-radius:3px;
-    background:#fff;
+  max-width:700px;
+  width: 85%;
+  padding: 20px 10px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  box-shadow:0px 2px 6px rgba(0,0,0,1);
+  border-radius:3px;
+  background:#fff;
 }
- 
+
 /* Close Button */
 .popup-close , .sb .sb-close-btn{
-    width:30px;
-    height:30px;
-    padding-top:4px;
-    display:inline-block;
-    position:absolute;
-    top:0px;
-    right:0px;
-    transition:ease 0.25s all;
-    -webkit-transform:translate(50%, -50%);
-    transform:translate(50%, -50%);
-    border-radius:1000px;
-    background:rgba(0,0,0,0.8);
-    font-family:Arial, Sans-Serif;
-    font-size:20px;
-    text-align:center;
-    line-height:100%;
-    color:#fff;
+  width:30px;
+  height:30px;
+  padding-top:4px;
+  display:inline-block;
+  position:absolute;
+  top:0px;
+  right:0px;
+  transition:ease 0.25s all;
+  -webkit-transform:translate(50%, -50%);
+  transform:translate(50%, -50%);
+  border-radius:1000px;
+  background:rgba(0,0,0,0.8);
+  font-family:Arial, Sans-Serif;
+  font-size:20px;
+  text-align:center;
+  line-height:100%;
+  color:#fff;
 }
- 
+
 .popup-close:hover , .sb .sb-close-btn:hover {
-    -webkit-transform:translate(50%, -50%) rotate(180deg);
-    transform:translate(50%, -50%) rotate(180deg);
-    background:rgba(0,0,0,1);
-    text-decoration:none;
+  -webkit-transform:translate(50%, -50%) rotate(180deg);
+  transform:translate(50%, -50%) rotate(180deg);
+  background:rgba(0,0,0,1);
+  text-decoration:none;
 }
 
 
@@ -220,6 +213,12 @@ input#submit-c {
   padding: 0px 1px;
   text-align: center;
   height: 37px;
+}
+
+div#popup-message {
+  position: relative;
+  left: 5%;
+  width: 90%;
 }
 
 
@@ -519,70 +518,95 @@ input#submit-c {
 /* ----------------------------- MASTHEAD YOU ----------------------------- */
 /* ----------------------------------------------------------------------- */
 
-.masthead-you {
-  height: 680px;
-  background-image: url('/img1/masthead-you.jpg');
-  background-position: 30% 50%;
-  background-size: cover;
+.masthead-space {
+  height: 400px;
 }
 
-.masthead-you-content {
-  position: relative;
-  top: 340px;
-  background-color: rgba(255,255,255,.3);
-}
-
-
-
 /* ----------------------------------------------------------------------- */
-/* ------------------------ MASTHEAD - EXPLAINER ------------------------- */
+/* ---------------------- MASTHEAD - EATING RIGHT ------------------------ */
 /* ----------------------------------------------------------------------- */
 
-.masthead-explainer {
+.masthead-eatingRight {
   padding-top: 75px;
   padding-bottom: 75px;
+  min-height: 880px;
+  background-image: url('/img1/eat-right.jpg');
+  background-position: 30% 50%;
+  background-size: cover;
+  color: #fafafa;
 }
 
-span.explainer-step-number {
-  background-color: rgb(110, 177, 155);
-  border-radius: 50%;
-  color: white;
+.masthead-eatingRight-content h2 {
+  letter-spacing: 0px;
+  margin-bottom: 50px;
+}
+
+img.eatingRight-meal {
+  width: 225px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.eatingRight-point {
+  width: 300px;
+  height: 350px;
   display: block;
-  font-size: 28px;
-  height: 50px;
-  box-sizing: border-box;
-  width: 50px;
-  line-height: 28px;
-  margin: 30px auto 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: green;
+}
+  
+.point-box p {
+  margin-bottom: 0px;
+}
+
+.point-box {
+  font-size: 21px;
+  line-height: 1.4em;
+  width: 85%;
+  background-color: rgba(255,255,255,.9);
+  color: #050505;
   padding: 10px;
-  -webkit-box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    2px 2px 8px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+  border-radius: 10px;
 }
 
-.explainer-step img {
-  width: 100%;
-  max-width: 300px;
-  padding-bottom: 50px;
+.point-box-img {
+  display: block;
+  height: 110px;
+  float: left;
+  margin-left: -62px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.9);
+  
 }
-
-
-.explainer-step p {
-  font-size: 17px;
-}
-
+  
 /* Larger than tablet */
 @media (min-width: 750px) {
   
-  .explainer-step {
-    display: inline-block;
-    width: 30%;
-    margin-left: 4%;
+  .masthead-eatingRight {
+    min-height: 650px;
   }
+  
+  img.eatingRight-meal {
+    float: left;
+  }
+  
+.eatingRight-point {
+  width: 60%;
+  float: left;
+  margin: 10px 0% 0% 10px;
+}
+  
+}
 
-  .explainer-step:first-child {
-    margin-left: 0; 
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  
+  img.eatingRight-meal {
+    width: 285px;
+    margin: 0px 5%;
   }
+  
 }
 
 
