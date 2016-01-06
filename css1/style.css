@@ -191,7 +191,6 @@ input#submit-c {
 .sb form input[type='text'], .sb form input[type='password'], .sb form input[type='email'], .sb form textarea{
   margin: 0;
   display: inline;
-  border: none;
   background: #f7f7f7;
   padding: 18px 10px;
   font-size: 15px;
@@ -199,6 +198,11 @@ input#submit-c {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+.sb form input[type='email']:focus , .sb form input[type='email']:active {
+  border: 1px solid black;
 }
 
 .sb form input[type='submit'] {
@@ -206,7 +210,7 @@ input#submit-c {
   font-size: 15px;
   text-transform: uppercase;
   border: none;
-  background: black;
+  background: #EF6530;
   color: white;
   width: 80px;
   margin-left: 5px;
@@ -221,6 +225,24 @@ div#popup-message {
   width: 90%;
 }
 
+input#started-cta {
+  font-family: 'Open Sans';
+  background-color: #EF6530;
+  border-color: #EF6530;
+}
+
+form#ajax-phone-index {
+  width: 90%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.branch-message {
+  text-align: center;
+  margin: 0px auto 20px;
+  font-size: 21px;
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {
@@ -539,19 +561,17 @@ img.testimonial-profile {
 
 .testimonial-stars-row {
   display: block;
-  padding-top: 8px;
 }
 
 img.testimonial-stars {
   display: inline;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 .testimonial-box h5 {
-  margin-bottom: 7px;
+  margin-bottom: 0px;
   font-weight: 500;
-  margin-top: 9px;
 }
 
 .testimonial-box h6 {

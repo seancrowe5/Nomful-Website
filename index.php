@@ -46,11 +46,13 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
     <img id="orange-arrow" src="img1/orange-arrow.png"/>
     
 </section>  
-   
+
 <div class="popup" data-popup="popup-1">
     <div class="popup-inner">
       
-        <h2>Wow! This is Awesome! (Popup #1)</h2>
+        <h2>You're almost finished!</h2>
+        <h5 class="container-480 branch-message">Enter your phone number below and we will text you the link to download!</h5>
+        <div class="parallelogram progress-fill"><p>&nbsp;</p></div><div class="parallelogram"><p class="parallel-text-budge">Download App</p></div><div class="parallelograms"><p class="parallel-text-budge">Choose Coach</p></div>
         <script src="phone-index-form.js"></script>
         <div id="branch-message-top" class="container-480"><div id="branch-message"></div></div>
       
@@ -59,7 +61,7 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
           <input class="u-full-width label_better" data-new-placeholder="phone number" type="tel" placeholder="phone number" name="phone_number_a" id="phone_number_a">
           <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
           <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
-          <input class="button-primary" type="submit" value="Find a coach">
+          <input class="button-primary" type="submit" id="started-cta" value="Start 3 Days Free">
         </div>
         </form>
       
@@ -141,9 +143,9 @@ branch.init('key_test_mecNdlfYel5IvYJXZtBVIhaotynBT0K2');
 </section>
   
 <div class="subscribe-me">
-  <h2>Stay in touch!</h2>
+  <h2>Interested in Nomful?</h2>
   <a href="#close" class="sb-close-btn">x</a>
-  <p>Promotions, fun food things, and stories.</p>
+  <p>Start 2016 off right with 3-days of free coaching, on us &#9786;</p>
   <script src="email-popup-form.js"></script>
     <div id="popup-message-top" class="container-480"><div id="popup-message"></div></div>
     

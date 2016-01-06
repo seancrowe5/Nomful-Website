@@ -78,6 +78,7 @@ Class Definitions
 
 .sb-open .sb {
   opacity: 1;
+  font-family: 'Open Sans';
 }
 
 .sb-overlay {
