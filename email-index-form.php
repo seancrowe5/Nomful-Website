@@ -15,16 +15,16 @@ require 'vendor/autoload.php';
         }
         
         //ADD USER TO MAILCHIMP
-//        $MailChimp = new \Drewm\MailChimp('458779a92e35ef155beeb58b445fd2ee-us10');
-//        $result = $MailChimp->call('lists/subscribe', array(
-//            'id'                => '297cbd7828',
-//            'email'             => array('email'=>$email),
-//            'merge_vars'        => array('TYPE' => 'Trial'),
-//            'double_optin'      => false,
-//            'update_existing'   => true,
-//            'replace_interests' => false,
-//            'send_welcome'      => false,
-//        ));
+        $MailChimp = new \Drewm\MailChimp('458779a92e35ef155beeb58b445fd2ee-us10');
+        $result = $MailChimp->call('lists/subscribe', array(
+            'id'                => '297cbd7828',
+            'email'             => array('email'=>$email),
+            'merge_vars'        => array('TYPE' => 'Trial'),
+            'double_optin'      => false,
+            'update_existing'   => true,
+            'replace_interests' => false,
+            'send_welcome'      => false,
+        ));
         
         //TESTING EMAIL INFO FOR THOMAS
         $recipient = "thomas@nomful.com";
