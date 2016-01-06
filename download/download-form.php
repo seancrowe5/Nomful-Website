@@ -20,29 +20,29 @@ require 'vendor/autoload.php';
         $email_content = "Phone: <sms://$phone_number_strip|$phone_number> \n\n";
 
       
-
-        $payload = array("text" => "Hey <@sean> <@thomas>, somebody signed up on the landing page!");                                                                    
-        $data_string = json_encode($payload);                                                                                   
-
-        $ch = curl_init('https://hooks.slack.com/services/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');                                             
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
-            'Content-Type: application/json',                                                                                
-            'Content-Length: ' . strlen($data_string))                                                                       
-        );                                                                                                                   
-
-        $MailChimp = new \Drewm\MailChimp('458779a92e35ef155beeb58b445fd2ee-us10');
-        $result = $MailChimp->call('lists/subscribe', array(
-            'id'                => '297cbd7828',
-            'email'             => array('email'=>$email),
-            'merge_vars'        => array('TYPE' => 'Trial'),
-            'double_optin'      => false,
-            'update_existing'   => true,
-            'replace_interests' => false,
-            'send_welcome'      => true,
-        ));
+//
+//        $payload = array("text" => "Hey <@sean> <@thomas>, somebody signed up on the landing page!");                                                                    
+//        $data_string = json_encode($payload);                                                                                   
+//
+//        $ch = curl_init('https://hooks.slack.com/services/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');                                             
+//        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
+//        curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
+//        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
+//        curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
+//            'Content-Type: application/json',                                                                                
+//            'Content-Length: ' . strlen($data_string))                                                                       
+//        );                                                                                                                   
+//
+//        $MailChimp = new \Drewm\MailChimp('458779a92e35ef155beeb58b445fd2ee-us10');
+//        $result = $MailChimp->call('lists/subscribe', array(
+//            'id'                => '297cbd7828',
+//            'email'             => array('email'=>$email),
+//            'merge_vars'        => array('TYPE' => 'Trial'),
+//            'double_optin'      => false,
+//            'update_existing'   => true,
+//            'replace_interests' => false,
+//            'send_welcome'      => true,
+//        ));
       
 //        print_r($result);
 
