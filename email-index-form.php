@@ -1,4 +1,6 @@
 <?php
+require 'vendor/autoload.php';
+
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
@@ -11,24 +13,28 @@
           echo "Oops! There was a problem with your email. Please try again.";
           exit;
         }
-      
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
+        
+        //ADD USER TO MAILCHIMP
+        $MailChimp = new \Drewm\MailChimp('458779a92e35ef155beeb58b445fd2ee-us10');
+        $result = $MailChimp->call('lists/subscribe', array(
+            'id'                => '297cbd7828',
+            'email'             => array('email'=>$email),
+            'merge_vars'        => array('TYPE' => 'Trial'),
+            'double_optin'      => false,
+            'update_existing'   => true,
+            'replace_interests' => false,
+            'send_welcome'      => true,
+        ));
+        
+        //TESTING EMAIL INFO FOR THOMAS
         $recipient = "thomas@nomful.com";
-
-        // Set the email subject.
         $subject = "New Contact Message!";
-
-        // Build the email content.
         $email_content = "Email: $email \n\n";
-      
-        // Build the email headers.
         $email_headers = "From: <$email>";
       
       
-        $payload = array("text" => "Hey <@sean> <@thomas>, you've got a Nashville!! \n$email_content\n\n");                                                                    
-        $data_string = json_encode($payload);                                                                                   
-
+        //SEND SLACK MESSAGE WHEN USER ENTERS EMAIL
+        $payload = array("text" => "Hey <@sean> <@thomas>, you've got a Nashville!! \n$email_content\n\n");                                           $data_string = json_encode($payload);                                                                                   
         $ch = curl_init('https://hooks.slack.com/services/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');                                                                      
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
@@ -39,7 +45,7 @@
         ); 
 
       
-        // Send the email.
+        // Send the TEST email and Execute curl request for Slack
         if (curl_exec($ch) || mail($recipient, $subject, $email_content)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
