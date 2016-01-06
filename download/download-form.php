@@ -43,7 +43,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         $result = $MailChimp->call('lists/subscribe', array(
             'id'                => '297cbd7828',
             'email'             => array('email'=>$email),
-            'merge_vars'        => array(),
+            'merge_vars'        => array('PLAN' => 'Trial'),
             'double_optin'      => false,
             'update_existing'   => true,
             'replace_interests' => false,
