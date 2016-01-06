@@ -1,47 +1,96 @@
 [
     {
-        "name": "mandrill/mandrill",
-        "version": "1.0.54",
-        "version_normalized": "1.0.54.0",
+        "name": "drewm/mailchimp-api",
+        "version": "v1.1",
+        "version_normalized": "1.1.0.0",
         "source": {
             "type": "git",
-            "url": "https://bitbucket.org/mailchimp/mandrill-api-php.git",
-            "reference": "9f336b08ea148c80db3b694f3dc737cd4f414e19"
+            "url": "https://github.com/drewm/mailchimp-api.git",
+            "reference": "707d555962442b21a75683a56bdb7cebd0a19f72"
         },
         "dist": {
             "type": "zip",
-            "url": "https://bitbucket.org/mailchimp/mandrill-api-php/get/9f336b08ea148c80db3b694f3dc737cd4f414e19.zip",
-            "reference": "9f336b08ea148c80db3b694f3dc737cd4f414e19",
+            "url": "https://api.github.com/repos/drewm/mailchimp-api/zipball/707d555962442b21a75683a56bdb7cebd0a19f72",
+            "reference": "707d555962442b21a75683a56bdb7cebd0a19f72",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.2.0"
+            "php": ">=5.3"
         },
-        "time": "2014-10-16 21:08:20",
+        "time": "2015-07-07 15:38:25",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
             "psr-0": {
-                "Mandrill": "src/"
+                "Drewm": "src/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "Apache-2.0"
+            "MIT"
         ],
         "authors": [
             {
-                "name": "Mandrill Devs",
-                "email": "community@mandrill.com",
-                "homepage": "http://mandrill.com",
-                "role": "Developer"
+                "name": "Drew McLellan",
+                "homepage": "http://allinthehead.com/"
             }
         ],
-        "description": "API client library for the Mandrill email as a service platform",
-        "homepage": "https://bitbucket.org/mailchimp/mandrill-api-php",
+        "description": "Super-simple, minimum abstraction MailChimp API v2 wrapper",
+        "homepage": "https://github.com/drewm/mailchimp-api"
+    },
+    {
+        "name": "parse/php-sdk",
+        "version": "1.1.9",
+        "version_normalized": "1.1.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ParsePlatform/parse-php-sdk.git",
+            "reference": "ba0400e187029d40070b5456455b85e91b337e53"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ParsePlatform/parse-php-sdk/zipball/ba0400e187029d40070b5456455b85e91b337e53",
+            "reference": "ba0400e187029d40070b5456455b85e91b337e53",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "ext-json": "*",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpdocumentor/phpdocumentor": "~2.5",
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~1.5"
+        },
+        "time": "2015-11-30 07:33:06",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Parse\\": "src/Parse/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Parse Platform License"
+        ],
+        "authors": [
+            {
+                "name": "Parse",
+                "homepage": "https://github.com/parseplatform/parse-php-sdk/contributors"
+            }
+        ],
+        "description": "Parse PHP SDK",
+        "homepage": "https://github.com/parseplatform/parse-php-sdk",
         "keywords": [
-            "api",
-            "email"
+            "parse",
+            "sdk"
         ]
     }
 ]
