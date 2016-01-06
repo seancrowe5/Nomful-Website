@@ -38,7 +38,13 @@ $(function() {
 		})
         
 		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
+          
+          var targeted_popup_class = jQuery(this).attr('data-popup-open');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+        $('body').css('overflow', 'hidden');
+        e.preventDefault();
+          
+/*			// Make sure that the formMessages div has the 'success' class.
 			$(formMessages).removeClass('error');
 			$(formMessages).addClass('success');
             
@@ -48,7 +54,7 @@ $(function() {
 
             // Hide the form.
 			$('#ajax-email-index').hide();
-            $('#index-message-top').fadeIn(700);
+            $('#index-message-top').fadeIn(700);*/
             
 		})
 		.fail(function(data) {

@@ -24,6 +24,17 @@
     
 </section>  
   
+  <a class="btn" data-popup-open="popup-1" href="#">Open Popup #1</a>
+ 
+<div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
+        <h2>Wow! This is Awesome! (Popup #1)</h2>
+        <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam. Nulla luctus luctus ipsum at ultricies. Nullam nec velit dui. Nullam sem eros, pulvinar sed pellentesque ac, feugiat et turpis. Donec gravida ipsum cursus massa malesuada tincidunt. Nullam finibus nunc mauris, quis semper neque ultrices in. Ut ac risus eget eros imperdiet posuere nec eu lectus.</p>
+        <p><a data-popup-close="popup-1" href="#">Close</a></p>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    </div>
+</div>
+  
 <section class="masthead masthead-explainer">
   <div class="container masthead-explainer-content">
     <h2 class="bold">Have confidence in what you eat</h2>
@@ -102,6 +113,31 @@
 		});
 
 	</script>
+  
+  
+  
+  
+  <script>
+  
+  $(function() {
+    //----- OPEN
+    $('[data-popup-open]').on('click', function(e)  {
+        
+    });
+ 
+    //----- CLOSE
+    $('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+ 
+        e.preventDefault();
+    });
+});
+  
+  
+  
+  </script>
+  
   
 <!--  <script>  
   $("input.label_better").label_better({
