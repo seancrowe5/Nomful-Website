@@ -1,5 +1,5 @@
 $(function() {
-
+    
 	// Get the form. 
 	var form = $('#ajax-email-popup');
 
@@ -10,6 +10,13 @@ $(function() {
 	$(form).submit(function(e) {
 		// Stop the browser from submitting the form.
 		e.preventDefault();
+        
+         //send optimizely
+        // ensures the optimizely object is defined globally using
+        window['optimizely'] = window['optimizely'] || [];
+
+        // sends a tracking call to Optimizely for the given event name. 
+        window.optimizely.push(["trackEvent", "popup-email-submitted"]);
         
         if ($('input#sp-website-r').val().length != 0) {
             return false;
