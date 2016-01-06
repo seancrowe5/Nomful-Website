@@ -1,10 +1,10 @@
 $(function() {
 
 	// Get the form. 
-	var form = $('#ajax-email-index');
+	var form = $('#ajax-email-popup');
 
 	// Get the messages div.
-	var formMessages = $('#index-message');
+	var formMessages = $('#popup-message');
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {
@@ -19,7 +19,7 @@ $(function() {
             return false;
         } 
       
-        if ($('input#email-c').val().length <= 7) {
+        if ($('input#email-popup').val().length <= 7) {
             alert("Oh no! Please enter a valid email.");
             return false;
         }
@@ -39,11 +39,7 @@ $(function() {
         
 		.done(function(response) {
           
-            $('[data-popup=popup-1]').fadeIn(350);
-            $('body').css('overflow', 'hidden');
-            e.preventDefault();
-          
-/*			// Make sure that the formMessages div has the 'success' class.
+			// Make sure that the formMessages div has the 'success' class.
 			$(formMessages).removeClass('error');
 			$(formMessages).addClass('success');
             
@@ -52,8 +48,8 @@ $(function() {
 			$(formMessages).text(response);
 
             // Hide the form.
-			$('#ajax-email-index').hide();
-            $('#index-message-top').fadeIn(700);*/
+			$('#ajax-email-popup').hide();
+            $('#popup-message-top').fadeIn(700);
             
 		})
 		.fail(function(data) {

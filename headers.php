@@ -71,7 +71,7 @@
 </head>
 <body>
 
-<div class="mobile-nav"> <!-- Hidden if the screen is larger than XXX px -->
+<!--<div class="mobile-nav"> Hidden if the screen is larger than XXX px 
   <a href="http://nomful.com"><img class="logo-mobile" src="img1/nomful.png"></a>
   <div class="button_container" id="toggle">
     <span class="top"></span>
@@ -83,12 +83,12 @@
       <ul>
         <li><a href="https://nomful.com/">Home</a></li>
         <li><a href="https://itunes.apple.com/US/app/id991589420?mt=8#">Sign-up</a></li>
-        <!--<li><a href="#">About</a></li>-->
+        <li><a href="#">About</a></li>
         <li><a href="https://nomful.com/partners/">Partners</a></li>
       </ul>
     </nav>
   </div>
-</div>
+</div>-->
 
 <header>
   <div class="header">

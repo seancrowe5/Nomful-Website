@@ -21,19 +21,24 @@ img.logo-mobile {
 .masthead-top {
   height: 650px;
   background-image: url('/img1/hero-home.jpg');
-  background-position: 54% 50%;
+  background-position: 14% 50%;
   background-size: cover;
   margin-top: -30px;
 }
 
 .masthead-top-content {
   position: relative;
-  top: 90px;
+  top: 130px;
 }
 
 .header {
-  display: none;
+  margin-bottom: -78px;
+  padding-top: 10px;
   text-align: left;
+}
+
+img.logo {
+  height: 44px;
 }
 
 #top-button {
@@ -57,6 +62,24 @@ h5#subline {
   margin-top: 30px;
 }
 
+h4#top-CTA {
+
+}
+
+h4#top-CTA {
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+h4#top-CTA span {
+  border-bottom: 5px solid #FF8B35;
+}
+
+img#orange-arrow {
+  display: none;
+}
+
 .lb_label.top {
   color: #888;
   padding-left: 10px;
@@ -71,7 +94,27 @@ input.button-primary {
   width: 100%;
 }
 
+input#email-c {
+  width: 90%;
+  display: inline;
+  height: 42px;
+  border: none;
+  font-size: 17px;
+  margin-right: 5px;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
+input#submit-c {
+  width: 90%;
+  display: inline;
+  text-transform: none;
+  margin-left: -3px;
+  text-align: center;
+  background-color: #FF8B35;
+  border: none;
+  font-size: 21px;
+}
+    
 
 
 
@@ -108,7 +151,7 @@ input.button-primary {
 }
  
 /* Close Button */
-.popup-close {
+.popup-close , .sb .sb-close-btn{
     width:30px;
     height:30px;
     padding-top:4px;
@@ -128,7 +171,7 @@ input.button-primary {
     color:#fff;
 }
  
-.popup-close:hover {
+.popup-close:hover , .sb .sb-close-btn:hover {
     -webkit-transform:translate(50%, -50%) rotate(180deg);
     transform:translate(50%, -50%) rotate(180deg);
     background:rgba(0,0,0,1);
@@ -136,16 +179,55 @@ input.button-primary {
 }
 
 
+.sb {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 3%;
+  width: 94%;
+  height: 210px;
+  background: white;
+  padding: 10px 0px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+  z-index: 1999;
+  opacity: 0;
+}
 
+.sb form input[type='text'], .sb form input[type='password'], .sb form input[type='email'], .sb form textarea{
+  margin: 0;
+  display: inline;
+  border: none;
+  background: #f7f7f7;
+  padding: 18px 10px;
+  font-size: 15px;
+  width: 230px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
-
-
+.sb form input[type='submit'] {
+  background: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  background: black;
+  color: white;
+  width: 80px;
+  margin-left: 5px;
+  padding: 0px 1px;
+  text-align: center;
+  height: 37px;
+}
 
 
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead-top-content {
     top: 40px;
+    width: 80%;
   }
 
   .mobile-nav {
@@ -154,7 +236,7 @@ input.button-primary {
   
   header {
     display: block;
-/*    position: fixed;
+/*  position: fixed;
     top: 0;
     left: 0;
     background-color: transparent;
@@ -162,8 +244,9 @@ input.button-primary {
     z-index: 1000;
     height: 120px;
     overflow: hidden;*/
+    padding: 0px;
     position: relative;
-    margin-bottom: -108px;
+    margin-bottom: -112px;
     width: 100%;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -197,19 +280,16 @@ input.button-primary {
 
   .masthead-top {
     height: 570px;
-    background-position: 44% 30%;
+    background-position: 34% 30%;
     background-size: cover;
     padding-top: 120px;
     margin-top: 0px;
   }
   
-  .masthead-top-content {
-    width: 80%;
-  }
-  
   h1#top-headline {
     text-align: left;
     width: 80%;
+    min-width: 550px;
   }
 
   h5#subline {
@@ -219,44 +299,34 @@ input.button-primary {
   }
   
   h4#top-CTA {
-    font-weight: 600;
-    width: 50%;
-    max-width: 450px;
     margin-top: 70px;
+    margin-bottom: 20px;
+    width: 500px;
+    text-align: left;
   }
   
-  h4#top-CTA span {
-    border-bottom: 5px solid #FF8B35;
-  }
-  
-  img#orange-arrow {
-    -ms-transform: rotate(77deg);
-    -webkit-transform: rotate(77deg);
-    transform: rotate(77deg);
-    width: 75px;
-    display: inline;
-    float: left;
-    margin-top: -20px;
-  }
-
   input#email-c {
-    width: 270px;
-    display: inline;
     height: 45px;
-    border: none;
+    width: 270px;
     font-size: 19px;
-    margin-right: 5px;
   }
   
   input#submit-c {
     width: 160px;
-    display: inline;
-    text-transform: none;
     padding: 0px 1px;
-    text-align: center;
-    background-color: #FF8B35;
-    border-color: #FF8B35;
-    font-size: 21px;
+    font-size: 22px;
+    height: 45px;
+    top: 1px;
+  }
+  
+  img#orange-arrow {
+    width: 75px;
+    display: inline;
+    float: left;
+    margin-top: -20px;
+    -ms-transform: rotate(77deg);
+    -webkit-transform: rotate(77deg);
+    transform: rotate(77deg);
   }
   
   #top-button {
@@ -321,6 +391,22 @@ input.button-primary {
     background-color: rgba(110, 177, 155, .8);
   }
   
+  .sb {
+    left: 15%;
+    width: 70%;
+    height: 210px;
+    padding: 20px 0px;
+  }
+  
+  .sb form input[type='text'], .sb form input[type='password'], .sb form input[type='email'], .sb form textarea{
+    font-size: 16px;
+    width: 270px;
+  }
+
+  .sb form input[type='submit'] {
+    font-size: 16px;
+    width: 130px;
+  }
 }
 
 /* Larger than desktop */
@@ -332,6 +418,7 @@ input.button-primary {
   h1#top-headline {
     text-align: left;
     width: 60%;
+    min-width: 550px;
   }
 
   h5#subline {
@@ -339,9 +426,13 @@ input.button-primary {
     max-width: 550px;
   }
   
-  .left55 {
-    margin-left: 55px;
+  .sb {
+    left: 22.5%;
+    width: 55%;
+    height: 170px;
+    padding: 30px 0px 40px;
   }
+
 }
 
 

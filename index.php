@@ -23,9 +23,7 @@
     <img id="orange-arrow" src="img1/orange-arrow.png"/>
     
 </section>  
-  
-  <a class="btn" data-popup-open="popup-1" href="#">Open Popup #1</a>
- 
+   
 <div class="popup" data-popup="popup-1">
     <div class="popup-inner">
         <h2>Wow! This is Awesome! (Popup #1)</h2>
@@ -95,20 +93,28 @@
   
   
 <div class="subscribe-me">
-  <h2>Subscribe our Newsletter</h2>
+  <h2>Stay in touch!</h2>
   <a href="#close" class="sb-close-btn">x</a>
-  <p>Subscribe to our mailing list to get updates to your email inbox</p>
-  <form>
-    <input type="email" placeholder="Email Address">
-    <input type="submit" value="Sign up">
-  </form>
+  <p>Promotions, fun food things, and stories.</p>
+  <script src="email-popup-form.js"></script>
+    <div id="popup-message-top" class="container-480"><div id="popup-message"></div></div>
+    
+    <form id="ajax-email-popup" method="post" action="email-popup-form.php" novalidate>
+    <div class="row">
+      <input class="u-full-width" type="email" placeholder="Enter your email" name="email-popup" id="email-popup">
+      <input type="text"  id="sp-website-r" name="sp-website-r" value=""  />
+      <input type="phone" id="sp-phone-r" name="sp-phone-r" value="" />
+      <input class="button-primary" id="submit-popup" type="submit" value="Sign up">
+    </div>
+    </form>
 </div>
 
   
 	<script type="text/javascript">
 		$(document).ready( function() {
 			$(".subscribe-me").subscribeBetter({
-                trigger: "onidle"
+                trigger: "onidle",
+                delay: 100
 			});
 		});
 

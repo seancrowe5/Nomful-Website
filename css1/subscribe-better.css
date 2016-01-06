@@ -3,7 +3,7 @@ Class Definitions
 =================================================*/
 
 
-.sb {
+/*.sb {
   display: none;
   position: fixed;
   top: 50%;
@@ -19,7 +19,7 @@ Class Definitions
   -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.5);
   z-index: 1999;
   opacity: 0;
-}
+}*/
 
 .sb h2 {
   margin-top: 0;
@@ -29,7 +29,7 @@ Class Definitions
   font-size: 20px;
 }
 
-.sb form input[type='text'], .sb form input[type='password'], .sb form input[type='email'], .sb form textarea{
+/*.sb form input[type='text'], .sb form input[type='password'], .sb form input[type='email'], .sb form textarea{
   margin: 0;
   border: none;
   background: #f7f7f7;
@@ -58,7 +58,7 @@ Class Definitions
   right: 10px;
   top: 10px;
   color: #ccc;
-}
+}*/
 
 .sb.sb-withoverlay {
   position: absolute;
