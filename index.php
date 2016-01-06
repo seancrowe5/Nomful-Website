@@ -117,28 +117,20 @@
   
   
   
-  <script>
+<script>
   
   $(function() {
-    //----- OPEN
-    $('[data-popup-open]').on('click', function(e)  {        
-        $('[data-popup=popup-1]').fadeIn(350);
-        $('body').css('overflow', 'hidden');
-        e.preventDefault();
-    });
- 
     //----- CLOSE
     $('[data-popup-close]').on('click', function(e)  {
         var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('input#email-c').val('');
         $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
- 
+        $('body').css('overflow','auto'); 
         e.preventDefault();
     });
-});
+  });
   
-  
-  
-  </script>
+</script>
   
   
 <!--  <script>  
