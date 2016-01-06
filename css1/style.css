@@ -610,6 +610,59 @@ img.testimonial-stars {
   
 }
 
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------ MASTHEAD - EXPLAINER ------------------------- */
+/* ----------------------------------------------------------------------- */
+
+.masthead-explainer {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+span.explainer-step-number {
+  background-color: rgb(110, 177, 155);
+  border-radius: 50%;
+  color: white;
+  display: block;
+  font-size: 28px;
+  height: 50px;
+  box-sizing: border-box;
+  width: 50px;
+  line-height: 28px;
+  margin: 30px auto 10px;
+  padding: 10px;
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+}
+
+.explainer-step img {
+  width: 100%;
+  max-width: 300px;
+  padding-bottom: 50px;
+}
+
+
+.explainer-step p {
+  font-size: 17px;
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  
+  .explainer-step {
+    display: inline-block;
+    width: 30%;
+    margin-left: 4%;
+  }
+
+  .explainer-step:first-child {
+    margin-left: 0; 
+  }
+}
+
+
 /* ----------------------------------------------------------------------- */
 /* ---------------------- MASTHEAD - EATING RIGHT ------------------------ */
 /* ----------------------------------------------------------------------- */
