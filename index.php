@@ -32,8 +32,21 @@
     </div>
 </div>
   
-<section class="masthead masthead-space">
-  <div class="container">
+<section class="masthead masthead-testimonial">
+  <div class="container masthead-testimonial-content">
+    
+    <div class="testimonial-box">
+      <img class="testimonial-profile" src="img1/Steph.jpg">
+      <div class="testimonial-stars-row">
+        <img class="testimonial-stars" src="img1/star.png">
+        <img class="testimonial-stars" src="img1/star.png">
+        <img class="testimonial-stars" src="img1/star.png">
+        <img class="testimonial-stars" src="img1/star.png">
+        <img class="testimonial-stars" src="img1/star.png">
+      </div>
+      <h4>"The Nomful program allowed me to break my bad habits!"</h4>
+      <h5>-Ashley, 24</h5>
+    </div>
     
   </div>
 </section>
@@ -48,14 +61,46 @@
         <div class="cells"><img class="point-box-img" src="img1/Ashley.png" /></div>
         <div class="cells"><p>I just have to track food with photos, not calories. And then my coach, Emily, gives me a personalized plan just for me.</p></div>
       </div>
+    <p class="point-box-person">Ashley, 27</p>
     </div>
+    
     
     <div class="eatingRight-point">
       <div class="point-box tables" id="point-box-green">
         <div class="cells"><img class="point-box-img" src="img1/emily.png" /></div>
         <div class="cells"><p>With photos, I can see  what you're eating, when you're eating it, and how big your portions are. All I need to help re-align your diet!</p></div>
       </div>
+    <p class="point-box-person">Coach Emily</p>
     </div>
+    
+    
+  </div>
+</section>
+  
+  
+<section class="masthead masthead-coachIntro">
+  <div class="container masthead-coachIntro-content">
+    <h2 class="bold">Everyone is different. Our coaches have a wide range of specialties for you to choose from.</h2>
+    
+    <div class="coachIntro-box">
+      <img src="img1/Steph.jpg">
+      <h4>Brittany C.</h4>
+      <p>I was born and raised in upstate New York. After receiving my Bachelor's Degree in Nutrition and Dietetics from Syracuse University, I moved to South Carolina for a dietetic internship and have lived here ever since. I enjoy cooking, Pure Barre, blogging, renovating, and being on social media. I’m also a dog lover!</p>
+    </div>
+    
+    <div class="coachIntro-box">
+      <img src="img1/emily.png">
+      <h4>Emily G.</h4>
+      <p>I come from a close-knit Irish family - youngest of seven kids! My passion for nutrition began when I was diagnosed with type 1 diabetes. I decided then that I wanted to help people like me, which is why I’m becoming a certified diabetes educator. I enjoy yoga, cooking, reading nutrition blogs, and binging on reality TV.</p>
+    </div>
+    
+    <div class="coachIntro-box">
+      <img src="img1/amy.png">
+      <h4>Amy D.</h4>
+      <p>Born and raised in New Orleans, I've always had a passion for food. When I'm not helping people reach their health goals, I'm spending too much time browsing the aisles of Whole Foods, recipe testing for my blog, The Balanced Dietitian, trying new meals at local restaurants, or walking through beautiful Audubon Park!</p>
+    </div>
+    
+    
     
   </div>
 </section>
