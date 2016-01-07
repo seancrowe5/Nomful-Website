@@ -244,6 +244,16 @@ form#ajax-phone-index {
   font-size: 21px;
 }
 
+#branch-message-top {
+  display: block;
+  margin: 25px auto 0px;
+}
+
+#popup-message-top {
+  display: block;
+  margin: 0px auto;
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
   .masthead-top-content {
