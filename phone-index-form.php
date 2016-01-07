@@ -3,7 +3,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         http_response_code(200);
-        echo "yessss";
+        echo "Boom! Check your phone for a link to download Nomful";
         /*// Get the form fields and remove whitespace.
         $phone_number = $_POST["phone_number_a"];
         $phone_number_strip = preg_replace("/[^0-9]/","",$phone_number);
