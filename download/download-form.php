@@ -19,7 +19,7 @@ require 'vendor/autoload.php';
         // Build the email content.
         $email_content = "Phone: <sms://$phone_number_strip|$phone_number> \n\n";
 
-        $payload = array("text" => "Hey <@sean> <@thomas>, somebody signed up on the landing page!");                                                                    
+        $payload = array("text" => "DOWNLOAD: Hey <@sean> <@thomas>, somebody signed up on the download page!");                                                                    
         $data_string = json_encode($payload);                                                                                   
 
         $ch = curl_init('https://hooks.slack.com/services/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');                                             

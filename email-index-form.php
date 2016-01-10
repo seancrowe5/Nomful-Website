@@ -34,7 +34,7 @@ require 'vendor/autoload.php';
       
       
         //SEND SLACK MESSAGE WHEN USER ENTERS EMAIL
-        $payload = array("text" => "Hey <@sean> <@thomas>, you've got a Nashville!! \n$email_content\n\n");                                           $data_string = json_encode($payload);                                                                                   
+        $payload = array("text" => "HOME CTA FORM: Hey <@sean> <@thomas>, you've got a Nashville interested!! \n$email_content\n\n");                                           $data_string = json_encode($payload);                                                                                   
         $ch = curl_init('https://hooks.slack.com/services/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');                                                                      
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
