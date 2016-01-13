@@ -19,7 +19,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         }
         
         //ADD USER TO MAILCHIMP
-        ParseCloud::run("addUserToMailchimpList", array("toEmail" => email));
+        ParseCloud::run("addUserToMailchimpList", array("toEmail" => $email));
     
 //        
 //        $mc_ulr = "/automations/e34c745515/emails/7b108c9d9b/queue";
