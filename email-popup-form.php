@@ -44,8 +44,11 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             'Content-Type: application/json',                                                                                
             'Content-Length: ' . strlen($data_string))                                                                       
         ); 
-
       
+      http_response_code(200);
+            echo "Boom! Check your email for a link to download Nomful!";
+
+/*      
         // Send the email.
         if (curl_exec($ch) || mail($recipient, $subject, $email_content)) {
             // Set a 200 (okay) response code.
@@ -55,7 +58,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             // Set a 500 (internal server error) response code.
             http_response_code(500);
             echo "Oops! Something went wrong.";
-        }
+        }*/
 
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
