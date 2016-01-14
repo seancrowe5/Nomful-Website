@@ -32,6 +32,13 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
       
         //ADD USER TO MAILCHIMP
         ParseCloud::run("addUserToMailchimpList", array("toEmail" => $email));
+        
+      
+      
+        // SEAN - IT IS BREAKING ABOVE ON LINE 34! NOTHING BELOW IS EXECUTED.
+      
+      
+      
       
         $payload = array("text" => "SCROLL POPUP: Hey <@sean> <@thomas>, you've got a new subscriber!! \n$email_content\n\n");                                                                    
         $data_string = json_encode($payload);                                                                                   
@@ -44,11 +51,8 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             'Content-Type: application/json',                                                                                
             'Content-Length: ' . strlen($data_string))                                                                       
         ); 
-      
-      http_response_code(200);
-            echo "Boom! Check your email for a link to download Nomful!";
 
-/*      
+      
         // Send the email.
         if (curl_exec($ch) || mail($recipient, $subject, $email_content)) {
             // Set a 200 (okay) response code.
@@ -58,7 +62,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
             // Set a 500 (internal server error) response code.
             http_response_code(500);
             echo "Oops! Something went wrong.";
-        }*/
+        }
 
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
