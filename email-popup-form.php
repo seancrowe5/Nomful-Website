@@ -16,45 +16,10 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
           echo "Oops! There was a problem with your email. Please try again.";
           exit;
         }
-      
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "thomas@nomful.com";
-
-        // Set the email subject.
-        $subject = "New Contact Message!";
-
-        // Build the email content.
-        $email_content = "Email: $email \n\n";
-      
-        // Build the email headers.
-        $email_headers = "From: <$email>";
-      
-        //ADD USER TO MAILCHIMP
-        ParseCloud::run("addUserToMailchimpList", array("toEmail" => $email));
-        
-      
-      
-        // SEAN - IT IS BREAKING ABOVE ON LINE 34! NOTHING BELOW IS EXECUTED.
-      
-      
-      
-      
-        $payload = array("text" => "SCROLL POPUP: Hey <@sean> <@thomas>, you've got a new subscriber!! \n$email_content\n\n");                                                                    
-        $data_string = json_encode($payload);                                                                                   
-
-        $ch = curl_init('https://hooks.slack.com/services/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');                                                                      
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
-            'Content-Type: application/json',                                                                                
-            'Content-Length: ' . strlen($data_string))                                                                       
-        ); 
 
       
-        // Send the email.
-        if (curl_exec($ch) || mail($recipient, $subject, $email_content)) {
+        // run cloud code
+        if (ParseCloud::run("addUserToMailchimpList", array("toEmail" => $email))) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Boom! Check your email for a link to download Nomful!";
