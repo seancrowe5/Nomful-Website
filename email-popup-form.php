@@ -17,7 +17,6 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
           exit;
         }
 
-      
         // run cloud code
         if (ParseCloud::run("userSignupFromWebsite", array("toEmail" => $email))) {
             // Set a 200 (okay) response code.
