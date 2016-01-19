@@ -18,43 +18,10 @@ ParseClient::initialize('KjqhJkgvtVSsPA9SVHxq1Euad73fWhLWfVS4LNxO', '9V1I071QAS4
           exit;
         }
         
-        //ADD USER TO MAILCHIMP
-        ParseCloud::run("addUserToMailchimpList", array("toEmail" => $email));
-    
-//        
-//        $mc_ulr = "/automations/e34c745515/emails/7b108c9d9b/queue";
-//        $MailChimp = new \Drewm\MailChimp('458779a92e35ef155beeb58b445fd2ee-us10');
-//        $result = $MailChimp->call('lists/subscribe', array(
-//            'id'                => '297cbd7828',
-//            'email'             => array('email'=>$email),
-//            'merge_vars'        => array('TYPE' => 'Trial'),
-//            'double_optin'      => false,
-//            'update_existing'   => true,
-//            'replace_interests' => false,
-//            'send_welcome'      => false,
-//        ));
-//        
-        //TESTING EMAIL INFO FOR THOMAS
-        $recipient = "thomas@nomful.com";
-        $subject = "New Contact Message!";
-        $email_content = "Email: $email \n\n";
-        $email_headers = "From: <$email>";
-      
-      
-        //SEND SLACK MESSAGE WHEN USER ENTERS EMAIL
-        $payload = array("text" => "HOME CTA FORM: Hey <@sean> <@thomas>, you've got a Nashville interested!! \n$email_content\n\n");                                           $data_string = json_encode($payload);                                                                                   
-        $ch = curl_init('https://hooks.slack.com/services/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');                                                                      
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
-            'Content-Type: application/json',                                                                                
-            'Content-Length: ' . strlen($data_string))                                                                       
-        ); 
-
-      
-        // Send the TEST email and Execute curl request for Slack
-        if (curl_exec($ch) || mail($recipient, $subject, $email_content)) {
+        
+        
+        // Send request to CLOUD CODE
+        if (ParseCloud::run("userSignupFromWebsite", array("toEmail" => $email))) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Awesome! You’ve taken the first step towards a healthier lifestyle. One of our experts will be in touch soon to match you with the perfect coach.";
