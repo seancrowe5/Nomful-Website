@@ -17,7 +17,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
           exit;
         }
 
-      ParseCloud::run("userSignupFromWebsite", array("toEmail" => $email);
+      ParseCloud::run("userSignupFromWebsite", array("toEmail" => $email));
    
         http_response_code(200);
         echo "Boom! Check your email for a link to download Nomful!";
