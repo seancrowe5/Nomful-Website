@@ -17,17 +17,11 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
           exit;
         }
 
-      
-        // run cloud code
-        if (ParseCloud::run("userSignupFromWebsite", array("toEmail" => $email))) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            echo "Boom! Check your email for a link to download Nomful!";
-        } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong.";
-        }
+      ParseCloud::run("userSignupFromWebsite", array("toEmail" => $email);
+   
+        http_response_code(200);
+        echo "Boom! Check your email for a link to download Nomful!";
+        
 
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
