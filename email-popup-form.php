@@ -19,7 +19,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
 
       
         // run cloud code
-        if (ParseCloud::run("addUserToMailchimpList", array("toEmail" => $email))) {
+        if (ParseCloud::run("userSignupFromWebsite", array("toEmail" => $email))) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Boom! Check your email for a link to download Nomful!";

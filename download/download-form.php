@@ -14,7 +14,7 @@ ParseClient::initialize('EcHepDGBmNvZhRx8D1vMFLzMPgqAXqfIjpiIJuIe', 'cyksn8TZdJy
         $phone_number_strip = preg_replace("/[^0-9]/","",$phone_number);
       
     
-        if (ParseCloud::run("addUserToMailchimpList", array("toEmail" => $email))) {
+        if (ParseCloud::run("userSignupFromWebsite", array("toEmail" => $email))) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Awesome! You’ve taken the first step towards a healthier lifestyle. Look out for a text to download the app! :)";
