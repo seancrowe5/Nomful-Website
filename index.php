@@ -217,7 +217,7 @@ $(function() {
 <div class="subscribe-me">
   <h2>Interested in Nomful?</h2>
   <a href="#close" class="sb-close-btn">x</a>
-  <p>Start 2016 off right with 3-days of free coaching, on us &#9786;</p>
+  <p>Start 2016 with 3 days of free coaching on us &#9786;</p>
   <script src="email-popup-form.js"></script>
     <div id="popup-message-top" class="container-480"><div id="popup-message"></div></div>
     
