@@ -201,10 +201,10 @@ $(function() {
   <div class="container masthead-join-content">
     <h2 id="join-title">Forget fads and restrictions, build a lifestyle right for you</h2>
     <div id="healthy-start">
-      <h4>21 Day Healthy Start</h4>
+      <h4>21-Day Healthy Start</h4>
       <h2>$49</h2>
       <ul class="join-props">
-        <li>Initial phone assesment</li>
+        <li>Initial phone assessment</li>
         <li>Daily feedback and support</li>
         <li>Quick meal sharing</li>
         <li>Help with recipes, questions, etc.</li>
@@ -216,7 +216,7 @@ $(function() {
       <h2>$199</h2>
       <ul class="join-props">
         <li>Complete Personalized Evaluation</li>
-        <li>Regular phone assesments</li>
+        <li>Regular phone assessments</li>
         <li>Daily accountability</li>
         <li>Quick meal sharing</li>
         <li>Weekly progress tracking</li>
@@ -230,7 +230,7 @@ $(function() {
 <div class="subscribe-me">
   <h2>Interested in Nomful?</h2>
   <a href="#close" class="sb-close-btn">x</a>
-  <p>Start 2016 off right with 3-days of free coaching, on us &#9786;</p>
+  <p>Start 2016 with 3 days of free coaching on us &#9786;</p>
   <script src="email-popup-form.js"></script>
     <div id="popup-message-top" class="container-480"><div id="popup-message"></div></div>
     
