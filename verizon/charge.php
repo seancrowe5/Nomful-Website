@@ -14,5 +14,5 @@
       'currency' => 'usd'
   ));
 
-  echo '<h1>Successfully charged $199.00!</h1>';
+  echo '<h1>Successfully charged $199.00!</h1>'; //THOMAS THIS IS RESPONSE MESSAGE
 ?>
