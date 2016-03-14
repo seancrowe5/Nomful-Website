@@ -131,25 +131,30 @@ $(function() {
 <section class="masthead masthead-join" id="bottom">
     <div id="bootcamp">
       <h4>12-Week Boot Camp</h4>
-      <h2>$199</h2>
+      <h4><strong>VERIZON SPECIAL</strong></h4>
+      <h2><s>$299</s> <strong>NOW $199</strong></h2>
       <ul class="join-props">
         <li>Complete Personalized Evaluation</li>
-        <li>Regular phone assessments</li>
+        <li>Regular phone checkins ($300 value)</li>
         <li>Daily accountability</li>
         <li>Quick meal sharing</li>
+        <li>Help with recipes, questions, etc.</li>
         <li>Weekly progress tracking</li>
+        <strong><center>BONUS</center></strong>
+        <li>Meal Patter Guide ($75 value)</li>
+        <li>Extra phone consultation ($50 value)</li>
       </ul>
-      <button class="button-primary join-button">Get Started</button>
+      <form action="charge.php" method="post">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<?php echo $stripe['publishable_key']; ?>"
+        data-description="Nomful 12-week Bootcamp"
+        data-amount="19900"
+        data-locale="auto"></script>
+      </form>
     </div>
   </div>
 </section> 
 
-<form action="charge.php" method="post">
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<?php echo $stripe['publishable_key']; ?>"
-          data-description="Nomful 12-week Bootcamp"
-          data-amount="19900"
-          data-locale="auto"></script>
-</form>
+
 
 <?php require("footers.php"); ?>
