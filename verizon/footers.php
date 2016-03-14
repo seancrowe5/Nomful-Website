@@ -3,7 +3,7 @@
   <div class="top-footer">
     <div class="learn-more">
       <h6 class="hide-less-tablet uppercase">Learn more</h6>
-      <img class="footer-logo show-less-tablet" src="img1/nomful-white.png"/>
+      <img class="footer-logo show-less-tablet" src="/../img1/nomful-white.png"/>
       <ul class="learn-more-list list-left">
         <li><a href="https://nomful.com/partners/">Partners</a></li>
         <li><a href="https://nomful.com/contact.php">Contact</a></li>
@@ -14,15 +14,15 @@
       </ul>
     </div>
 
-    <a href="https://itunes.apple.com/US/app/id991589420?mt=8#" target="_blank"><img class="download-appstore" src="img1/appstore-download.png" /></a>
+    <a href="https://itunes.apple.com/US/app/id991589420?mt=8#" target="_blank"><img class="download-appstore" src="/../img1/appstore-download.png" /></a>
       
     <div class="connect">
       <h6 class="hide-less-tablet uppercase">Connect with us</h6>
       <ul class="social-media-icons">
-        <li><a href="https://instagram.com/nomful/" target="_blank"><img src="img1/icons/instagram.png"/></a></li>
-        <li><a href="https://www.facebook.com/benomful/" target="_blank"><img src="img1/icons/facebook.png"/></a></li>
-        <li><a href="https://www.linkedin.com/company/nomful" target="_blank"><img src="img1/icons/linkedin.png"/></a></li>
-        <li><a href="https://mobile.twitter.com/benomful/" target="_blank"><img src="img1/icons/twitter.png"/></a></li>
+        <li><a href="https://instagram.com/nomful/" target="_blank"><img src="/../img1/icons/instagram.png"/></a></li>
+        <li><a href="https://www.facebook.com/benomful/" target="_blank"><img src="/../img1/icons/facebook.png"/></a></li>
+        <li><a href="https://www.linkedin.com/company/nomful" target="_blank"><img src="/../img1/icons/linkedin.png"/></a></li>
+        <li><a href="https://mobile.twitter.com/benomful/" target="_blank"><img src="/../img1/icons/twitter.png"/></a></li>
       </ul>
     </div>
   </div>

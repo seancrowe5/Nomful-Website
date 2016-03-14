@@ -9,14 +9,7 @@ require_once('./config.php');
     
     <h5 id="subline">Daily accountability and support from an expert in nutrition while you shop, cook, eat, and exercise.</h5>
     
-</section>  
-
-
-  
-<section class="masthead masthead-testimonial">
-  <div class="container masthead-testimonial-content">
-    
-    <div class="testimonial-box">
+    <div class="testimonial-box-verizon">
       <img class="testimonial-profile" src="/../img1/chelsea.png">
       <div class="testimonial-stars-row">
         <img class="testimonial-stars" src="/../img1/star.png">
@@ -28,6 +21,30 @@ require_once('./config.php');
       <h5>"The Nomful program allowed me to break my bad habits!"</h5>
       <h6>-Chelsea, 29</h6>
     </div>
+</section>  
+
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+  
+<section class="masthead masthead-testimonial">
+  <div class="container masthead-testimonial-content">
+    
+     <a href="#bottom"><button class="button-primary started-button">GET STARTED</button></a>
     
   </div>
 </section>
@@ -111,7 +128,7 @@ require_once('./config.php');
 </section>
   
   
-<section class="masthead masthead-join">
+<section class="masthead masthead-join" id="bottom">
     <div id="bootcamp">
       <h4>12-Week Boot Camp</h4>
       <h2>$199</h2>

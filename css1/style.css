@@ -1581,4 +1581,22 @@ input#email_c {
   
 }
 
+/* ========================================================================== */
+
+.testimonial-box-verizon {
+  padding: 0px 11px;
+  margin-top: 60px;
+  background-color: #BFDBD1;
+  border: none;
+  border-radius: 10px;
+  float: left;
+}
+
+button.button-primary.started-button {
+  margin-top: 100px;
+  padding: 15px 65px;
+  text-align: center;
+  height: inherit;
+  font-size: 25px;
+}
   
