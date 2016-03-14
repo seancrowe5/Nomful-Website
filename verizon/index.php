@@ -44,13 +44,7 @@ $(function() {
 <section class="masthead masthead-testimonial">
   <div class="container masthead-testimonial-content">
     
-     <form action="charge.php" method="post">
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<?php echo $stripe['publishable_key']; ?>"
-          data-description="Nomful 12-week Bootcamp"
-          data-amount="199"
-          data-locale="auto"></script>
-</form>
+     <a href="#bottom"><button class="button-primary started-button">GET STARTED</button></a>
     
   </div>
 </section>
@@ -150,6 +144,12 @@ $(function() {
   </div>
 </section> 
 
-
+<form action="charge.php" method="post">
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<?php echo $stripe['publishable_key']; ?>"
+          data-description="Nomful 12-week Bootcamp"
+          data-amount="19900"
+          data-locale="auto"></script>
+</form>
 
 <?php require("footers.php"); ?>
