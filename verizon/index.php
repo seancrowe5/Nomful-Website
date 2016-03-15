@@ -141,7 +141,7 @@ $(function() {
         <li>Help with recipes, questions, etc.</li>
         <li>Weekly progress tracking</li>
         <strong><center>BONUS</center></strong>
-        <li>Meal Patter Guide ($75 value)</li>
+        <li>Meal Pattern Guide ($75 value)</li>
         <li>Extra phone consultation ($50 value) </li>
       </ul>
       <form action="charge.php" method="post">
