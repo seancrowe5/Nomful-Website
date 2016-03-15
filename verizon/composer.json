@@ -1,0 +1,14 @@
+{
+    "name": "root/verizon",
+    "authors": [
+        {
+            "name": "seancrowe5",
+            "email": "sean.crowe@me.com"
+        }
+    ],
+    "require": {
+        
+            "stripe/stripe-php": "3.*"
+
+    }
+}
