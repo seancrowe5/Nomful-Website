@@ -60,7 +60,7 @@ $(function() {
     </div>
     </form>
     
-    <img id="orange-arrow" src="img1/orange-arrow.png"/>
+    <img id="orange-arrow" src="/../img1/orange-arrow.png"/>
     
 </section>  
 
@@ -90,13 +90,13 @@ $(function() {
   <div class="container masthead-testimonial-content">
     
     <div class="testimonial-box">
-      <img class="testimonial-profile" src="img1/chelsea.png">
+      <img class="testimonial-profile" src="/../img1/chelsea.png">
       <div class="testimonial-stars-row">
-        <img class="testimonial-stars" src="img1/star.png">
-        <img class="testimonial-stars" src="img1/star.png">
-        <img class="testimonial-stars" src="img1/star.png">
-        <img class="testimonial-stars" src="img1/star.png">
-        <img class="testimonial-stars" src="img1/star.png">
+        <img class="testimonial-stars" src="/../img1/star.png">
+        <img class="testimonial-stars" src="/../img1/star.png">
+        <img class="testimonial-stars" src="/../img1/star.png">
+        <img class="testimonial-stars" src="/../img1/star.png">
+        <img class="testimonial-stars" src="/../img1/star.png">
       </div>
       <h5>"The Nomful program allowed me to break my bad habits!"</h5>
       <h6>-Chelsea, 29</h6>
@@ -108,11 +108,11 @@ $(function() {
 <section class="masthead masthead-eatingRight">
   <div class="container masthead-eatingRight-content">
     <h2 class="bold">Eating Right Can Be Easy</h2>
-    <img class="eatingRight-meal" src="img1/iphone-meal.png"/>
+    <img class="eatingRight-meal" src="/../img1/iphone-meal.png"/>
     
     <div class="eatingRight-point">
       <div class="point-box tables">
-        <div class="cells"><img class="point-box-img" src="img1/Ashley.jpg" /></div>
+        <div class="cells"><img class="point-box-img" src="/../img1/Ashley.jpg" /></div>
         <div class="cells"><p>I just have to track food with photos, not calories. And then my coach, Emily, gives me a personalized plan just for me.</p></div>
       </div>
     <p class="point-box-person">Ashley, 27</p>
@@ -121,7 +121,7 @@ $(function() {
     
     <div class="eatingRight-point">
       <div class="point-box tables" id="point-box-green">
-        <div class="cells"><img class="point-box-img" src="img1/Steph.jpg" /></div>
+        <div class="cells"><img class="point-box-img" src="/../img1/Steph.jpg" /></div>
         <div class="cells"><p>With photos, I can see  what you're eating, when you're eating it, and how big your portions are. All I need to help re-align your diet!</p></div>
       </div>
     <p class="point-box-person">Coach Stephanie</p>
@@ -137,7 +137,7 @@ $(function() {
     <h2 class="bold">Everyone is different. Our coaches have a wide range of specialties for you to choose from.</h2>
     
     <div class="coachIntro-box">
-      <img src="img1/Brittany.jpg">
+      <img src="/../img1/Brittany.jpg">
       <h4>Brittany C.</h4>
       <p>I was born and raised in upstate New York. After receiving my Bachelor's Degree in Nutrition and Dietetics from Syracuse University, I moved to South Carolina for a dietetic internship and have lived here ever since. I enjoy cooking, Pure Barre, blogging, renovating, and being on social media. I’m also a dog lover!</p>
       
@@ -152,7 +152,7 @@ $(function() {
     </div>
     
     <div class="coachIntro-box">
-      <img src="img1/Emily.jpg">
+      <img src="/../img1/Emily.jpg">
       <h4>Emily G.</h4>
       <p>I come from a close-knit Irish family - youngest of seven kids! My passion for nutrition began when I was diagnosed with type 1 diabetes. I decided then that I wanted to help people like me, which is why I’m becoming a certified diabetes educator. I enjoy yoga, cooking, reading nutrition blogs, and binging on reality TV.</p>
       
@@ -167,7 +167,7 @@ $(function() {
     </div>
     
     <div class="coachIntro-box">
-      <img src="img1/Amy.jpg">
+      <img src="/../img1/Amy.jpg">
       <h4>Amy D.</h4>
       <p>Born and raised in New Orleans, I've always had a passion for food. When I'm not helping people reach their health goals, I'm spending too much time browsing the aisles of Whole Foods, recipe testing for my blog, The Balanced Dietitian, trying new meals at local restaurants, or walking through beautiful Audubon Park!</p>
       
@@ -276,8 +276,8 @@ $(function() {
   
 </script>-->
 
-<script src="js1/scale.fix.js"></script>
-<script src="js1/formatter.js"></script>
+<script src="/../js1/scale.fix.js"></script>
+<script src="/../js1/formatter.js"></script>
   
   <script>
     new Formatter(document.getElementById('phone_number_a'), {
