@@ -48,8 +48,8 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
 
-  <link rel="stylesheet" type="text/css" href="css1/subscribe-better.css" />
-  <script type="text/javascript" src="js1/jquery.subscribe-better.js"></script>
+  <link rel="stylesheet" type="text/css" href="/../css1/subscribe-better.css" />
+  <script type="text/javascript" src="/../js1/jquery.subscribe-better.js"></script>
   
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
