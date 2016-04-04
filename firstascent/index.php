@@ -1,7 +1,5 @@
 <?php require("headers.php"); ?>
 
-<script src="//cdn.optimizely.com/js/3820750056.js"></script>
-
 <script>
     (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-v1.8.3.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
 branch.init('key_live_kbmLoonXji6GF6P8YutPaifnztbFJ1QG'); 
@@ -42,17 +40,6 @@ $(function() {
 });
 </script>
 
-<script>
- (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
- ga('create', 'UA-62272031-2', 'auto');
- ga('send', 'pageview');
-
-</script>
-
 <section class="masthead-top">
   <div class="container masthead-top-content">
     <h1 id="top-headline">A nutrition coach in your pocket</h1>
@@ -73,7 +60,7 @@ $(function() {
     </div>
     </form>
     
-    <img id="orange-arrow" src="img1/orange-arrow.png"/>
+    <img id="orange-arrow" src="/../img1/orange-arrow.png"/>
     
 </section>  
 
@@ -103,13 +90,13 @@ $(function() {
   <div class="container masthead-testimonial-content">
     
     <div class="testimonial-box">
-      <img class="testimonial-profile" src="img1/chelsea.png">
+      <img class="testimonial-profile" src="/../img1/chelsea.png">
       <div class="testimonial-stars-row">
-        <img class="testimonial-stars" src="img1/star.png">
-        <img class="testimonial-stars" src="img1/star.png">
-        <img class="testimonial-stars" src="img1/star.png">
-        <img class="testimonial-stars" src="img1/star.png">
-        <img class="testimonial-stars" src="img1/star.png">
+        <img class="testimonial-stars" src="/../img1/star.png">
+        <img class="testimonial-stars" src="/../img1/star.png">
+        <img class="testimonial-stars" src="/../img1/star.png">
+        <img class="testimonial-stars" src="/../img1/star.png">
+        <img class="testimonial-stars" src="/../img1/star.png">
       </div>
       <h5>"The Nomful program allowed me to break my bad habits!"</h5>
       <h6>-Chelsea, 29</h6>
@@ -121,11 +108,11 @@ $(function() {
 <section class="masthead masthead-eatingRight">
   <div class="container masthead-eatingRight-content">
     <h2 class="bold">Eating Right Can Be Easy</h2>
-    <img class="eatingRight-meal" src="img1/iphone-meal.png"/>
+    <img class="eatingRight-meal" src="/../img1/iphone-meal.png"/>
     
     <div class="eatingRight-point">
       <div class="point-box tables">
-        <div class="cells"><img class="point-box-img" src="img1/Ashley.jpg" /></div>
+        <div class="cells"><img class="point-box-img" src="/../img1/Ashley.jpg" /></div>
         <div class="cells"><p>I just have to track food with photos, not calories. And then my coach, Emily, gives me a personalized plan just for me.</p></div>
       </div>
     <p class="point-box-person">Ashley, 27</p>
@@ -134,7 +121,7 @@ $(function() {
     
     <div class="eatingRight-point">
       <div class="point-box tables" id="point-box-green">
-        <div class="cells"><img class="point-box-img" src="img1/Steph.jpg" /></div>
+        <div class="cells"><img class="point-box-img" src="/../img1/Steph.jpg" /></div>
         <div class="cells"><p>With photos, I can see  what you're eating, when you're eating it, and how big your portions are. All I need to help re-align your diet!</p></div>
       </div>
     <p class="point-box-person">Coach Stephanie</p>
@@ -150,7 +137,7 @@ $(function() {
     <h2 class="bold">Everyone is different. Our coaches have a wide range of specialties for you to choose from.</h2>
     
     <div class="coachIntro-box">
-      <img src="img1/Brittany.jpg">
+      <img src="/../img1/Brittany.jpg">
       <h4>Brittany C.</h4>
       <p>I was born and raised in upstate New York. After receiving my Bachelor's Degree in Nutrition and Dietetics from Syracuse University, I moved to South Carolina for a dietetic internship and have lived here ever since. I enjoy cooking, Pure Barre, blogging, renovating, and being on social media. I’m also a dog lover!</p>
       
@@ -165,7 +152,7 @@ $(function() {
     </div>
     
     <div class="coachIntro-box">
-      <img src="img1/Emily.jpg">
+      <img src="/../img1/Emily.jpg">
       <h4>Emily G.</h4>
       <p>I come from a close-knit Irish family - youngest of seven kids! My passion for nutrition began when I was diagnosed with type 1 diabetes. I decided then that I wanted to help people like me, which is why I’m becoming a certified diabetes educator. I enjoy yoga, cooking, reading nutrition blogs, and binging on reality TV.</p>
       
@@ -180,7 +167,7 @@ $(function() {
     </div>
     
     <div class="coachIntro-box">
-      <img src="img1/Amy.jpg">
+      <img src="/../img1/Amy.jpg">
       <h4>Amy D.</h4>
       <p>Born and raised in New Orleans, I've always had a passion for food. When I'm not helping people reach their health goals, I'm spending too much time browsing the aisles of Whole Foods, recipe testing for my blog, The Balanced Dietitian, trying new meals at local restaurants, or walking through beautiful Audubon Park!</p>
       
@@ -227,10 +214,10 @@ $(function() {
   </div>
 </section> 
   
-<!--<div class="subscribe-me">
-  <h2>Interested in Nomful?</h2>
+<div class="subscribe-me">
+  <h2>Special First Ascent climbers offer!</h2>
   <a href="#close" class="sb-close-btn">x</a>
-  <p>Start 2016 with 3 days of free coaching on us &#9786;</p>
+  <p>First Ascent members get 3 days of free coaching on us &#9786;</p>
   <script src="email-popup-form.js"></script>
     <div id="popup-message-top" class="container-480"><div id="popup-message"></div></div>
     
@@ -242,7 +229,7 @@ $(function() {
       <input class="button-primary" id="submit-popup" type="submit" value="Sign up">
     </div>
     </form>
-</div>-->
+</div>
 
   
 	<script type="text/javascript">
@@ -276,7 +263,7 @@ $(function() {
   
 <!--  <script>  
   $("input.label_better").label_better({
-    position: "top", 
+    position: "top",
     animationTime: 400,
     easing: "bounce",
     offset: 10,
@@ -289,8 +276,8 @@ $(function() {
   
 </script>-->
 
-<script src="js1/scale.fix.js"></script>
-<script src="js1/formatter.js"></script>
+<script src="/../js1/scale.fix.js"></script>
+<script src="/../js1/formatter.js"></script>
   
   <script>
     new Formatter(document.getElementById('phone_number_a'), {
