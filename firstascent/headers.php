@@ -33,9 +33,9 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css1/normalize.css">
-  <link rel="stylesheet" href="css1/skeleton.css">
-  <link rel="stylesheet" href="css1/style.css">
+  <link rel="stylesheet" href="/../css1/normalize.css">
+  <link rel="stylesheet" href="/../css1/skeleton.css">
+  <link rel="stylesheet" href="/../css1/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel='stylesheet prefetch' href='https://daneden.github.io/animate.css/animate.min.css'>
 
@@ -92,6 +92,6 @@
 
 <header>
   <div class="header">
-    <a href="http://nomful.com"><img class="logo" id="top" src="img1/nomful-white-logo-60.png"></a>
+    <a href="http://nomful.com/firstascent"><img class="logo" id="top" src="img1/nomful-white-logo-60.png"></a>
   </div>
 </header>
